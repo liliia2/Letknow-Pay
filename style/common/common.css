@@ -1,0 +1,738 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button,
+button:active,
+button:focus {
+  outline: none;
+  border: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto-Regular"; }
+
+html {
+  height: auto;
+  background-color: #F4F6F7 !important; }
+
+body {
+  height: 100%; }
+  body.mobile * {
+    cursor: none !important;
+    outline: none !important; }
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url("../../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url("../../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("../../fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("../../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'SF-Pro-Text-Light';
+  src: url("../../fonts/SF-Pro-Text-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+.content {
+  width: 100%;
+  color: #212121; }
+  .content .m-s-header {
+    font-family: "Montserrat-SemiBold";
+    font-size: 28px;
+    line-height: 40px;
+    color: #2BBE00;
+    text-transform: uppercase;
+    padding: 2px;
+    text-align: center; }
+  .content .header {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+    .content .header .header-content {
+      max-width: 1440px;
+      margin: 0 60px;
+      height: 100%;
+      align-items: center; }
+      .content .header .header-content .logo-header {
+        float: left;
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .content .header .header-content .logo-header a {
+          height: 40px !important; }
+          .content .header .header-content .logo-header a img {
+            margin: auto;
+            height: 40px;
+            width: 200px; }
+      .content .header .header-content .nav-links {
+        display: flex;
+        float: right;
+        height: 100%; }
+        .content .header .header-content .nav-links p {
+          margin: auto; }
+          .content .header .header-content .nav-links p a {
+            color: black;
+            padding: 8px 25px;
+            margin: auto;
+            height: auto;
+            font-family: "Roboto-Regular";
+            font-size: 14px;
+            line-height: 16px;
+            color: #212121; }
+          .content .header .header-content .nav-links p a.accent {
+            color: #FF119D; }
+  .content .custom-gateway {
+    display: flex;
+    margin: 58px auto;
+    max-width: 1106px; }
+    .content .custom-gateway .text-area {
+      max-width: 630px;
+      padding-bottom: 187px; }
+      .content .custom-gateway .text-area h2 {
+        font-size: 54px;
+        line-height: 68px;
+        font-family: "Montserrat-Bold";
+        color: #212121;
+        padding: 32px 0; }
+      .content .custom-gateway .text-area p {
+        color: #212121;
+        line-height: 33px;
+        padding-bottom: 10px; }
+      .content .custom-gateway .text-area p.subheader {
+        font-family: "Montserrat-Medium";
+        font-size: 24px; }
+      .content .custom-gateway .text-area p.text {
+        font-family: "Montserrat-Regular";
+        font-size: 22px; }
+      .content .custom-gateway .text-area .submit-btn {
+        padding-top: 71px; }
+        .content .custom-gateway .text-area .submit-btn button {
+          background-image: linear-gradient(180deg, #0BBF50, #0BB095);
+          height: 60px;
+          width: 235px;
+          border-radius: 34px;
+          color: white;
+          font-family: "Roboto-Regular";
+          font-size: 18px;
+          line-height: 18px;
+          box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32); }
+          .content .custom-gateway .text-area .submit-btn button img {
+            position: relative;
+            left: 29px; }
+    .content .custom-gateway .custom-gateway-bg {
+      float: right;
+      width: 894px;
+      height: 590px;
+      right: 5%;
+      position: absolute;
+      background: url("../../img/custom_gateway.png") no-repeat;
+      background-size: cover;
+      z-index: -1; }
+  .content .how-it-works-bg, .content .merchant-crm-bg, .content .merchant-form-bg {
+    height: 100%;
+    width: 100%;
+    right: 0;
+    position: absolute;
+    background: url("../../img/how-works-bg.png") no-repeat;
+    background-size: cover;
+    z-index: -1;
+    margin-top: -52px; }
+  .content .how-it-works {
+    max-width: 1106px;
+    margin: 58px auto; }
+    .content .how-it-works .text-area {
+      max-width: 915px;
+      margin: 0 auto; }
+      .content .how-it-works .text-area .m-s-header, .content .how-it-works .text-area .subheader, .content .how-it-works .text-area .text {
+        text-align: center;
+        margin: 8px; }
+      .content .how-it-works .text-area .subheader {
+        font-family: "Montserrat-Medium";
+        font-size: 28px;
+        line-height: 34px; }
+      .content .how-it-works .text-area .text {
+        font-family: "Montserrat-Regular";
+        font-size: 24px;
+        line-height: 34px; }
+    .content .how-it-works .slider {
+      margin-top: 62px;
+      text-align: center; }
+      .content .how-it-works .slider .api-title {
+        font-family: "Montserrat-Bold";
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        margin-bottom: 10px; }
+      .content .how-it-works .slider .api-subheader {
+        font-family: "Montserrat-Regular";
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 43px; }
+      .content .how-it-works .slider .api2-slide, .content .how-it-works .slider .api3-slide {
+        max-width: 814px;
+        margin: auto; }
+        .content .how-it-works .slider .api2-slide .steps-screens, .content .how-it-works .slider .api3-slide .steps-screens {
+          display: flex;
+          margin-top: 36px; }
+          .content .how-it-works .slider .api2-slide .steps-screens .second, .content .how-it-works .slider .api3-slide .steps-screens .second {
+            margin: 0 35px; }
+          .content .how-it-works .slider .api2-slide .steps-screens img, .content .how-it-works .slider .api3-slide .steps-screens img {
+            border-radius: 7px;
+            box-shadow: 0 0 5px rgba(33, 43, 54, 0.15); }
+          .content .how-it-works .slider .api2-slide .steps-screens .count, .content .how-it-works .slider .api3-slide .steps-screens .count {
+            background-color: #0D9BFF;
+            width: 38px;
+            height: 38px;
+            border-radius: 38px;
+            color: white;
+            font-family: "Roboto-Bold";
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            margin: 27px auto 20px;
+            padding: 5px; }
+          .content .how-it-works .slider .api2-slide .steps-screens .text, .content .how-it-works .slider .api3-slide .steps-screens .text {
+            max-width: 248px;
+            color: #212B36;
+            font-family: "Roboto-Regular";
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center; }
+        .content .how-it-works .slider .api2-slide .api3-screen img, .content .how-it-works .slider .api3-slide .api3-screen img {
+          box-shadow: 7px 8px 21px rgba(0, 0, 0, 0.2);
+          border-radius: 24px; }
+        .content .how-it-works .slider .api2-slide .disclaimer, .content .how-it-works .slider .api3-slide .disclaimer {
+          font-family: "Roboto-Regular";
+          font-size: 12px;
+          line-height: 14px;
+          color: #6B7C89;
+          max-width: 535px;
+          text-align: right;
+          margin: 14px auto; }
+  .content .integration {
+    max-width: 1106px;
+    margin: 151px auto 130px; }
+    .content .integration .text-area {
+      max-width: 915px;
+      margin: 0 auto; }
+      .content .integration .text-area .m-s-header, .content .integration .text-area .subheader, .content .integration .text-area .text {
+        text-align: center;
+        margin: 8px; }
+      .content .integration .text-area .subheader {
+        font-family: "Montserrat-Medium";
+        font-size: 28px;
+        line-height: 34px; }
+      .content .integration .text-area .text {
+        font-family: "Montserrat-Regular";
+        font-size: 24px;
+        line-height: 34px; }
+    .content .integration .provide {
+      max-width: 915px;
+      margin: 100px auto; }
+      .content .integration .provide p {
+        font-family: "Roboto-Bold";
+        font-size: 24px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase; }
+      .content .integration .provide .cards {
+        display: flex;
+        margin: 41px auto; }
+        .content .integration .provide .cards .support, .content .integration .provide .cards .testing, .content .integration .provide .cards .api {
+          width: 249px;
+          height: 249px;
+          border-radius: 30px;
+          background-color: black;
+          color: white;
+          text-align: center;
+          box-shadow: 0 0 16px #a6b7c4; }
+          .content .integration .provide .cards .support .card-icon, .content .integration .provide .cards .testing .card-icon, .content .integration .provide .cards .api .card-icon {
+            width: 72px;
+            height: 72px;
+            margin: 44px auto 29px; }
+          .content .integration .provide .cards .support p, .content .integration .provide .cards .testing p, .content .integration .provide .cards .api p {
+            font-family: "Roboto-Medium";
+            line-height: 32px;
+            text-transform: none;
+            width: 163px;
+            margin: 0 auto; }
+        .content .integration .provide .cards .support {
+          background-color: #2BBE00; }
+        .content .integration .provide .cards .testing {
+          background-color: #0D9BFF;
+          margin: 0 84px; }
+        .content .integration .provide .cards .api {
+          background-color: #FF119D; }
+  .content .merchant-crm {
+    margin: 130px auto; }
+    .content .merchant-crm .m-s-header {
+      margin: auto;
+      padding-top: 2px; }
+    .content .merchant-crm .merchant-crm-content {
+      display: flex;
+      max-width: 1106px;
+      margin: auto; }
+      .content .merchant-crm .merchant-crm-content .merchant-notebook {
+        margin-top: 131px;
+        height: 584px;
+        width: 1027px;
+        right: -15%;
+        position: relative;
+        background: url("../../img/merchant-crm.png") no-repeat;
+        background-size: cover;
+        z-index: -1; }
+      .content .merchant-crm .merchant-crm-content .merchant-crm-bg {
+        margin-top: -52px; }
+      .content .merchant-crm .merchant-crm-content .about-merchant {
+        max-width: 1106px;
+        margin-top: 52px;
+        text-align: left; }
+        .content .merchant-crm .merchant-crm-content .about-merchant .info-block-with-ic {
+          width: 422px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 18px; }
+          .content .merchant-crm .merchant-crm-content .about-merchant .info-block-with-ic .icon {
+            width: 80px;
+            min-width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          .content .merchant-crm .merchant-crm-content .about-merchant .info-block-with-ic .text-about {
+            font-family: "Roboto-Medium";
+            font-size: 22px;
+            line-height: 28px;
+            padding-left: 15px; }
+            .content .merchant-crm .merchant-crm-content .about-merchant .info-block-with-ic .text-about .upcoming {
+              font-family: "Roboto-Bold";
+              font-size: 14px;
+              line-height: 20px;
+              padding: 3px 14px 4px;
+              color: white;
+              background-color: #FF119D;
+              border-radius: 10px;
+              min-width: 102px;
+              min-height: 26px;
+              margin-right: 10px; }
+  .content .letknow-app {
+    background-color: #0D9BFF;
+    width: 100%;
+    display: flex; }
+    .content .letknow-app .text-area {
+      max-width: 1022px;
+      text-align: left;
+      margin: auto;
+      padding: 58px 0 48px;
+      z-index: 1; }
+      .content .letknow-app .text-area .text {
+        color: white;
+        font-family: "Montserrat-Medium";
+        font-size: 32px;
+        line-height: 42px;
+        max-width: 511px;
+        float: right; }
+        .content .letknow-app .text-area .text .semibold {
+          font-family: "Montserrat-SemiBold"; }
+      .content .letknow-app .text-area .buttons {
+        display: flex;
+        color: #212B36;
+        margin-top: 35px;
+        float: right; }
+        .content .letknow-app .text-area .buttons button {
+          background-color: #F7FAFC;
+          width: 230px;
+          height: 44px;
+          border-radius: 22px;
+          box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32);
+          margin-right: 26px;
+          font-family: "Roboto-Regular";
+          font-size: 16px;
+          line-height: 12px; }
+          .content .letknow-app .text-area .buttons button a {
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .content .letknow-app .text-area .buttons button a .logo {
+              padding-right: 10px; }
+          .content .letknow-app .text-area .buttons button a:visited {
+            color: #212B36; }
+    .content .letknow-app .letknow-app-bg {
+      margin-top: -280px;
+      height: 800px;
+      width: 830px;
+      left: -2%;
+      position: absolute;
+      background: url("../../img/img-phone.png") no-repeat;
+      background-size: cover; }
+  .content .fees-and-limits {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 136px 0 50px; }
+    .content .fees-and-limits .fees-and-limits-content {
+      max-width: 1106px;
+      margin: auto;
+      display: flex;
+      height: 100%; }
+      .content .fees-and-limits .fees-and-limits-content .m-s-header {
+        text-align: left; }
+      .content .fees-and-limits .fees-and-limits-content .fees {
+        max-width: 442px;
+        width: 442px;
+        height: 100%;
+        margin-right: 224px; }
+        .content .fees-and-limits .fees-and-limits-content .fees .m-s-header {
+          margin-bottom: 52px; }
+        .content .fees-and-limits .fees-and-limits-content .fees .fees .fee {
+          display: flex;
+          border-bottom: 0.5px solid #979797;
+          align-items: center;
+          width: 439px;
+          margin-bottom: 21px;
+          padding-bottom: 8px; }
+          .content .fees-and-limits .fees-and-limits-content .fees .fees .fee .fee-title {
+            font-family: "Roboto-Medium";
+            font-size: 18px;
+            line-height: 18px;
+            color: #0D9BFF;
+            text-transform: uppercase; }
+          .content .fees-and-limits .fees-and-limits-content .fees .fees .fee .count {
+            font-family: "Montserrat-Medium";
+            font-size: 32px;
+            line-height: 32px;
+            color: #212B36;
+            margin-left: auto; }
+            .content .fees-and-limits .fees-and-limits-content .fees .fees .fee .count .procent {
+              color: #6B7C89; }
+        .content .fees-and-limits .fees-and-limits-content .fees .table {
+          background-color: white;
+          border-radius: 30px;
+          width: 439px;
+          height: 262px;
+          box-shadow: 0 0 16px #A6B7C4;
+          margin-top: 44px;
+          text-align: center; }
+          .content .fees-and-limits .fees-and-limits-content .fees .table .title {
+            color: #FF119D;
+            font-family: "Roboto-Medium";
+            font-size: 18px;
+            line-height: 18px;
+            padding: 36px 0; }
+            .content .fees-and-limits .fees-and-limits-content .fees .table .title img {
+              vertical-align: super; }
+          .content .fees-and-limits .fees-and-limits-content .fees .table .fee {
+            padding: 0 32px 8px 32px; }
+          .content .fees-and-limits .fees-and-limits-content .fees .table .fee-title.grey {
+            color: #6B7C89; }
+          .content .fees-and-limits .fees-and-limits-content .fees .table .without-border {
+            border: none; }
+        .content .fees-and-limits .fees-and-limits-content .fees .disclaimer {
+          font-family: "Roboto-Regular";
+          font-size: 12px;
+          line-height: 14px;
+          color: #6B7C89;
+          max-width: 370px;
+          text-align: right;
+          margin-left: 70px;
+          margin-top: 16px; }
+          .content .fees-and-limits .fees-and-limits-content .fees .disclaimer img {
+            vertical-align: super; }
+      .content .fees-and-limits .fees-and-limits-content .limits {
+        max-width: 440px;
+        width: 440px;
+        height: 100%; }
+        .content .fees-and-limits .fees-and-limits-content .limits .m-s-header {
+          margin-bottom: 48px; }
+        .content .fees-and-limits .fees-and-limits-content .limits .limit {
+          margin: 40px auto; }
+          .content .fees-and-limits .fees-and-limits-content .limits .limit .amount {
+            font-family: "Montserrat-Bold";
+            font-size: 28px;
+            line-height: 22px;
+            color: #212B36;
+            margin-bottom: 14px; }
+            .content .fees-and-limits .fees-and-limits-content .limits .limit .amount .period {
+              font-family: "Montserrat-Medium";
+              color: #6B7C89;
+              text-transform: uppercase; }
+          .content .fees-and-limits .fees-and-limits-content .limits .limit .description {
+            font-family: "Roboto-Regular";
+            font-size: 18px;
+            line-height: 22px;
+            color: #212B36; }
+            .content .fees-and-limits .fees-and-limits-content .limits .limit .description .medium {
+              font-family: "Roboto-Medium"; }
+  .content .settlements {
+    max-width: 1106px;
+    display: flex;
+    margin: 50px auto 78px; }
+    .content .settlements .text-block {
+      max-width: 535px;
+      margin-right: 69px; }
+      .content .settlements .text-block .m-s-header {
+        text-align: left;
+        margin-bottom: 23px; }
+      .content .settlements .text-block .text {
+        font-family: "Montserrat-Medium";
+        font-size: 24px;
+        line-height: 34px; }
+    .content .settlements .schemes {
+      max-width: 501px;
+      display: flex; }
+      .content .settlements .schemes .crypto-crypto, .content .settlements .schemes .crypto-fiat {
+        width: 218px;
+        height: 185px;
+        justify-content: center; }
+        .content .settlements .schemes .crypto-crypto .figures, .content .settlements .schemes .crypto-fiat .figures {
+          height: 127px;
+          width: 139px;
+          position: relative;
+          margin: auto; }
+          .content .settlements .schemes .crypto-crypto .figures .figure, .content .settlements .schemes .crypto-fiat .figures .figure {
+            width: 100px;
+            height: 100px;
+            position: absolute; }
+          .content .settlements .schemes .crypto-crypto .figures .circle, .content .settlements .schemes .crypto-fiat .figures .circle {
+            border-radius: 100px; }
+          .content .settlements .schemes .crypto-crypto .figures .rectangle, .content .settlements .schemes .crypto-fiat .figures .rectangle {
+            border-radius: 26px; }
+          .content .settlements .schemes .crypto-crypto .figures .blue, .content .settlements .schemes .crypto-fiat .figures .blue {
+            background-color: #0D9BFF; }
+          .content .settlements .schemes .crypto-crypto .figures .green, .content .settlements .schemes .crypto-fiat .figures .green {
+            background-color: #09CD0A; }
+          .content .settlements .schemes .crypto-crypto .figures .orange, .content .settlements .schemes .crypto-fiat .figures .orange {
+            background-color: #F5A623; }
+          .content .settlements .schemes .crypto-crypto .figures .shadow, .content .settlements .schemes .crypto-fiat .figures .shadow {
+            box-shadow: 2px 2px 12px rgba(33, 43, 54, 0.5); }
+        .content .settlements .schemes .crypto-crypto .text, .content .settlements .schemes .crypto-fiat .text {
+          font-family: "Roboto-Medium";
+          font-size: 32px;
+          line-height: 30px;
+          color: #212B36;
+          text-align: center;
+          margin-top: 28px; }
+          .content .settlements .schemes .crypto-crypto .text .grey, .content .settlements .schemes .crypto-fiat .text .grey {
+            color: #6B7C89; }
+      .content .settlements .schemes .crypto-crypto {
+        margin-right: 66px; }
+        .content .settlements .schemes .crypto-crypto .figures .blue {
+          top: 0;
+          left: 0; }
+        .content .settlements .schemes .crypto-crypto .figures .orange {
+          right: 0;
+          bottom: 0; }
+      .content .settlements .schemes .crypto-fiat .figures .blue {
+        top: 0;
+        right: 4px; }
+      .content .settlements .schemes .crypto-fiat .figures .green {
+        left: 4px;
+        bottom: 0; }
+  .content .currencies-supported {
+    width: 100%;
+    margin: auto;
+    background-color: #212B36; }
+    .content .currencies-supported .content {
+      max-width: 917px;
+      padding: 64px 0;
+      margin: auto; }
+      .content .currencies-supported .content .currencies {
+        margin: 40px auto; }
+        .content .currencies-supported .content .currencies .string {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 32px 0;
+          margin-left: 22px; }
+          .content .currencies-supported .content .currencies .string .currency {
+            width: auto;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 22px; }
+            .content .currencies-supported .content .currencies .string .currency .icon {
+              height: 35px;
+              width: 35px; }
+            .content .currencies-supported .content .currencies .string .currency .text {
+              margin-left: 6px;
+              color: white;
+              font-family: "Roboto-Bold";
+              font-size: 20px;
+              line-height: 28px; }
+  .content .merchant-form {
+    max-width: 1106px;
+    height: 397px;
+    margin: 78px auto; }
+    .content .merchant-form .text-block {
+      float: left; }
+      .content .merchant-form .text-block .title {
+        font-family: "Montserrat-Medium";
+        color: #FF119D;
+        font-size: 32px;
+        line-height: 42px;
+        max-width: 380px; }
+      .content .merchant-form .text-block .text {
+        margin-top: 24px;
+        color: #000000;
+        font-family: "Montserrat-Regular";
+        font-size: 24px;
+        line-height: 34px;
+        max-width: 552px; }
+        .content .merchant-form .text-block .text .email {
+          color: #0D9BFF; }
+          .content .merchant-form .text-block .text .email a, .content .merchant-form .text-block .text .email a:visited {
+            color: #0D9BFF; }
+    .content .merchant-form .form {
+      float: right;
+      width: 535px;
+      height: 397px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 18px 34px rgba(5, 48, 95, 0.32); }
+      .content .merchant-form .form form {
+        margin: 24px 64px 32px;
+        text-align: center; }
+        .content .merchant-form .form form .m-s-header {
+          font-size: 20px;
+          padding: 0; }
+        .content .merchant-form .form form .subheader {
+          font-family: "Roboto-Light";
+          font-size: 12px;
+          line-height: 21px;
+          color: #6B7C89;
+          margin-bottom: 8px; }
+        .content .merchant-form .form form input {
+          width: 100%;
+          height: 50px;
+          border-radius: 8px;
+          border: 1px solid #C8CFD8;
+          margin: 6px auto;
+          padding: 16px;
+          color: #8C9AA7;
+          font-family: "SF-Pro-Text-Light";
+          font-size: 16px;
+          line-height: 16px; }
+        .content .merchant-form .form form button {
+          margin-top: 42px;
+          color: white;
+          width: 325px;
+          height: 44px;
+          border-radius: 22px;
+          box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32);
+          background-color: #09CD0A;
+          font-family: "Roboto-Medium";
+          font-size: 14px;
+          line-height: 22px; }
+    .content .merchant-form .merchant-form-bg {
+      width: 104%;
+      margin-top: -132px;
+      left: -20%; }
+  .content .footer {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #D8D8D8;
+    color: #595F63; }
+    .content .footer .links-block-content {
+      max-width: 1106px;
+      margin: 41px auto;
+      display: flex; }
+      .content .footer .links-block-content .links-block-title {
+        font-family: "Roboto-Medium";
+        font-size: 16px;
+        line-height: 19px; }
+      .content .footer .links-block-content .links {
+        margin-top: 28px;
+        width: 155px;
+        font-family: "Roboto-Regular";
+        font-size: 16px;
+        line-height: 24px; }
+        .content .footer .links-block-content .links a:visited {
+          color: #595F63; }
+    .content .footer .copyright {
+      font-family: "Roboto-Regular";
+      font-size: 14px;
+      line-height: 16px;
+      max-width: 1106px;
+      margin: 64px auto 32px; }
+
+/*# sourceMappingURL=common.css.map */

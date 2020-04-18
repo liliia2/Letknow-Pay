@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="minimal-ui, user-scalable=no, width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Lkpay</title>
+    <link rel="stylesheet" href="style/common/common.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="header-content">
+                <div class="logo-header">
+                    <a href="#"><img src="img/logo.svg" alt="logotype"></a>
+                </div>
+                <div class="nav-links">
+                    <p class="nav-link"><a href="#">API Documentation</a></p>
+                    <p class="nav-link"><a href="#">About Us</a></p>
+                    <p class="nav-link"><a href="#">Contacts</a></p>
+                    <p class="nav-link"><a class="accent" href="https://id.letknow.com/">Log In</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="custom-gateway">
+            <div class="text-area">
+                <h2>Custom Gateway</h2>
+                <p class="subheader">LetKnow Pay is a tailor-made payment service provider facilitating merchants to accept digital currency payments.</p>
+                <p class="text">Our gateway offers you to accept multiple digital currencies with built-in exchange service. We facilitate our clients with bank account opening to guarantee the settlements in fiat.</p>
+                <div class="submit-btn">
+                    <button type="submit">Send Request
+                        <span><img src="img/ic-arrow-down.svg" alt="ic-arrow-down"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="custom-gateway-bg"></div>
+        </div>
+        <div class="how-it-works">
+            <div class="how-it-works-bg"></div>
+            <div class="text-area">
+                <p class="m-s-header">How it works</p>
+                <p class="subheader">LetKnow provides two methods of API integration:</p>
+                <p class="text">Redirecting your customer to the payment page and embedding the QR code in a checkout or deposit page.</p>            
+            </div>
+            <div class="slider">
+                <div class="api2-slide">
+                    <p class="api-title">API 2.0: redirecting to the payment page</p>
+                    <div class="steps-screens">
+                        <div class="screen first">
+                            <div><img src="./img/api2-first-screen.png"></div>
+                            <div class="count">1</div>
+                            <div class="text"><p>Client initiates a deposit on the merchant's shopping site and gets redirected to the LetKnow Payment Page</p></div>
+                        </div>
+                        <div class="screen second">
+                            <div><img src="./img/api2-second-screen.png"></div>
+                            <div class="count">2</div>
+                            <div class="text"><p>Client sends crypto</p></div>
+                        </div>
+                        <div class="screen third">
+                            <div><img src="./img/api2-third-screen.png"></div>
+                            <div class="count">3</div>
+                            <div class="text"><p>After our Node detects the payment, transaction is immediately approved and the client is redirected back to the merchant's shop</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="api3-slide">
+                    <p class="api-title">API 3.0: embedding the QR code</p>
+                    <p class="api-subheader">Customize the checkout page and embed the QR code and the crypto address in your page.</p>
+                    <div class="api3-screen">
+                        <img src="./img/ic-tablet.png">
+                        <div class="disclaimer"><span><img src="./img/ic-dsclmr.svg"></span>Client  account example </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="integration">
+            <div class="text-area">
+                <p class="m-s-header">Integration</p>
+                <p class="subheader">LetKnow’s API provides direct integration for Merchants.</p>
+                <p class="text">For less tech-savvy Merchants, LetKnow offers automated connections with customized dashboard buttons for purchasing specified items with fixed prices denominated in Fiat.</p>
+            </div>
+            <div class="provide">
+                <p class="r-header">Additionally, we provide</p>
+                <div class="cards">
+                    <div class="support">
+                        <div class="card-icon">
+                            <img src="./img/full-support.svg" alt="full-support"> 
+                        </div>
+                        <p>Full support on API integration</p>
+                    </div>
+                    <div class="testing">
+                        <div class="card-icon">
+                            <img src="./img/testing.svg" alt="testing">
+                        </div>
+                        <p>Testing before going live</p>
+                    </div>
+                    <div class="api">
+                        <div class="card-icon">
+                            <img src="./img/API-integration.svg" alt="API-integration">
+                        </div>
+                        <p>API integration for you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="merchant-crm">
+            <p class="m-s-header">Merchant CRM FEATURES</p>
+            <div class="merchant-crm-content">
+                <div class="about-merchant">
+                    <div class="info-block-with-ic">
+                        <div class="icon">
+                            <img src="./img/ic-manage.svg">
+                        </div>
+                        <div class="text-about">
+                            <p>Manage, withdraw and deposit your balance;</p>
+                        </div>
+                    </div>
+                    <div class="info-block-with-ic">
+                        <div class="icon">
+                            <img src="./img/ic-trace.svg">
+                        </div>
+                        <div class="text-about">
+                            <p>Trace the inbound transactions;</p>
+                        </div>
+                    </div>
+                    <div class="info-block-with-ic">
+                        <div class="icon">
+                            <img src="./img/ic-generate.svg">
+                        </div>
+                        <div class="text-about">
+                            <p>Generate and manage settlements;</p>
+                        </div>
+                    </div>
+                    <div class="info-block-with-ic">
+                        <div class="icon">
+                            <img src="./img/ic-buy.svg">
+                        </div>
+                        <div class="text-about">
+                            <p>Buy or Sell crypto for other crypto currencies;</p>
+                        </div>
+                    </div>
+                    <div class="info-block-with-ic">
+                        <div class="icon">
+                            <img src="./img/ic-integrate.svg">
+                        </div>
+                        <div class="text-about">
+                            <p>Integrate and manage multiple online shops;</p>
+                        </div>
+                    </div>
+                    <div class="info-block-with-ic">
+                        <div class="icon">
+                            <img src="./img/ic-app-to-app-payments.svg">
+                        </div>
+                        <div class="text-about">
+                            <p><span class="upcoming">Upcoming</span>Open Banking integration for app-to-app payments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="merchant-crm-bg"></div>
+                <div class="merchant-notebook"></div>
+            </div>
+        </div>
+        <div class="letknow-app">
+            <div class="text-area">
+                <div class="text">
+                    <p>Install our <span class="semibold">LetKnow App</span> and get 24/7 support via the messenger</p>
+                </div>
+                <div class="buttons">
+                    <button class="app-store">
+                        <a href="#"><span class="logo"><img src="./img/logo-applestore.svg"></span>App Store</a>
+                    </button>
+                    <button class="google-play">
+                        <a href="#"><span class="logo"><img src="./img/logo-googleplay.svg"></span>Google Play</a>
+                    </button>
+                </div>
+            </div>
+            <div class="letknow-app-bg"></div>
+        </div>
+        <div class="fees-and-limits">
+            <div class="fees-and-limits-content">
+                <div class="fees">
+                    <p class="m-s-header">Fees</p>
+                    <div class="fees">
+                        <div class="fee">
+                            <p class="fee-title">Processing Fee</p>
+                            <p class="count">0.45<span class="procent">%</span></p>
+                        </div>
+                        <div class="fee">
+                            <p class="fee-title">Exchange Fee</p>
+                            <p class="count">0.60<span class="procent">%</span></p>
+                        </div>
+                        <div class="fee">
+                            <p class="fee-title">Settlement Fee</p>
+                            <p class="count">0.30<span class="procent">%</span></p>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="title">
+                            BANK ACCOUNT OPENING FEE<span><img src="./img/ic-dsclmr.svg"></span>
+                        </div>
+                        <div class="fees">
+                            <div class="fee">
+                                <p class="fee-title grey">SET UP FEE</p>
+                                <p class="count"><span class="procent">€</span>5,000</p>
+                            </div>
+                            <div class="fee">
+                                <p class="fee-title grey">DEPOSIT FEE</p>
+                                <p class="count">1<span class="procent">%</span></p>
+                            </div>
+                            <div class="fee without-border">
+                                <p class="fee-title grey">WITHDRAW FEE</p>
+                                <p class="count">1<span class="procent">%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="disclaimer">
+                        <p><span><img src="./img/ic-dsclmr.svg"></span>Please note we are not the guarantor of the bank nor their representative, we are only facilitating our clients to open an account with the banks we have trusted relationship.</p>
+                    </div>
+                </div>
+                <div class="limits">
+                    <p class="m-s-header">Limits</p>
+                    <div class="limits-part">
+                        <div class="limit">
+                            <p class="amount">€1K <span class="period">/MONTHLY</span></p>
+                            <p class="description">Merchant Customers can pay or deposit funds <span class="medium">no AML/KYC required.</span></p>
+                        </div>
+                        <div class="limit">
+                            <p class="amount">€15K <span class="period">/yearly</span></p>
+                            <p class="description"><span class="medium">For purchases and/or deposits up to EUR 15,000 yearly, </span>Merchant needs to collect the following information from its customers: Address, Citizenship, Residence, Copy Passport, Selfie.</p>
+                        </div>
+                        <div class="limit">
+                            <p class="amount">€30K <span class="period">/yearly</span></p>
+                            <p class="description"><span class="medium">For purchases and/or deposits up to EUR 30,000 yearly, </span>Merchant needs to collect proof of address, origin of funds, Video/Audio session for high risk countries only.</p>
+                        </div>
+                        <div class="limit">
+                            <p class="amount">€45K <span class="period">/yearly</span></p>
+                            <p class="description"><span class="medium">For purchases and/or deposits up to EUR 45,000 yearly, </span>Merchant needs to collect origin of funds, Video/Audio session for all countries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="settlements">
+            <div class="text-block">
+                <p class="m-s-header">Settlements</p>
+                <p class="text">Once the balance of €2,500 is reached, our Backoffice team will automatically settle the funds to a Merchant bank account, unless otherwise agreed upon.</p>
+            </div>
+            <div class="schemes">
+                <div class="crypto-crypto">
+                    <div class="figures">
+                        <div class="figure circle orange"></div>
+                        <div class="figure circle blue shadow"></div>
+                    </div>
+                    <div class="text">Crypto <span class="grey">/ Crypto</span></div>
+                </div>
+                <div class="crypto-fiat">
+                    <div class="figures">
+                        <div class="figure rectangle green"></div>
+                        <div class="figure circle blue shadow"></div>
+                    </div>
+                    <div class="text">Crypto <span class="grey">/ Fiat</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="currencies-supported">
+            <div class="content">
+                <p class="m-s-header">Currencies supported</p>
+                <div class="currencies">
+                    <div class="string">
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-BTC.svg">
+                            <p class="text">BTC</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-ETH.svg">
+                            <p class="text">ETH</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-LTC.svg">
+                            <p class="text">LTC</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-BCH.svg">
+                            <p class="text">BCH</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-XRP.svg">
+                            <p class="text">XRP</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-ADA.svg">
+                            <p class="text">ADA</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-ALGO.svg">
+                            <p class="text">ALGO</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-ATOM.svg">
+                            <p class="text">ATOM</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-BAT.svg">
+                            <p class="text">BAT</p>
+                        </div>
+                    </div>
+                    <div class="string">
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-DAI.svg">
+                            <p class="text">DAI</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-DASH.svg">
+                            <p class="text">DASH</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-EOS.svg">
+                            <p class="text">EOS</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-ETC.svg">
+                            <p class="text">ETC</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-LSK.svg">
+                            <p class="text">LSK</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-LINK.svg">
+                            <p class="text">LINK</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-MLN.svg">
+                            <p class="text">MLN</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-NANO.svg">
+                            <p class="text">NANO</p>
+                        </div>
+                    </div>
+                    <div class="string">
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-OMG.svg">
+                            <p class="text">OMG</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-PAXG.svg">
+                            <p class="text">PAXG</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-QTUM.svg">
+                            <p class="text">QTUM</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-REP.svg">
+                            <p class="text">REP</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-SC.svg">
+                            <p class="text">SC</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-TRX.svg">
+                            <p class="text">TRX</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-USDT.svg">
+                            <p class="text">USDT</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-WAVES.svg">
+                            <p class="text">WAVES</p>
+                        </div>
+                    </div>
+                    <div class="string">
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-XDG.svg">
+                            <p class="text">XDG</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-XLM.svg">
+                            <p class="text">XLM</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-XMR.svg">
+                            <p class="text">XMR</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-XTZ.svg">
+                            <p class="text">XTZ</p>
+                        </div>
+                        <div class="currency">
+                            <img class="icon" src="./img/currency-ZEC.svg">
+                            <p class="text">ZEC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="merchant-form">
+            <div class="text-block">
+                <p class="title">Apply For A Merchant Account Now</p>
+                <p class="text">Fill the Merchant Form, or send us e-mail request  directly to <span class="email"><a href="mailto:pay@letknow.com">pay@letknow.com</a></span></p>
+            </div>
+            <div class="form">
+                <form id="sendForm" method="POST">
+                    <p class="m-s-header">Write Us Now</p>
+                    <p class="subheader">All fields below are required</p>
+                    <div class="form-field">
+                        <input type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-field">
+                        <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                    </div>
+                    <div class="form-field url">
+                        <input type="link" name="url" placeholder="Shop URL">
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="merchant-form-bg"></div>
+        </div>
+        <div class="footer">
+            <div class="links-block-content">
+                <div class="letknow-block">
+                    <p class="links-block-title">LetKnow</p>
+                    <div class="links">
+                        <p class="nav-link"><a href="#">About Us</a></p>
+                        <p class="nav-link"><a href="#">Contacts</a></p>
+                        <p class="nav-link"><a href="#">Licenses</a></p>
+                    </div>
+                </div>
+                <div class="products-block">
+                    <p class="links-block-title">Products</p>
+                    <div class="links">
+                        <p class="nav-link"><a href="#">App</a></p>
+                        <p class="nav-link"><a href="#">Trade</a></p>
+                        <p class="nav-link"><a href="#">Exchange</a></p>
+                    </div>
+                </div>
+                <div class="ecosystem-block">
+                    <p class="links-block-title">Ecosystem</p>
+                    <div class="links">
+                        <p class="nav-link"><a href="#">Overview</a></p>
+                        <p class="nav-link"><a href="#">Terms Of Use</a></p>
+                        <p class="nav-link"><a href="#">Privacy Policy</a></p>
+                    </div>
+                </div>
+                <div class="letknow-pay-block">
+                    <p class="links-block-title">LetKnow Pay</p>
+                    <div class="links">
+                        <p class="nav-link"><a href="#">Service Level Agreement</a></p>
+                        <p class="nav-link"><a href="#">Terms & Conditions</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">© 2017 - 2020 LetKnow.com. All Rights Reserved.</div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>

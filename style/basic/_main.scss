@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontR_R;
+}
+
+html {
+  height: auto;
+  background-color: #F4F6F7 !important;
+}
+
+body {
+  height: 100%;
+
+  &.mobile {
+    * {
+      cursor: none !important;
+      outline: none !important;
+    }
+  }
+}

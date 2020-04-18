@@ -1,0 +1,924 @@
+.content {
+  width: 100%;
+  color: #212121;
+
+  .m-s-header {
+    font-family: $fontM_SB;
+    font-size: 28px;
+    line-height: 40px;
+    color: #2BBE00;
+    text-transform: uppercase;
+    padding: 2px;
+    text-align: center;
+  }
+
+  .header {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    .header-content {
+      max-width: 1440px;
+      margin: 0 60px;
+      height: 100%;
+      align-items: center;
+
+      .logo-header {
+        float: left;
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        a {
+          height: 40px !important;
+  
+          img {
+            margin: auto;
+            height: 40px;
+            width: 200px;
+          }
+        }
+      }
+  
+      .nav-links {
+        display: flex;
+        float: right;
+        height: 100%;
+  
+        p {
+          margin: auto;
+  
+          a {
+            color: black;
+            padding: 8px 25px;
+            margin: auto;
+            height: auto;
+            font-family: $fontR_R;
+            font-size: 14px;
+            line-height: 16px;
+            color: #212121;
+          }
+  
+          a.accent {
+            color: #FF119D;
+          }
+        }      
+      }
+    }
+  }
+
+  .custom-gateway {
+    display: flex;
+    margin: 58px auto;
+    max-width: 1106px;
+
+    .text-area {
+      max-width: 630px;
+      padding-bottom: 187px;
+
+      h2 {
+        font-size: 54px;
+        line-height: 68px;
+        font-family: $fontM_B;
+        color: #212121;
+        padding: 32px 0;
+      }
+
+      p {
+        color: #212121;
+        line-height: 33px;
+        padding-bottom: 10px;
+      }
+
+      p.subheader {
+        font-family: $fontM_M;
+        font-size: 24px;
+      }
+
+      p.text {
+        font-family: $fontM_R;
+        font-size: 22px;
+      }
+
+      .submit-btn {
+        padding-top: 71px;
+
+        button {
+          background-image: linear-gradient(180deg, #0BBF50, #0BB095);
+          height: 60px;
+          width: 235px;
+          border-radius: 34px;
+          color: white;
+          font-family: $fontR_R;
+          font-size: 18px;
+          line-height: 18px;
+          box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32);
+
+          img {
+            position: relative;
+            left: 29px;
+          }
+        }
+      }
+    }
+
+    .custom-gateway-bg {
+      float: right;
+      width: 894px;
+      height: 590px;
+      right: 5%;
+      position: absolute;
+      background: url("../../img/custom_gateway.png") no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+  .how-it-works-bg, .merchant-crm-bg, .merchant-form-bg {
+    height: 100%;
+    width: 100%;
+    right: 0;
+    position: absolute;
+    background: url("../../img/how-works-bg.png") no-repeat;
+    background-size: cover;
+    z-index: -1;
+    margin-top: -52px;
+  }
+
+  .how-it-works {
+    max-width: 1106px;
+    margin: 58px auto;
+
+    .text-area {
+      max-width: 915px;
+      margin: 0 auto;
+
+      .m-s-header, .subheader, .text {
+        text-align: center;
+        margin: 8px;
+      }
+  
+      .subheader {
+        font-family: $fontM_M;
+        font-size: 28px;
+        line-height: 34px;
+      }
+  
+      .text {
+        font-family: $fontM_R;
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+
+    .slider {
+      margin-top: 62px;
+      text-align: center;
+
+      .api-title {
+        font-family: $fontM_B;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .api-subheader {
+        font-family: $fontM_R;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 43px;
+      }
+
+      .api2-slide, .api3-slide {
+        max-width: 814px;
+        margin: auto;
+
+        .steps-screens {
+          display: flex;
+          margin-top: 36px;
+
+          .second {
+            margin: 0 35px;
+          }
+
+          img {
+            border-radius: 7px;
+            box-shadow: 0 0 5px rgba(33, 43, 54, 0.15);
+          }
+
+          .count {
+            background-color: #0D9BFF;
+            width: 38px;
+            height: 38px;
+            border-radius: 38px;
+            color: white;
+            font-family: $fontR_B;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            margin: 27px auto 20px;
+            padding: 5px;
+          }
+
+          .text {
+            max-width: 248px;
+            color: #212B36;
+            font-family: $fontR_R;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+          }
+        }
+
+        .api3-screen {
+          img {
+            box-shadow: 7px 8px 21px rgba(0, 0, 0, 0.2);
+            border-radius: 24px;
+          }
+        }
+
+        .disclaimer {
+          font-family: $fontR_R;
+          font-size: 12px;
+          line-height: 14px;
+          color: #6B7C89;
+          max-width: 535px;
+          text-align: right;
+          margin: 14px auto;
+        }
+      }
+    }
+  }
+
+  .integration {
+    max-width: 1106px;
+    margin: 151px auto 130px;
+
+    .text-area {
+      max-width: 915px;
+      margin: 0 auto;
+
+      .m-s-header, .subheader, .text {
+        text-align: center;
+        margin: 8px;
+      }
+  
+      .subheader {
+        font-family: $fontM_M;
+        font-size: 28px;
+        line-height: 34px;
+      }
+  
+      .text {
+        font-family: $fontM_R;
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+
+    .provide {
+      max-width: 915px;
+      margin: 100px auto;
+
+      p {
+        font-family: $fontR_B;
+        font-size: 24px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .cards {
+        display: flex;
+        margin: 41px auto;
+
+        .support, .testing, .api {
+          width: 249px;
+          height: 249px;
+          border-radius: 30px;
+          background-color:black;
+          color: white;
+          text-align: center;
+          box-shadow: 0 0 16px rgb(166, 183, 196);
+
+          .card-icon {
+            width: 72px;
+            height: 72px;
+            margin: 44px auto 29px;
+          }
+
+          p {
+            font-family: $fontR_M;
+            line-height: 32px;
+            text-transform: none;
+            width: 163px;
+            margin: 0 auto;
+          }
+        }
+
+        .support {
+          background-color: #2BBE00;
+        }
+
+        .testing {
+          background-color: #0D9BFF;
+          margin: 0 84px;
+        }
+
+        .api {
+          background-color: #FF119D;
+        }
+      }
+    }
+  }
+
+  .merchant-crm {
+    // max-width: 1804px;
+    margin: 130px auto;
+
+    .m-s-header {
+      margin: auto;
+      padding-top: 2px;
+    }
+
+    .merchant-crm-content {
+      display: flex;
+      max-width: 1106px;
+      margin: auto;
+
+      .merchant-notebook {
+        margin-top: 131px;
+        height: 584px;
+        width: 1027px;
+        // right: -12%;
+        // position: absolute;
+        right: -15%;
+        position: relative;
+        background: url("../../img/merchant-crm.png") no-repeat;
+        background-size: cover;
+        z-index: -1;
+      }
+
+      .merchant-crm-bg {
+        margin-top: -52px;
+      }
+
+      .about-merchant {
+        max-width: 1106px;
+        margin-top: 52px;
+        text-align: left;
+        
+        .info-block-with-ic {
+          width: 422px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 18px;
+
+          .icon {
+            width: 80px;
+            min-width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .text-about {
+            font-family: $fontR_M;
+            font-size: 22px;
+            line-height: 28px;
+            padding-left: 15px;
+
+            .upcoming {
+              font-family: $fontR_B;
+              font-size: 14px;
+              line-height: 20px;
+              padding: 3px 14px 4px;
+              color: white;
+              background-color: #FF119D;
+              border-radius: 10px;
+              min-width: 102px;
+              min-height: 26px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .letknow-app {
+    background-color: #0D9BFF;
+    width: 100%;
+    display: flex;
+
+    .text-area {
+      max-width: 1022px;
+      text-align: left;
+      margin: auto;
+      padding: 58px 0 48px;
+      z-index: 1;
+
+      .text {
+        color: white;
+        font-family: $fontM_M;
+        font-size: 32px;
+        line-height: 42px;
+        max-width: 511px;
+        float: right;
+
+        .semibold {
+          font-family: $fontM_SB;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        color: #212B36;
+        margin-top: 35px;
+        float: right;
+
+        button {
+          background-color: #F7FAFC;
+          width: 230px;
+          height: 44px;
+          border-radius: 22px;
+          box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32);
+          margin-right: 26px;
+          font-family: $fontR_R;
+          font-size: 16px;
+          line-height: 12px;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .logo {
+              padding-right: 10px;
+            }
+          }
+
+          a:visited {
+            color: #212B36;
+          }
+          
+        }
+      }
+    }
+
+    .letknow-app-bg {
+      margin-top: -280px;
+      height: 800px;
+      width: 830px;
+      left: -2%;
+      position: absolute;
+      background: url("../../img/img-phone.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .fees-and-limits {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 136px 0 50px;
+
+    .fees-and-limits-content {
+      max-width: 1106px;
+      margin: auto;
+      display: flex;
+      height: 100%;
+
+      .m-s-header {
+        text-align: left;
+      }
+
+      .fees {
+        max-width: 442px;
+        width: 442px;
+        height: 100%;
+        margin-right: 224px;
+
+        .m-s-header {
+          margin-bottom: 52px;
+        }
+
+        .fees {
+          .fee {
+            display: flex;
+            border-bottom: 0.5px solid #979797;
+            align-items: center;
+            width: 439px;
+            margin-bottom: 21px;
+            padding-bottom: 8px;
+
+            .fee-title {
+              font-family: $fontR_M;
+              font-size: 18px;
+              line-height: 18px;
+              color: #0D9BFF;
+              text-transform: uppercase;
+            }
+
+            .count {
+              font-family: $fontM_M;
+              font-size: 32px;
+              line-height: 32px;
+              color: #212B36;
+              margin-left: auto;
+
+              .procent {
+                color: #6B7C89;
+              }
+            }
+          }
+        }
+
+        .table {
+          background-color: white;
+          border-radius: 30px;
+          width: 439px;
+          height: 262px;
+          box-shadow: 0 0 16px #A6B7C4;
+          margin-top: 44px;
+          text-align: center;
+
+          .title {
+            color: #FF119D;
+            font-family: $fontR_M;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 36px 0;
+
+            img {
+              vertical-align: super;
+            }
+          }
+
+          .fee {
+            padding: 0 32px 8px 32px;
+          }
+
+          .fee-title.grey {
+            color: #6B7C89;
+          }
+
+          .without-border {
+            border: none;
+          }
+        }
+
+        .disclaimer {
+          font-family: $fontR_R;
+          font-size: 12px;
+          line-height: 14px;
+          color: #6B7C89;
+          max-width: 370px;
+          text-align: right;
+          margin-left: 70px;
+          margin-top: 16px;
+
+          img {
+            vertical-align: super;
+          }
+        }
+      }
+  
+      .limits {
+        max-width: 440px;  
+        width: 440px;  
+        height: 100%;
+
+        .m-s-header {
+          margin-bottom: 48px;
+        }
+
+        .limit {
+          margin: 40px auto;
+
+          .amount {
+            font-family: $fontM_B;
+            font-size: 28px;
+            line-height: 22px;
+            color: #212B36;
+            margin-bottom: 14px;
+
+            .period {
+              font-family: $fontM_M;
+              color: #6B7C89;
+              text-transform: uppercase;
+            }
+          }
+
+          .description {
+            font-family: $fontR_R;
+            font-size: 18px;
+            line-height: 22px;
+            color: #212B36;
+
+            .medium {
+              font-family: $fontR_M;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .settlements {
+    max-width: 1106px;
+    display: flex;
+    margin: 50px auto 78px;
+
+    .text-block {
+      max-width: 535px;
+      margin-right: 69px;
+
+      .m-s-header {
+        text-align: left;
+        margin-bottom: 23px;
+      }
+
+      .text {
+        font-family: $fontM_M;
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+
+    .schemes {
+      max-width: 501px;
+      display: flex;
+
+      .crypto-crypto, .crypto-fiat {
+        width: 218px;
+        height: 185px;
+        justify-content: center;
+  
+        .figures {
+          height: 127px;
+          width: 139px;
+          position: relative;
+          margin: auto;
+  
+          .figure {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+          }
+    
+          .circle {
+            border-radius: 100px;
+          }
+    
+          .rectangle {
+            border-radius: 26px;
+          }
+    
+          .blue {
+            background-color: #0D9BFF;
+          }
+    
+          .green {
+            background-color: #09CD0A;
+          }
+    
+          .orange {
+            background-color: #F5A623;
+          }
+    
+          .shadow {
+            box-shadow: 2px 2px 12px rgba(33, 43, 54, 0.5);
+          }  
+        }
+        
+        .text {
+          font-family: $fontR_M;
+          font-size: 32px;
+          line-height: 30px;
+          color: #212B36;
+          text-align: center;
+          margin-top: 28px;
+  
+          .grey {
+            color: #6B7C89;
+          }
+        }
+      }
+  
+      .crypto-crypto {
+        margin-right: 66px;
+  
+        .figures {
+          .blue {
+            top: 0;
+            left: 0;
+          }
+  
+          .orange {
+            right: 0;
+            bottom: 0;
+          }
+        }
+      }
+  
+      .crypto-fiat {
+        .figures {
+          .blue {
+            top: 0;
+            right: 4px;
+          }
+  
+          .green {
+            left: 4px;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .currencies-supported {
+    width: 100%;
+    margin: auto;
+    background-color: #212B36;
+
+    .content {
+      max-width: 917px;
+      padding: 64px 0;
+      margin: auto;
+
+      .currencies {
+        margin: 40px auto;
+
+        .string {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 32px 0;
+          margin-left: 22px;
+
+          .currency {
+            width: auto;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 22px;
+
+              .icon {
+                height: 35px;
+                width: 35px;
+              }
+  
+              .text {
+                margin-left: 6px;
+                color: white;
+                font-family: $fontR_B;
+                font-size: 20px;
+                line-height: 28px;
+              }
+          }
+        }
+      }
+    }
+  }
+
+  .merchant-form {
+    max-width: 1106px;
+    height: 397px;
+    margin: 78px auto;
+
+    .text-block {
+      float: left;
+
+      .title {
+        font-family: $fontM_M;
+        color: #FF119D;
+        font-size: 32px;
+        line-height: 42px;
+        max-width: 380px;
+      }
+
+      .text {
+        margin-top: 24px;
+        color: #000000;
+        font-family: $fontM_R;
+        font-size: 24px;
+        line-height: 34px;
+        max-width: 552px;
+
+        .email {
+          color: #0D9BFF;
+
+          a, a:visited {
+            color: #0D9BFF;
+          }
+        }
+      }
+    }
+
+    .form {
+      float: right;
+      width: 535px;
+      height: 397px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 18px 34px rgba(5, 48, 95, 0.32);
+      
+      form {
+        margin: 24px 64px 32px;
+        text-align: center;
+
+        .m-s-header {
+          font-size: 20px;
+          padding: 0;
+        }
+
+        .subheader {
+          font-family: $fontR_L;
+          font-size: 12px;
+          line-height: 21px;
+          color: #6B7C89;
+          margin-bottom: 8px;
+        }
+
+        input {
+          width: 100%;
+          height: 50px;
+          border-radius: 8px;
+          border: 1px solid #C8CFD8;
+          margin: 6px auto;
+          padding: 16px;
+          color: #8C9AA7;
+          font-family: $fontSF_L;
+          font-size: 16px;
+          line-height: 16px;
+        }
+
+        button {
+          margin-top: 42px;
+          color: white;
+          width: 325px;
+          height: 44px;
+          border-radius: 22px;
+          box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32);
+          background-color: #09CD0A;
+          font-family: $fontR_M;
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }   
+    }
+
+    .merchant-form-bg {
+      width: 104%;
+      margin-top: -132px;
+      left: -20%;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #D8D8D8;
+    color: #595F63;
+
+    .links-block-content {
+      max-width: 1106px;
+      margin: 41px auto;
+      display: flex;
+
+      .links-block-title {
+        font-family: $fontR_M;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      .links {
+        margin-top: 28px;
+        width: 155px;
+        font-family: $fontR_R;
+        font-size: 16px;
+        line-height: 24px;
+
+        a:visited {
+          color: #595F63;
+        }
+      }
+    }
+
+    .copyright {
+      font-family: $fontR_R;
+      font-size: 14px;
+      line-height: 16px;
+      max-width: 1106px;
+      margin: 64px auto 32px;
+    }
+  }
+}
