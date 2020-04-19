@@ -209,6 +209,7 @@ body {
       z-index: -1; }
   .content .how-it-works-bg, .content .merchant-crm-bg, .content .merchant-form-bg {
     height: 100%;
+    max-height: 902px;
     width: 100%;
     right: 0;
     position: absolute;
@@ -343,57 +344,63 @@ body {
         .content .integration .provide .cards .api {
           background-color: #FF119D; }
   .content .merchant-crm {
-    margin: 130px auto; }
+    width: 100%;
+    margin: 130px auto 210px; }
     .content .merchant-crm .m-s-header {
       margin: auto;
       padding-top: 2px; }
     .content .merchant-crm .merchant-crm-content {
       display: flex;
-      max-width: 1106px;
-      margin: auto; }
+      width: 100%; }
       .content .merchant-crm .merchant-crm-content .merchant-notebook {
+        max-height: 584px;
         margin-top: 131px;
-        height: 584px;
-        width: 1027px;
-        right: -15%;
-        position: relative;
-        background: url("../../img/merchant-crm.png") no-repeat;
+        height: -webkit-fill-available;
+        max-width: 1027px;
+        right: 0;
+        width: 59%;
+        position: absolute;
+        background: url(../../img/merchant-crm.png) no-repeat;
         background-size: cover;
         z-index: -1; }
       .content .merchant-crm .merchant-crm-content .merchant-crm-bg {
         margin-top: -52px; }
-      .content .merchant-crm .merchant-crm-content .about-merchant {
+      .content .merchant-crm .merchant-crm-content .text-block {
         max-width: 1106px;
-        margin-top: 52px;
-        text-align: left; }
-        .content .merchant-crm .merchant-crm-content .about-merchant .info-block-with-ic {
-          width: 422px;
-          display: flex;
-          align-items: center;
-          margin-bottom: 18px; }
-          .content .merchant-crm .merchant-crm-content .about-merchant .info-block-with-ic .icon {
-            width: 80px;
-            min-width: 80px;
-            height: 80px;
+        margin: 0 auto;
+        width: 100%; }
+        .content .merchant-crm .merchant-crm-content .text-block .about-merchant {
+          max-width: 1106px;
+          margin-top: 52px;
+          text-align: left; }
+          .content .merchant-crm .merchant-crm-content .text-block .about-merchant .info-block-with-ic {
+            width: 422px;
             display: flex;
             align-items: center;
-            justify-content: center; }
-          .content .merchant-crm .merchant-crm-content .about-merchant .info-block-with-ic .text-about {
-            font-family: "Roboto-Medium";
-            font-size: 22px;
-            line-height: 28px;
-            padding-left: 15px; }
-            .content .merchant-crm .merchant-crm-content .about-merchant .info-block-with-ic .text-about .upcoming {
-              font-family: "Roboto-Bold";
-              font-size: 14px;
-              line-height: 20px;
-              padding: 3px 14px 4px;
-              color: white;
-              background-color: #FF119D;
-              border-radius: 10px;
-              min-width: 102px;
-              min-height: 26px;
-              margin-right: 10px; }
+            margin-bottom: 18px; }
+            .content .merchant-crm .merchant-crm-content .text-block .about-merchant .info-block-with-ic .icon {
+              width: 80px;
+              min-width: 80px;
+              height: 80px;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+            .content .merchant-crm .merchant-crm-content .text-block .about-merchant .info-block-with-ic .text-about {
+              font-family: "Roboto-Medium";
+              font-size: 22px;
+              line-height: 28px;
+              padding-left: 15px; }
+              .content .merchant-crm .merchant-crm-content .text-block .about-merchant .info-block-with-ic .text-about .upcoming {
+                font-family: "Roboto-Bold";
+                font-size: 14px;
+                line-height: 20px;
+                padding: 3px 14px 4px;
+                color: white;
+                background-color: #FF119D;
+                border-radius: 10px;
+                min-width: 102px;
+                min-height: 26px;
+                margin-right: 10px; }
   .content .letknow-app {
     background-color: #0D9BFF;
     width: 100%;
@@ -704,7 +711,7 @@ body {
           font-size: 14px;
           line-height: 22px; }
     .content .merchant-form .merchant-form-bg {
-      width: 104%;
+      transform: scale(-1, 1);
       margin-top: -132px;
       left: -20%; }
   .content .footer {
@@ -726,7 +733,7 @@ body {
         font-family: "Roboto-Regular";
         font-size: 16px;
         line-height: 24px; }
-        .content .footer .links-block-content .links a:visited {
+        .content .footer .links-block-content .links a, .content .footer .links-block-content .links a:visited {
           color: #595F63; }
     .content .footer .copyright {
       font-family: "Roboto-Regular";

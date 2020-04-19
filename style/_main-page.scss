@@ -139,6 +139,7 @@
 
   .how-it-works-bg, .merchant-crm-bg, .merchant-form-bg {
     height: 100%;
+    max-height: 902px;
     width: 100%;
     right: 0;
     position: absolute;
@@ -337,8 +338,8 @@
   }
 
   .merchant-crm {
-    // max-width: 1804px;
-    margin: 130px auto;
+    width: 100%;
+    margin: 130px auto 210px;
 
     .m-s-header {
       margin: auto;
@@ -347,18 +348,17 @@
 
     .merchant-crm-content {
       display: flex;
-      max-width: 1106px;
-      margin: auto;
+      width: 100%;
 
       .merchant-notebook {
+        max-height: 584px;
         margin-top: 131px;
-        height: 584px;
-        width: 1027px;
-        // right: -12%;
-        // position: absolute;
-        right: -15%;
-        position: relative;
-        background: url("../../img/merchant-crm.png") no-repeat;
+        height: -webkit-fill-available;
+        max-width: 1027px;
+        right: 0;
+        width: 59%;
+        position: absolute;
+        background: url(../../img/merchant-crm.png) no-repeat;
         background-size: cover;
         z-index: -1;
       }
@@ -367,43 +367,49 @@
         margin-top: -52px;
       }
 
-      .about-merchant {
+      .text-block {
         max-width: 1106px;
-        margin-top: 52px;
-        text-align: left;
-        
-        .info-block-with-ic {
-          width: 422px;
-          display: flex;
-          align-items: center;
-          margin-bottom: 18px;
+        margin: 0 auto;
+        width: 100%;
 
-          .icon {
-            width: 80px;
-            min-width: 80px;
-            height: 80px;
+        .about-merchant {
+          max-width: 1106px;
+          margin-top: 52px;
+          text-align: left;
+          
+          .info-block-with-ic {
+            width: 422px;
             display: flex;
             align-items: center;
-            justify-content: center;
-          }
-
-          .text-about {
-            font-family: $fontR_M;
-            font-size: 22px;
-            line-height: 28px;
-            padding-left: 15px;
-
-            .upcoming {
-              font-family: $fontR_B;
-              font-size: 14px;
-              line-height: 20px;
-              padding: 3px 14px 4px;
-              color: white;
-              background-color: #FF119D;
-              border-radius: 10px;
-              min-width: 102px;
-              min-height: 26px;
-              margin-right: 10px;
+            margin-bottom: 18px;
+  
+            .icon {
+              width: 80px;
+              min-width: 80px;
+              height: 80px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+  
+            .text-about {
+              font-family: $fontR_M;
+              font-size: 22px;
+              line-height: 28px;
+              padding-left: 15px;
+  
+              .upcoming {
+                font-family: $fontR_B;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 3px 14px 4px;
+                color: white;
+                background-color: #FF119D;
+                border-radius: 10px;
+                min-width: 102px;
+                min-height: 26px;
+                margin-right: 10px;
+              }
             }
           }
         }
@@ -877,7 +883,8 @@
     }
 
     .merchant-form-bg {
-      width: 104%;
+      // width: 104%;
+      transform: scale(-1, 1);
       margin-top: -132px;
       left: -20%;
     }
@@ -907,7 +914,7 @@
         font-size: 16px;
         line-height: 24px;
 
-        a:visited {
+        a, a:visited {
           color: #595F63;
         }
       }
