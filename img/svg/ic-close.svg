@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="73px" height="73px" viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>button/btn-back-normal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="37.5" height="37.5" rx="18.75"></rect>
+        <filter x="-92.0%" y="-76.0%" width="284.0%" height="284.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0194842169   0 0 0 0 0.187267785   0 0 0 0 0.37182971  0 0 0 0.133058348 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lkpay---375---Menu" transform="translate(-302.000000, 0.000000)">
+            <g id="0_Header-Normal" transform="translate(15.000000, 9.000000)">
+                <g id="button/btn-back-normal" transform="translate(307.000000, 0.375000)">
+                    <g id="Rectangle" fill-rule="nonzero" fill="black" fill-opacity="1">
+                        <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M13.2078139,13.0154594 L13.1386718,13.1208017 C12.9112762,13.5166422 12.9705447,14.0097953 13.292894,14.3321447 L17.8350008,18.8750379 L13.2928877,23.4179375 C12.9023697,23.8084554 12.9023697,24.4416204 13.292894,24.8321447 L13.3871014,24.9153333 C13.7793926,25.2203582 14.3466236,25.1926286 14.7071076,24.8321447 L19.2500008,20.2890379 L23.7929004,24.832151 L23.8904223,24.9172248 C24.3005293,25.2223643 24.8554538,25.1837985 25.2071076,24.8321447 L25.2921877,24.7346164 L25.3613298,24.6292741 C25.5887254,24.2334336 25.5294569,23.7402804 25.2071076,23.4179311 L20.6640008,18.8750379 L25.2071139,14.3321383 C25.5976319,13.9416204 25.5976319,13.3084554 25.2071076,12.9179311 L25.1129002,12.8347425 C24.720609,12.5297176 24.153378,12.5574472 23.792894,12.9179311 L19.2500008,17.4600379 L14.7071012,12.9179248 L14.5951802,12.8213196 C14.1994723,12.5277115 13.6445478,12.5662773 13.292894,12.9179311 L13.2078139,13.0154594 Z" id="Shape" fill="#212B36"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

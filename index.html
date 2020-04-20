@@ -10,36 +10,69 @@
 </head>
 <body>
     <div class="content">
+        <div id="mobile-menu">
+            <div class="top">
+                <a class="logo" href="#" onclick="closeMenu()"><img src="img/svg/logo.svg" alt="logotype"></a>
+                <div class="icon-back" onclick="closeMenu()"><img src="img/svg/ic-close.svg"></div>
+            </div>
+            <div class="mobile-menu-content inactive">
+                <div class="category">
+                    <p class="category-title">Payment Gateway</p>
+                    <p class="nav-link"><a href="#">Send Request</a></p>
+                    <p class="nav-link"><a href="#">API Documentation</a></p>
+                </div>
+                <div class="category">
+                    <p class="category-title">Company</p>
+                    <p class="nav-link"><a href="#">Home</a></p>
+                    <p class="nav-link"><a href="#">Contacts</a></p>
+                    <p class="nav-link"><a href="#">About Us</a></p>
+                    <p class="nav-link"><a href="#">Terms Of Use</a></p>
+                    <p class="nav-link"><a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="login">
+                    <button class="login">
+                        <a href="#">Log In</a>
+                    </button>
+                </div>
+                <div class="copyright">Copyright © 2017 - 2020 LetKnow.com. All Rights Reserved.</div>
+            </div>
+        </div>
         <div class="header">
             <div class="header-content">
                 <div class="logo-header">
-                    <a href="#"><img src="img/logo.svg" alt="logotype"></a>
+                    <a href="#"><img src="img/svg/logo.svg" alt="logotype"></a>
                 </div>
                 <div class="nav-links">
                     <p class="nav-link"><a href="#">API Documentation</a></p>
                     <p class="nav-link"><a href="#">About Us</a></p>
                     <p class="nav-link"><a href="#">Contacts</a></p>
-                    <p class="nav-link"><a class="accent" href="https://id.letknow.com/">Log In</a></p>
+                    <p class="nav-link"><a class="accent" href="#">Log In</a></p>
                 </div>
+                <div class="menu" onclick="openMenu()"><img src="img/svg/ic-menu.svg" alt="logotype"></div>
             </div>
         </div>
         <div class="custom-gateway">
+            <div class="bg-wrapper">
+                <div class="c-g-gradient-bg"></div>
+                <div class="c-g-notebook-bg"></div>
+            </div>
             <div class="text-area">
                 <h2>Custom Gateway</h2>
                 <p class="subheader">LetKnow Pay is a tailor-made payment service provider facilitating merchants to accept digital currency payments.</p>
                 <p class="text">Our gateway offers you to accept multiple digital currencies with built-in exchange service. We facilitate our clients with bank account opening to guarantee the settlements in fiat.</p>
                 <div class="submit-btn">
                     <button type="submit">Send Request
-                        <span><img src="img/ic-arrow-down.svg" alt="ic-arrow-down"></span>
+                        <span><img src="img/svg/ic-arrow-down.svg" alt="ic-arrow-down"></span>
                     </button>
                 </div>
             </div>
-            <div class="custom-gateway-bg"></div>
         </div>
         <div class="how-it-works">
             <div class="how-it-works-bg"></div>
             <div class="text-area">
-                <p class="m-s-header">How it works</p>
+                <p class="m-s-title">How it works</p>
                 <p class="subheader">LetKnow provides two methods of API integration:</p>
                 <p class="text">Redirecting your customer to the payment page and embedding the QR code in a checkout or deposit page.</p>            
             </div>
@@ -54,6 +87,7 @@
                         </div>
                         <div class="screen second">
                             <div><img src="./img/api2-second-screen.png"></div>
+                            <div class="hr"></div>
                             <div class="count">2</div>
                             <div class="text"><p>Client sends crypto</p></div>
                         </div>
@@ -69,14 +103,14 @@
                     <p class="api-subheader">Customize the checkout page and embed the QR code and the crypto address in your page.</p>
                     <div class="api3-screen">
                         <img src="./img/ic-tablet.png">
-                        <div class="disclaimer"><span><img src="./img/ic-dsclmr.svg"></span>Client  account example </div>
+                        <div class="disclaimer"><span><img src="./img/svg/ic-dsclmr.svg"></span>Client  account example </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="integration">
             <div class="text-area">
-                <p class="m-s-header">Integration</p>
+                <p class="m-s-title">Integration</p>
                 <p class="subheader">LetKnow’s API provides direct integration for Merchants.</p>
                 <p class="text">For less tech-savvy Merchants, LetKnow offers automated connections with customized dashboard buttons for purchasing specified items with fixed prices denominated in Fiat.</p>
             </div>
@@ -85,19 +119,19 @@
                 <div class="cards">
                     <div class="support">
                         <div class="card-icon">
-                            <img src="./img/full-support.svg" alt="full-support"> 
+                            <img src="./img/svg/full-support.svg" alt="full-support"> 
                         </div>
                         <p>Full support on API integration</p>
                     </div>
                     <div class="testing">
                         <div class="card-icon">
-                            <img src="./img/testing.svg" alt="testing">
+                            <img src="./img/svg/testing.svg" alt="testing">
                         </div>
                         <p>Testing before going live</p>
                     </div>
                     <div class="api">
                         <div class="card-icon">
-                            <img src="./img/API-integration.svg" alt="API-integration">
+                            <img src="./img/svg/API-integration.svg" alt="API-integration">
                         </div>
                         <p>API integration for you</p>
                     </div>
@@ -105,13 +139,13 @@
             </div>
         </div>
         <div class="merchant-crm">
-            <p class="m-s-header">Merchant CRM FEATURES</p>
+            <p class="m-s-title">Merchant CRM FEATURES</p>
             <div class="merchant-crm-content">
                 <div class="text-block">
                     <div class="about-merchant">
                         <div class="info-block-with-ic">
                             <div class="icon">
-                                <img src="./img/ic-manage.svg">
+                                <img src="./img/svg/ic-manage.svg">
                             </div>
                             <div class="text-about">
                                 <p>Manage, withdraw and deposit your balance;</p>
@@ -119,7 +153,7 @@
                         </div>
                         <div class="info-block-with-ic">
                             <div class="icon">
-                                <img src="./img/ic-trace.svg">
+                                <img src="./img/svg/ic-trace.svg">
                             </div>
                             <div class="text-about">
                                 <p>Trace the inbound transactions;</p>
@@ -127,7 +161,7 @@
                         </div>
                         <div class="info-block-with-ic">
                             <div class="icon">
-                                <img src="./img/ic-generate.svg">
+                                <img src="./img/svg/ic-generate.svg">
                             </div>
                             <div class="text-about">
                                 <p>Generate and manage settlements;</p>
@@ -135,7 +169,7 @@
                         </div>
                         <div class="info-block-with-ic">
                             <div class="icon">
-                                <img src="./img/ic-buy.svg">
+                                <img src="./img/svg/ic-buy.svg">
                             </div>
                             <div class="text-about">
                                 <p>Buy or Sell crypto for other crypto currencies;</p>
@@ -143,7 +177,7 @@
                         </div>
                         <div class="info-block-with-ic">
                             <div class="icon">
-                                <img src="./img/ic-integrate.svg">
+                                <img src="./img/svg/ic-integrate.svg">
                             </div>
                             <div class="text-about">
                                 <p>Integrate and manage multiple online shops;</p>
@@ -151,7 +185,7 @@
                         </div>
                         <div class="info-block-with-ic">
                             <div class="icon">
-                                <img src="./img/ic-app-to-app-payments.svg">
+                                <img src="./img/svg/ic-app-to-app-payments.svg">
                             </div>
                             <div class="text-about">
                                 <p><span class="upcoming">Upcoming</span>Open Banking integration for app-to-app payments.</p>
@@ -170,10 +204,10 @@
                 </div>
                 <div class="buttons">
                     <button class="app-store">
-                        <a href="#"><span class="logo"><img src="./img/logo-applestore.svg"></span>App Store</a>
+                        <a href="#"><span class="logo"><img src="./img/svg/logo-applestore.svg"></span>App Store</a>
                     </button>
                     <button class="google-play">
-                        <a href="#"><span class="logo"><img src="./img/logo-googleplay.svg"></span>Google Play</a>
+                        <a href="#"><span class="logo"><img src="./img/svg/logo-googleplay.svg"></span>Google Play</a>
                     </button>
                 </div>
             </div>
@@ -182,7 +216,7 @@
         <div class="fees-and-limits">
             <div class="fees-and-limits-content">
                 <div class="fees">
-                    <p class="m-s-header">Fees</p>
+                    <p class="m-s-title">Fees</p>
                     <div class="fees">
                         <div class="fee">
                             <p class="fee-title">Processing Fee</p>
@@ -199,7 +233,7 @@
                     </div>
                     <div class="table">
                         <div class="title">
-                            BANK ACCOUNT OPENING FEE<span><img src="./img/ic-dsclmr.svg"></span>
+                            BANK ACCOUNT OPENING FEE<span><img src="./img/svg/ic-dsclmr.svg"></span>
                         </div>
                         <div class="fees">
                             <div class="fee">
@@ -217,11 +251,11 @@
                         </div>
                     </div>
                     <div class="disclaimer">
-                        <p><span><img src="./img/ic-dsclmr.svg"></span>Please note we are not the guarantor of the bank nor their representative, we are only facilitating our clients to open an account with the banks we have trusted relationship.</p>
+                        <p><span><img src="./img/svg/ic-dsclmr.svg"></span>Please note we are not the guarantor of the bank nor their representative, we are only facilitating our clients to open an account with the banks we have trusted relationship.</p>
                     </div>
                 </div>
                 <div class="limits">
-                    <p class="m-s-header">Limits</p>
+                    <p class="m-s-title">Limits</p>
                     <div class="limits-part">
                         <div class="limit">
                             <p class="amount">€1K <span class="period">/MONTHLY</span></p>
@@ -245,7 +279,7 @@
         </div>
         <div class="settlements">
             <div class="text-block">
-                <p class="m-s-header">Settlements</p>
+                <p class="m-s-title">Settlements</p>
                 <p class="text">Once the balance of €2,500 is reached, our Backoffice team will automatically settle the funds to a Merchant bank account, unless otherwise agreed upon.</p>
             </div>
             <div class="schemes">
@@ -267,133 +301,133 @@
         </div>
         <div class="currencies-supported">
             <div class="content">
-                <p class="m-s-header">Currencies supported</p>
+                <p class="m-s-title">Currencies supported</p>
                 <div class="currencies">
                     <div class="string">
                         <div class="currency">
-                            <img class="icon" src="./img/currency-BTC.svg">
+                            <img class="icon" src="./img/svg/currency-BTC.svg">
                             <p class="text">BTC</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-ETH.svg">
+                            <img class="icon" src="./img/svg/currency-ETH.svg">
                             <p class="text">ETH</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-LTC.svg">
+                            <img class="icon" src="./img/svg/currency-LTC.svg">
                             <p class="text">LTC</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-BCH.svg">
+                            <img class="icon" src="./img/svg/currency-BCH.svg">
                             <p class="text">BCH</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-XRP.svg">
+                            <img class="icon" src="./img/svg/currency-XRP.svg">
                             <p class="text">XRP</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-ADA.svg">
+                            <img class="icon" src="./img/svg/currency-ADA.svg">
                             <p class="text">ADA</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-ALGO.svg">
+                            <img class="icon" src="./img/svg/currency-ALGO.svg">
                             <p class="text">ALGO</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-ATOM.svg">
+                            <img class="icon" src="./img/svg/currency-ATOM.svg">
                             <p class="text">ATOM</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-BAT.svg">
+                            <img class="icon" src="./img/svg/currency-BAT.svg">
                             <p class="text">BAT</p>
                         </div>
                     </div>
                     <div class="string">
                         <div class="currency">
-                            <img class="icon" src="./img/currency-DAI.svg">
+                            <img class="icon" src="./img/svg/currency-DAI.svg">
                             <p class="text">DAI</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-DASH.svg">
+                            <img class="icon" src="./img/svg/currency-DASH.svg">
                             <p class="text">DASH</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-EOS.svg">
+                            <img class="icon" src="./img/svg/currency-EOS.svg">
                             <p class="text">EOS</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-ETC.svg">
+                            <img class="icon" src="./img/svg/currency-ETC.svg">
                             <p class="text">ETC</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-LSK.svg">
+                            <img class="icon" src="./img/svg/currency-LSK.svg">
                             <p class="text">LSK</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-LINK.svg">
+                            <img class="icon" src="./img/svg/currency-LINK.svg">
                             <p class="text">LINK</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-MLN.svg">
+                            <img class="icon" src="./img/svg/currency-MLN.svg">
                             <p class="text">MLN</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-NANO.svg">
+                            <img class="icon" src="./img/svg/currency-NANO.svg">
                             <p class="text">NANO</p>
                         </div>
                     </div>
                     <div class="string">
                         <div class="currency">
-                            <img class="icon" src="./img/currency-OMG.svg">
+                            <img class="icon" src="./img/svg/currency-OMG.svg">
                             <p class="text">OMG</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-PAXG.svg">
+                            <img class="icon" src="./img/svg/currency-PAXG.svg">
                             <p class="text">PAXG</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-QTUM.svg">
+                            <img class="icon" src="./img/svg/currency-QTUM.svg">
                             <p class="text">QTUM</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-REP.svg">
+                            <img class="icon" src="./img/svg/currency-REP.svg">
                             <p class="text">REP</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-SC.svg">
+                            <img class="icon" src="./img/svg/currency-SC.svg">
                             <p class="text">SC</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-TRX.svg">
+                            <img class="icon" src="./img/svg/currency-TRX.svg">
                             <p class="text">TRX</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-USDT.svg">
+                            <img class="icon" src="./img/svg/currency-USDT.svg">
                             <p class="text">USDT</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-WAVES.svg">
+                            <img class="icon" src="./img/svg/currency-WAVES.svg">
                             <p class="text">WAVES</p>
                         </div>
                     </div>
                     <div class="string">
                         <div class="currency">
-                            <img class="icon" src="./img/currency-XDG.svg">
+                            <img class="icon" src="./img/svg/currency-XDG.svg">
                             <p class="text">XDG</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-XLM.svg">
+                            <img class="icon" src="./img/svg/currency-XLM.svg">
                             <p class="text">XLM</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-XMR.svg">
+                            <img class="icon" src="./img/svg/currency-XMR.svg">
                             <p class="text">XMR</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-XTZ.svg">
+                            <img class="icon" src="./img/svg/currency-XTZ.svg">
                             <p class="text">XTZ</p>
                         </div>
                         <div class="currency">
-                            <img class="icon" src="./img/currency-ZEC.svg">
+                            <img class="icon" src="./img/svg/currency-ZEC.svg">
                             <p class="text">ZEC</p>
                         </div>
                     </div>
@@ -407,7 +441,7 @@
             </div>
             <div class="form">
                 <form id="sendForm" method="POST">
-                    <p class="m-s-header">Write Us Now</p>
+                    <p class="m-s-title">Write Us Now</p>
                     <p class="subheader">All fields below are required</p>
                     <div class="form-field">
                         <input type="text" name="name" placeholder="Name">

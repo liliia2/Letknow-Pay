@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4px" height="24px" viewBox="0 0 4 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M31,38 C32.1053333,38 33,38.896 33,40 C33,41.104 32.1053333,42 31,42 C29.8946667,42 29,41.104 29,40 C29,38.896 29.8946667,38 31,38 Z M31,27.6 C32.1053333,27.6 33,28.496 33,29.6 C33,30.704 32.1053333,31.6 31,31.6 C29.8946667,31.6 29,30.704 29,29.6 C29,28.496 29.8946667,27.6 31,27.6 Z M31,18 C32.1053333,18 33,18.896 33,20 C33,21.104 32.1053333,22 31,22 C29.8946667,22 29,21.104 29,20 C29,18.896 29.8946667,18 31,18 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lkpay---600" transform="translate(-524.000000, -33.000000)">
+            <g id="0_Header-Normal">
+                <g id="button/btn-back-normal" transform="translate(495.000000, 15.000000)">
+                    <g id="Group-5">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#212B36" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
