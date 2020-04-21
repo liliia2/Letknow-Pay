@@ -4,7 +4,6 @@
 
 .content {
   max-width: 100%;
-  overflow-x: hidden;
   width: 100%;
   color: #212121;
 
@@ -1290,7 +1289,7 @@
             border-radius: 13px;
           }
           @media screen and (max-width: 599px) {
-            margin-top: 13px;
+            margin: 13px 27px 0;
           }
           &:hover {
             background-color: #0064AA;
