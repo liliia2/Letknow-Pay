@@ -454,6 +454,8 @@ body {
         height: 50px;
         width: 195px;
         font-size: 16px; } }
+    .content .custom-gateway .text-area .submit-btn button:hover {
+      box-shadow: 0 6px 20px rgba(5, 48, 95, 0.45); }
     .content .custom-gateway .text-area .submit-btn button:active {
       box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45); }
     .content .custom-gateway .text-area .submit-btn button img {
@@ -684,16 +686,24 @@ body {
                 height: 115px; } }
           .content .how-it-works .slider .api2-slide .steps-screens .count, .content .how-it-works .slider .api3-slide .steps-screens .count {
             background-color: #0D9BFF;
-            width: 38px;
-            height: 38px;
-            border-radius: 38px;
             color: white;
             font-family: "Roboto-Bold";
-            font-size: 24px;
-            line-height: 30px;
             text-align: center;
-            margin: 27px auto 20px;
-            padding: 5px; }
+            margin: 27px auto 20px; }
+            @media screen and (min-width: 600px) {
+              .content .how-it-works .slider .api2-slide .steps-screens .count, .content .how-it-works .slider .api3-slide .steps-screens .count {
+                width: 38px;
+                height: 38px;
+                font-size: 24px;
+                line-height: 38px;
+                border-radius: 38px; } }
+            @media screen and (max-width: 599px) {
+              .content .how-it-works .slider .api2-slide .steps-screens .count, .content .how-it-works .slider .api3-slide .steps-screens .count {
+                width: 26px;
+                height: 26px;
+                font-size: 16px;
+                line-height: 28px;
+                border-radius: 26px; } }
           .content .how-it-works .slider .api2-slide .steps-screens .text, .content .how-it-works .slider .api3-slide .steps-screens .text {
             color: #212B36;
             font-family: "Roboto-Regular";
@@ -718,72 +728,211 @@ body {
                 max-width: 100px;
                 font-size: 10px;
                 line-height: 12px; } }
-        .content .how-it-works .slider .api2-slide .api3-screen img, .content .how-it-works .slider .api3-slide .api3-screen img {
+        .content .how-it-works .slider .api2-slide .api3-screen .tablet-screen, .content .how-it-works .slider .api3-slide .api3-screen .tablet-screen {
           box-shadow: 7px 8px 21px rgba(0, 0, 0, 0.2);
-          border-radius: 24px;
+          border-radius: 36px;
           width: 100%; }
         .content .how-it-works .slider .api2-slide .disclaimer, .content .how-it-works .slider .api3-slide .disclaimer {
           font-family: "Roboto-Regular";
           font-size: 12px;
           line-height: 14px;
           color: #6B7C89;
-          max-width: 535px;
+          width: 100%;
           text-align: right;
           margin: 14px auto; }
-  .content .integration {
-    max-width: 1106px;
-    margin: 151px auto 130px; }
-    .content .integration .text-area {
+  @media screen and (min-width: 1440px) {
+    .content .integration {
       max-width: 915px;
-      margin: 0 auto; }
-      .content .integration .text-area .m-s-title, .content .integration .text-area .subheader, .content .integration .text-area .text {
-        text-align: center;
-        margin: 8px; }
-      .content .integration .text-area .subheader {
-        font-family: "Montserrat-Medium";
-        font-size: 28px;
-        line-height: 34px; }
-      .content .integration .text-area .text {
-        font-family: "Montserrat-Regular";
-        font-size: 24px;
-        line-height: 34px; }
+      margin: 151px auto 130px; } }
+  @media screen and (max-width: 1439px) {
+    .content .integration {
+      max-width: 829px;
+      margin: 97px auto; } }
+  @media screen and (max-width: 1023px) {
+    .content .integration {
+      max-width: 522px;
+      margin: 72px auto 116px; } }
+  @media screen and (max-width: 599px) {
+    .content .integration {
+      max-width: 346px;
+      margin: 58px auto 67px; } }
+  .content .integration .text-area {
+    margin: 0 auto; }
+    @media screen and (min-width: 1440px) {
+      .content .integration .text-area {
+        max-width: 915px; } }
+    @media screen and (max-width: 1439px) {
+      .content .integration .text-area {
+        max-width: 770px; } }
+    @media screen and (max-width: 1023px) {
+      .content .integration .text-area {
+        max-width: 510px; } }
+    @media screen and (max-width: 599px) {
+      .content .integration .text-area {
+        max-width: 338px; } }
+    .content .integration .text-area .m-s-title, .content .integration .text-area .subheader, .content .integration .text-area .text {
+      text-align: center;
+      margin: 8px; }
+    .content .integration .text-area .subheader {
+      font-family: "Montserrat-Medium"; }
+      @media screen and (min-width: 1440px) {
+        .content .integration .text-area .subheader {
+          font-size: 28px;
+          line-height: 34px; } }
+      @media screen and (max-width: 1439px) {
+        .content .integration .text-area .subheader {
+          font-size: 24px;
+          line-height: 34px; } }
+      @media screen and (max-width: 1023px) {
+        .content .integration .text-area .subheader {
+          font-size: 20px;
+          line-height: 28px; } }
+      @media screen and (max-width: 599px) {
+        .content .integration .text-area .subheader {
+          font-size: 14px;
+          line-height: 19px;
+          margin: 15px auto 6px; } }
+    .content .integration .text-area .text {
+      font-family: "Montserrat-Regular"; }
+      @media screen and (min-width: 1440px) {
+        .content .integration .text-area .text {
+          font-size: 24px;
+          line-height: 34px; } }
+      @media screen and (max-width: 1439px) {
+        .content .integration .text-area .text {
+          font-size: 20px;
+          line-height: 30px; } }
+      @media screen and (max-width: 1023px) {
+        .content .integration .text-area .text {
+          font-size: 14px;
+          line-height: 20px;
+          margin: 10px auto; } }
+      @media screen and (max-width: 599px) {
+        .content .integration .text-area .text {
+          font-size: 12px;
+          line-height: 18px;
+          margin: 6px auto; } }
+  @media screen and (min-width: 1440px) {
     .content .integration .provide {
       max-width: 915px;
-      margin: 100px auto; }
+      margin: 100px auto 0; } }
+  @media screen and (max-width: 1439px) {
+    .content .integration .provide {
+      max-width: 829px;
+      margin: 87px auto 0; } }
+  @media screen and (max-width: 1023px) {
+    .content .integration .provide {
+      max-width: 522px;
+      margin: 78px auto 0; } }
+  @media screen and (max-width: 599px) {
+    .content .integration .provide {
+      max-width: 346px;
+      margin: 36px auto 0; } }
+  .content .integration .provide p {
+    font-family: "Roboto-Bold";
+    text-align: center;
+    text-transform: uppercase; }
+    @media screen and (min-width: 1024px) {
       .content .integration .provide p {
-        font-family: "Roboto-Bold";
         font-size: 24px;
-        line-height: 20px;
-        text-align: center;
-        text-transform: uppercase; }
+        line-height: 20px; } }
+    @media screen and (max-width: 1023px) {
+      .content .integration .provide p {
+        font-size: 20px;
+        line-height: 20px; } }
+    @media screen and (max-width: 599px) {
+      .content .integration .provide p {
+        font-size: 12px;
+        line-height: 16px; } }
+  .content .integration .provide .cards {
+    display: flex; }
+    @media screen and (min-width: 1440px) {
       .content .integration .provide .cards {
-        display: flex;
-        margin: 41px auto; }
+        margin: 41px auto; } }
+    @media screen and (max-width: 1439px) {
+      .content .integration .provide .cards {
+        margin: 41px auto; } }
+    @media screen and (max-width: 1023px) {
+      .content .integration .provide .cards {
+        margin: 31px auto; } }
+    @media screen and (max-width: 599px) {
+      .content .integration .provide .cards {
+        margin: 18px auto; } }
+    .content .integration .provide .cards .support, .content .integration .provide .cards .testing, .content .integration .provide .cards .api {
+      background-color: black;
+      color: white;
+      text-align: center;
+      box-shadow: 0 0 16px #a6b7c4; }
+      @media screen and (min-width: 1024px) {
         .content .integration .provide .cards .support, .content .integration .provide .cards .testing, .content .integration .provide .cards .api {
           width: 249px;
           height: 249px;
-          border-radius: 30px;
-          background-color: black;
-          color: white;
-          text-align: center;
-          box-shadow: 0 0 16px #a6b7c4; }
-          .content .integration .provide .cards .support .card-icon, .content .integration .provide .cards .testing .card-icon, .content .integration .provide .cards .api .card-icon {
-            width: 72px;
-            height: 72px;
-            margin: 44px auto 29px; }
+          border-radius: 30px; } }
+      @media screen and (max-width: 1023px) {
+        .content .integration .provide .cards .support, .content .integration .provide .cards .testing, .content .integration .provide .cards .api {
+          width: 157px;
+          height: 157px;
+          border-radius: 18px; } }
+      @media screen and (max-width: 599px) {
+        .content .integration .provide .cards .support, .content .integration .provide .cards .testing, .content .integration .provide .cards .api {
+          width: 104px;
+          height: 104px;
+          border-radius: 12px; } }
+      @media screen and (min-width: 1024px) {
+        .content .integration .provide .cards .support .card-icon, .content .integration .provide .cards .testing .card-icon, .content .integration .provide .cards .api .card-icon {
+          width: 72px;
+          height: 72px;
+          margin: 44px auto 29px; } }
+      @media screen and (max-width: 1023px) {
+        .content .integration .provide .cards .support .card-icon, .content .integration .provide .cards .testing .card-icon, .content .integration .provide .cards .api .card-icon {
+          width: 44px;
+          height: 44px;
+          margin: 29px auto 20px; } }
+      @media screen and (max-width: 599px) {
+        .content .integration .provide .cards .support .card-icon, .content .integration .provide .cards .testing .card-icon, .content .integration .provide .cards .api .card-icon {
+          width: 28px;
+          height: 28px;
+          margin: 18px auto 20px; } }
+      .content .integration .provide .cards .support .card-icon img, .content .integration .provide .cards .testing .card-icon img, .content .integration .provide .cards .api .card-icon img {
+        width: 100%;
+        height: 100%; }
+      .content .integration .provide .cards .support p, .content .integration .provide .cards .testing p, .content .integration .provide .cards .api p {
+        font-family: "Roboto-Medium";
+        text-transform: none;
+        margin: 0 auto; }
+        @media screen and (min-width: 1024px) {
           .content .integration .provide .cards .support p, .content .integration .provide .cards .testing p, .content .integration .provide .cards .api p {
-            font-family: "Roboto-Medium";
+            font-size: 24px;
             line-height: 32px;
-            text-transform: none;
-            width: 163px;
-            margin: 0 auto; }
-        .content .integration .provide .cards .support {
-          background-color: #2BBE00; }
+            width: 163px; } }
+        @media screen and (max-width: 1023px) {
+          .content .integration .provide .cards .support p, .content .integration .provide .cards .testing p, .content .integration .provide .cards .api p {
+            font-size: 15px;
+            line-height: 20px;
+            width: 103px; } }
+        @media screen and (max-width: 599px) {
+          .content .integration .provide .cards .support p, .content .integration .provide .cards .testing p, .content .integration .provide .cards .api p {
+            font-size: 10px;
+            line-height: 12px;
+            width: 68px; } }
+    .content .integration .provide .cards .support {
+      background-color: #2BBE00; }
+    .content .integration .provide .cards .testing {
+      background-color: #0D9BFF; }
+      @media screen and (min-width: 1440px) {
         .content .integration .provide .cards .testing {
-          background-color: #0D9BFF;
-          margin: 0 84px; }
-        .content .integration .provide .cards .api {
-          background-color: #FF119D; }
+          margin: 0 84px; } }
+      @media screen and (max-width: 1439px) {
+        .content .integration .provide .cards .testing {
+          margin: 0 41px; } }
+      @media screen and (max-width: 1023px) {
+        .content .integration .provide .cards .testing {
+          margin: 0 25px; } }
+      @media screen and (max-width: 599px) {
+        .content .integration .provide .cards .testing {
+          margin: 0 16px; } }
+    .content .integration .provide .cards .api {
+      background-color: #FF119D; }
   .content .merchant-crm {
     width: 100%;
     margin: 130px auto 210px; }
@@ -855,10 +1004,17 @@ body {
       .content .letknow-app .text-area .text {
         color: white;
         font-family: "Montserrat-Medium";
-        font-size: 32px;
-        line-height: 42px;
-        max-width: 511px;
         float: right; }
+        @media screen and (min-width: 1440px) {
+          .content .letknow-app .text-area .text {
+            font-size: 32px;
+            line-height: 42px;
+            max-width: 511px; } }
+        @media screen and (max-width: 1439px) {
+          .content .letknow-app .text-area .text {
+            font-size: 28px;
+            line-height: 36px;
+            max-width: 370px; } }
         .content .letknow-app .text-area .text .semibold {
           font-family: "Montserrat-SemiBold"; }
       .content .letknow-app .text-area .buttons {
@@ -876,22 +1032,36 @@ body {
           font-family: "Roboto-Regular";
           font-size: 16px;
           line-height: 12px; }
+          .content .letknow-app .text-area .buttons button:hover {
+            background-color: #0064AA;
+            color: white !important; }
           .content .letknow-app .text-area .buttons button a {
             display: flex;
             align-items: center;
             justify-content: center; }
+            .content .letknow-app .text-area .buttons button a:hover {
+              color: white !important; }
+            .content .letknow-app .text-area .buttons button a:visited {
+              color: #212B36; }
             .content .letknow-app .text-area .buttons button a .logo {
               padding-right: 10px; }
-          .content .letknow-app .text-area .buttons button a:visited {
-            color: #212B36; }
     .content .letknow-app .letknow-app-bg {
-      margin-top: -280px;
-      height: 800px;
-      width: 830px;
-      left: -2%;
-      position: absolute;
       background: url("../../img/img-phone.png") no-repeat;
-      background-size: cover; }
+      position: absolute; }
+      @media screen and (min-width: 1440px) {
+        .content .letknow-app .letknow-app-bg {
+          margin-top: -280px;
+          height: 800px;
+          width: 830px;
+          left: -2%;
+          background-size: cover; } }
+      @media screen and (max-width: 1439px) {
+        .content .letknow-app .letknow-app-bg {
+          margin-top: -151px;
+          height: 492px;
+          width: 636px;
+          background-size: contain;
+          margin-left: 9px; } }
   .content .fees-and-limits {
     width: 100%;
     height: 100%;
@@ -990,171 +1160,442 @@ body {
             color: #212B36; }
             .content .fees-and-limits .fees-and-limits-content .limits .limit .description .medium {
               font-family: "Roboto-Medium"; }
-  .content .settlements {
-    max-width: 1106px;
-    display: flex;
-    margin: 50px auto 78px; }
+  @media screen and (min-width: 1440px) {
+    .content .settlements {
+      max-width: 1106px;
+      margin: 50px auto 78px;
+      display: flex; } }
+  @media screen and (max-width: 1439px) {
+    .content .settlements {
+      max-width: 919px;
+      padding: 58px 0 77px;
+      display: flex;
+      margin: 0 auto; } }
+  @media screen and (max-width: 1023px) {
+    .content .settlements {
+      max-width: 450px;
+      padding: 46px 0 60px;
+      display: block; } }
+  @media screen and (max-width: 599px) {
+    .content .settlements {
+      max-width: 345px;
+      padding: 37px 0 50px; } }
+  @media screen and (min-width: 1440px) {
     .content .settlements .text-block {
       max-width: 535px;
-      margin-right: 69px; }
-      .content .settlements .text-block .m-s-title {
-        text-align: left;
-        margin-bottom: 23px; }
-      .content .settlements .text-block .text {
-        font-family: "Montserrat-Medium";
-        font-size: 24px;
-        line-height: 34px; }
-    .content .settlements .schemes {
-      max-width: 501px;
-      display: flex; }
-      .content .settlements .schemes .crypto-crypto, .content .settlements .schemes .crypto-fiat {
-        width: 218px;
-        height: 185px;
-        justify-content: center; }
-        .content .settlements .schemes .crypto-crypto .figures, .content .settlements .schemes .crypto-fiat .figures {
-          height: 127px;
-          width: 139px;
-          position: relative;
-          margin: auto; }
-          .content .settlements .schemes .crypto-crypto .figures .figure, .content .settlements .schemes .crypto-fiat .figures .figure {
-            width: 100px;
-            height: 100px;
-            position: absolute; }
-          .content .settlements .schemes .crypto-crypto .figures .circle, .content .settlements .schemes .crypto-fiat .figures .circle {
-            border-radius: 100px; }
-          .content .settlements .schemes .crypto-crypto .figures .rectangle, .content .settlements .schemes .crypto-fiat .figures .rectangle {
-            border-radius: 26px; }
-          .content .settlements .schemes .crypto-crypto .figures .blue, .content .settlements .schemes .crypto-fiat .figures .blue {
-            background-color: #0D9BFF; }
-          .content .settlements .schemes .crypto-crypto .figures .green, .content .settlements .schemes .crypto-fiat .figures .green {
-            background-color: #09CD0A; }
-          .content .settlements .schemes .crypto-crypto .figures .orange, .content .settlements .schemes .crypto-fiat .figures .orange {
-            background-color: #F5A623; }
-          .content .settlements .schemes .crypto-crypto .figures .shadow, .content .settlements .schemes .crypto-fiat .figures .shadow {
-            box-shadow: 2px 2px 12px rgba(33, 43, 54, 0.5); }
-        .content .settlements .schemes .crypto-crypto .text, .content .settlements .schemes .crypto-fiat .text {
-          font-family: "Roboto-Medium";
-          font-size: 32px;
-          line-height: 30px;
-          color: #212B36;
-          text-align: center;
-          margin-top: 28px; }
-          .content .settlements .schemes .crypto-crypto .text .grey, .content .settlements .schemes .crypto-fiat .text .grey {
-            color: #6B7C89; }
-      .content .settlements .schemes .crypto-crypto {
-        margin-right: 66px; }
-        .content .settlements .schemes .crypto-crypto .figures .blue {
-          top: 0;
-          left: 0; }
-        .content .settlements .schemes .crypto-crypto .figures .orange {
-          right: 0;
-          bottom: 0; }
-      .content .settlements .schemes .crypto-fiat .figures .blue {
+      margin-right: 69px;
+      font-size: 24px;
+      line-height: 34px;
+      font-family: "Montserrat-Medium"; } }
+  @media screen and (max-width: 1439px) {
+    .content .settlements .text-block {
+      max-width: 535px;
+      margin-right: 69px;
+      font-size: 20px;
+      line-height: 30px;
+      font-family: "Montserrat-Regular"; } }
+  @media screen and (max-width: 1023px) {
+    .content .settlements .text-block {
+      width: 450px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center; } }
+  @media screen and (max-width: 599px) {
+    .content .settlements .text-block {
+      width: 345px;
+      max-width: 100%;
+      font-size: 12px;
+      line-height: 18px; } }
+  @media screen and (min-width: 1024px) {
+    .content .settlements .text-block .m-s-title {
+      text-align: left;
+      margin-bottom: 23px; } }
+  @media screen and (max-width: 1023px) {
+    .content .settlements .text-block .m-s-title {
+      margin-bottom: 0px; } }
+  @media screen and (max-width: 599px) {
+    .content .settlements .text-block .m-s-title {
+      margin-bottom: 15px; } }
+  .content .settlements .schemes {
+    max-width: 501px;
+    display: flex; }
+    @media screen and (max-width: 1023px) {
+      .content .settlements .schemes {
+        margin-top: 27px; } }
+    @media screen and (max-width: 599px) {
+      .content .settlements .schemes {
+        margin: 33px auto 0;
+        width: 318px; } }
+    .content .settlements .schemes .crypto-crypto, .content .settlements .schemes .crypto-fiat {
+      justify-content: center; }
+      @media screen and (min-width: 1440px) {
+        .content .settlements .schemes .crypto-crypto, .content .settlements .schemes .crypto-fiat {
+          width: 218px;
+          height: 185px; } }
+      @media screen and (max-width: 1439px) {
+        .content .settlements .schemes .crypto-crypto, .content .settlements .schemes .crypto-fiat {
+          width: 192px;
+          height: 186px; } }
+      @media screen and (max-width: 1023px) {
+        .content .settlements .schemes .crypto-crypto, .content .settlements .schemes .crypto-fiat {
+          width: 164px;
+          height: 188px; } }
+      @media screen and (max-width: 599px) {
+        .content .settlements .schemes .crypto-crypto, .content .settlements .schemes .crypto-fiat {
+          width: 110px;
+          height: 146px;
+          margin: auto; } }
+      .content .settlements .schemes .crypto-crypto .figures, .content .settlements .schemes .crypto-fiat .figures {
+        position: relative;
+        margin: auto; }
+        @media screen and (min-width: 600px) {
+          .content .settlements .schemes .crypto-crypto .figures, .content .settlements .schemes .crypto-fiat .figures {
+            height: 127px;
+            width: 139px; } }
+        @media screen and (max-width: 599px) {
+          .content .settlements .schemes .crypto-crypto .figures, .content .settlements .schemes .crypto-fiat .figures {
+            width: 107px;
+            height: 98px; } }
+        .content .settlements .schemes .crypto-crypto .figures .figure, .content .settlements .schemes .crypto-fiat .figures .figure {
+          position: absolute; }
+          @media screen and (min-width: 600px) {
+            .content .settlements .schemes .crypto-crypto .figures .figure, .content .settlements .schemes .crypto-fiat .figures .figure {
+              width: 100px;
+              height: 100px; } }
+          @media screen and (max-width: 599px) {
+            .content .settlements .schemes .crypto-crypto .figures .figure, .content .settlements .schemes .crypto-fiat .figures .figure {
+              width: 77px;
+              height: 77px; } }
+        .content .settlements .schemes .crypto-crypto .figures .circle, .content .settlements .schemes .crypto-fiat .figures .circle {
+          border-radius: 100px; }
+        .content .settlements .schemes .crypto-crypto .figures .rectangle, .content .settlements .schemes .crypto-fiat .figures .rectangle {
+          border-radius: 26px; }
+        .content .settlements .schemes .crypto-crypto .figures .blue, .content .settlements .schemes .crypto-fiat .figures .blue {
+          background-color: #0D9BFF; }
+        .content .settlements .schemes .crypto-crypto .figures .green, .content .settlements .schemes .crypto-fiat .figures .green {
+          background-color: #09CD0A; }
+        .content .settlements .schemes .crypto-crypto .figures .orange, .content .settlements .schemes .crypto-fiat .figures .orange {
+          background-color: #F5A623; }
+        .content .settlements .schemes .crypto-crypto .figures .shadow, .content .settlements .schemes .crypto-fiat .figures .shadow {
+          box-shadow: 2px 2px 12px rgba(33, 43, 54, 0.5); }
+      .content .settlements .schemes .crypto-crypto .text, .content .settlements .schemes .crypto-fiat .text {
+        font-family: "Roboto-Medium";
+        color: #212B36;
+        text-align: center;
+        margin-top: 28px; }
+        @media screen and (min-width: 1440px) {
+          .content .settlements .schemes .crypto-crypto .text, .content .settlements .schemes .crypto-fiat .text {
+            font-size: 32px;
+            line-height: 30px; } }
+        @media screen and (max-width: 1439px) {
+          .content .settlements .schemes .crypto-crypto .text, .content .settlements .schemes .crypto-fiat .text {
+            font-size: 28px;
+            line-height: 30px; } }
+        @media screen and (max-width: 1023px) {
+          .content .settlements .schemes .crypto-crypto .text, .content .settlements .schemes .crypto-fiat .text {
+            font-size: 24px;
+            line-height: 30px; } }
+        @media screen and (max-width: 599px) {
+          .content .settlements .schemes .crypto-crypto .text, .content .settlements .schemes .crypto-fiat .text {
+            font-size: 16px;
+            line-height: 23px; } }
+        .content .settlements .schemes .crypto-crypto .text .grey, .content .settlements .schemes .crypto-fiat .text .grey {
+          color: #6B7C89; }
+    .content .settlements .schemes .crypto-crypto {
+      margin-right: 66px; }
+      .content .settlements .schemes .crypto-crypto .figures .blue {
         top: 0;
-        right: 4px; }
-      .content .settlements .schemes .crypto-fiat .figures .green {
-        left: 4px;
+        left: 0; }
+      .content .settlements .schemes .crypto-crypto .figures .orange {
+        right: 0;
         bottom: 0; }
+    .content .settlements .schemes .crypto-fiat .figures .blue {
+      top: 0;
+      right: 4px; }
+    .content .settlements .schemes .crypto-fiat .figures .green {
+      left: 4px;
+      bottom: 0; }
   .content .currencies-supported {
     width: 100%;
     margin: auto;
     background-color: #212B36; }
     .content .currencies-supported .content {
-      max-width: 917px;
-      padding: 64px 0;
       margin: auto; }
-      .content .currencies-supported .content .currencies {
-        margin: 40px auto; }
-        .content .currencies-supported .content .currencies .string {
+      @media screen and (min-width: 1024px) {
+        .content .currencies-supported .content {
+          max-width: 917px;
+          padding: 64px 0; } }
+      @media screen and (max-width: 1023px) {
+        .content .currencies-supported .content {
+          max-width: 505px;
+          padding: 22px 0 34px; } }
+      @media screen and (max-width: 599px) {
+        .content .currencies-supported .content {
+          max-width: 321px;
+          padding: 14px 0 21px; } }
+      @media screen and (min-width: 1024px) {
+        .content .currencies-supported .content .currencies {
+          margin: 40px auto 0; } }
+      @media screen and (max-width: 1023px) {
+        .content .currencies-supported .content .currencies {
+          margin: 17px auto 0; } }
+      @media screen and (max-width: 599px) {
+        .content .currencies-supported .content .currencies {
+          margin: 21px auto 0; } }
+      .content .currencies-supported .content .currencies .string {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media screen and (min-width: 1024px) {
+          .content .currencies-supported .content .currencies .string {
+            margin: 32px 0;
+            margin-left: 22px; } }
+        @media screen and (max-width: 1023px) {
+          .content .currencies-supported .content .currencies .string {
+            margin: 17px 0;
+            margin-left: 19px; } }
+        @media screen and (max-width: 599px) {
+          .content .currencies-supported .content .currencies .string {
+            margin: 11px 0;
+            margin-left: 8px; } }
+        .content .currencies-supported .content .currencies .string .currency {
+          width: auto;
+          height: auto;
           display: flex;
           justify-content: center;
-          align-items: center;
-          margin: 32px 0;
-          margin-left: 22px; }
-          .content .currencies-supported .content .currencies .string .currency {
-            width: auto;
-            height: 35px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 22px; }
+          align-items: center; }
+          @media screen and (min-width: 1024px) {
+            .content .currencies-supported .content .currencies .string .currency {
+              margin-right: 22px; } }
+          @media screen and (max-width: 1023px) {
+            .content .currencies-supported .content .currencies .string .currency {
+              margin-right: 19px; } }
+          @media screen and (max-width: 599px) {
+            .content .currencies-supported .content .currencies .string .currency {
+              margin-right: 8px; } }
+          @media screen and (min-width: 1024px) {
             .content .currencies-supported .content .currencies .string .currency .icon {
-              height: 35px;
-              width: 35px; }
-            .content .currencies-supported .content .currencies .string .currency .text {
-              margin-left: 6px;
-              color: white;
-              font-family: "Roboto-Bold";
-              font-size: 20px;
-              line-height: 28px; }
-  .content .merchant-form {
-    max-width: 1106px;
-    height: 397px;
-    margin: 78px auto; }
+              width: 35px;
+              height: 35px; } }
+          @media screen and (max-width: 1023px) {
+            .content .currencies-supported .content .currencies .string .currency .icon {
+              width: 19px;
+              height: 19px; } }
+          @media screen and (max-width: 599px) {
+            .content .currencies-supported .content .currencies .string .currency .icon {
+              width: 12px;
+              height: 12px; } }
+          .content .currencies-supported .content .currencies .string .currency .text {
+            margin-left: 6px;
+            color: white;
+            font-family: "Roboto-Bold"; }
+            @media screen and (min-width: 1024px) {
+              .content .currencies-supported .content .currencies .string .currency .text {
+                font-size: 20px;
+                line-height: 28px; } }
+            @media screen and (max-width: 1023px) {
+              .content .currencies-supported .content .currencies .string .currency .text {
+                font-size: 11px;
+                line-height: 16px; } }
+            @media screen and (max-width: 599px) {
+              .content .currencies-supported .content .currencies .string .currency .text {
+                font-size: 7px;
+                line-height: 10px; } }
+  @media screen and (min-width: 1440px) {
+    .content .merchant-form {
+      max-width: 1106px;
+      margin: 78px auto; } }
+  @media screen and (max-width: 1439px) {
+    .content .merchant-form {
+      max-width: 930px;
+      margin: 62px auto 105px; } }
+  @media screen and (max-width: 1023px) {
+    .content .merchant-form {
+      max-width: 510px;
+      margin: 46px auto; } }
+  @media screen and (max-width: 599px) {
+    .content .merchant-form {
+      max-width: 345px;
+      min-height: 350px;
+      margin: 60px auto 57px; } }
+  @media screen and (min-width: 1024px) {
     .content .merchant-form .text-block {
-      float: left; }
+      float: left; } }
+  .content .merchant-form .text-block .title {
+    font-family: "Montserrat-Medium";
+    color: #FF119D; }
+    @media screen and (min-width: 1024px) {
       .content .merchant-form .text-block .title {
-        font-family: "Montserrat-Medium";
-        color: #FF119D;
         font-size: 32px;
         line-height: 42px;
-        max-width: 380px; }
+        max-width: 380px; } }
+    @media screen and (max-width: 1023px) {
+      .content .merchant-form .text-block .title {
+        font-size: 24px;
+        line-height: 32px;
+        max-width: 320px;
+        text-align: center;
+        margin: 0 auto; } }
+    @media screen and (max-width: 599px) {
+      .content .merchant-form .text-block .title {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 344px;
+        text-align: center;
+        margin: 0 auto; } }
+  .content .merchant-form .text-block .text {
+    margin-top: 24px;
+    color: #000000;
+    font-family: "Montserrat-Regular"; }
+    @media screen and (min-width: 1440px) {
       .content .merchant-form .text-block .text {
-        margin-top: 24px;
-        color: #000000;
-        font-family: "Montserrat-Regular";
         font-size: 24px;
         line-height: 34px;
-        max-width: 552px; }
-        .content .merchant-form .text-block .text .email {
-          color: #0D9BFF; }
-          .content .merchant-form .text-block .text .email a, .content .merchant-form .text-block .text .email a:visited {
-            color: #0D9BFF; }
-    .content .merchant-form .form {
-      float: right;
-      width: 535px;
-      height: 397px;
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0 18px 34px rgba(5, 48, 95, 0.32); }
-      .content .merchant-form .form form {
-        margin: 24px 64px 32px;
-        text-align: center; }
-        .content .merchant-form .form form .m-s-title {
-          font-size: 20px;
-          padding: 0; }
-        .content .merchant-form .form form .subheader {
-          font-family: "Roboto-Light";
-          font-size: 12px;
-          line-height: 21px;
-          color: #6B7C89;
-          margin-bottom: 8px; }
-        .content .merchant-form .form form input {
-          width: 100%;
-          height: 50px;
-          border-radius: 8px;
-          border: 1px solid #C8CFD8;
-          margin: 6px auto;
-          padding: 16px;
-          color: #8C9AA7;
-          font-family: "SF-Pro-Text-Light";
-          font-size: 16px;
-          line-height: 16px; }
-        .content .merchant-form .form form button {
-          margin-top: 42px;
-          color: white;
-          width: 325px;
-          height: 44px;
-          border-radius: 22px;
-          box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32);
-          background-color: #09CD0A;
-          font-family: "Roboto-Medium";
-          font-size: 14px;
-          line-height: 22px; }
-    .content .merchant-form .merchant-form-bg {
-      transform: scale(-1, 1);
-      margin-top: -132px;
-      left: -20%; }
+        max-width: 552px; } }
+    @media screen and (max-width: 1439px) {
+      .content .merchant-form .text-block .text {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 450px; } }
+    @media screen and (max-width: 1023px) {
+      .content .merchant-form .text-block .text {
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 330px;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%; } }
+    @media screen and (max-width: 599px) {
+      .content .merchant-form .text-block .text {
+        font-size: 12px;
+        line-height: 18px;
+        max-width: 344px;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%; } }
+    .content .merchant-form .text-block .text .email {
+      color: #0D9BFF; }
+      .content .merchant-form .text-block .text .email a, .content .merchant-form .text-block .text .email a:visited {
+        color: #0D9BFF; }
+  .content .merchant-form .form {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 18px 34px rgba(5, 48, 95, 0.32); }
+    @media screen and (min-width: 1440px) {
+      .content .merchant-form .form {
+        width: 535px;
+        height: 397px; } }
+    @media screen and (max-width: 1439px) {
+      .content .merchant-form .form {
+        width: 450px;
+        height: 397px; } }
+    @media screen and (min-width: 1024px) {
+      .content .merchant-form .form {
+        float: right; } }
+    @media screen and (max-width: 1023px) {
+      .content .merchant-form .form {
+        width: 510px;
+        height: 397px;
+        margin: 32px auto; } }
+    @media screen and (max-width: 599px) {
+      .content .merchant-form .form {
+        max-width: 345px;
+        width: 100%;
+        height: 268px;
+        margin: 16px auto; } }
+    .content .merchant-form .form form {
+      text-align: center; }
+      @media screen and (min-width: 1440px) {
+        .content .merchant-form .form form {
+          margin: 24px 64px 32px; } }
+      @media screen and (max-width: 1439px) {
+        .content .merchant-form .form form {
+          margin: 24px 50px 32px; } }
+      @media screen and (max-width: 1023px) {
+        .content .merchant-form .form form {
+          margin: 24px 57px 32px; } }
+      @media screen and (max-width: 599px) {
+        .content .merchant-form .form form {
+          margin: 16px 38px 21px; } }
+      .content .merchant-form .form form .m-s-title {
+        padding: 0; }
+        @media screen and (min-width: 600px) {
+          .content .merchant-form .form form .m-s-title {
+            font-size: 20px;
+            line-height: 40px; } }
+        @media screen and (max-width: 599px) {
+          .content .merchant-form .form form .m-s-title {
+            font-size: 13px;
+            line-height: 27px; } }
+      .content .merchant-form .form form .subheader {
+        font-family: "Roboto-Light";
+        color: #6B7C89;
+        margin-bottom: 8px; }
+        @media screen and (min-width: 600px) {
+          .content .merchant-form .form form .subheader {
+            font-size: 12px;
+            line-height: 21px; } }
+        @media screen and (max-width: 599px) {
+          .content .merchant-form .form form .subheader {
+            font-size: 8px;
+            line-height: 14px; } }
+      .content .merchant-form .form form input {
+        width: 100%;
+        border: 1px solid #C8CFD8;
+        color: #8C9AA7;
+        font-family: "SF-Pro-Text-Light"; }
+        @media screen and (min-width: 600px) {
+          .content .merchant-form .form form input {
+            height: 50px;
+            border-radius: 8px;
+            padding: 16px;
+            font-size: 16px;
+            line-height: 16px;
+            margin: 6px auto; } }
+        @media screen and (max-width: 599px) {
+          .content .merchant-form .form form input {
+            height: 33px;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 10px;
+            line-height: 11px;
+            margin: 6px auto;
+            max-width: 267px;
+            width: 100%; } }
+      .content .merchant-form .form form button {
+        color: white;
+        box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32);
+        background-color: #09CD0A;
+        font-family: "Roboto-Medium"; }
+        @media screen and (min-width: 1024px) {
+          .content .merchant-form .form form button {
+            font-size: 14px;
+            line-height: 22px;
+            margin-top: 42px;
+            width: 325px;
+            height: 44px;
+            border-radius: 22px; } }
+        @media screen and (max-width: 1023px) {
+          .content .merchant-form .form form button {
+            font-size: 14px;
+            line-height: 22px;
+            margin-top: 48px;
+            width: 309px;
+            height: 44px;
+            border-radius: 22px; } }
+        @media screen and (max-width: 599px) {
+          .content .merchant-form .form form button {
+            font-size: 10px;
+            line-height: 15px;
+            margin-top: 18px;
+            max-width: 210px;
+            width: 100%;
+            height: 30px;
+            border-radius: 15px; } }
+  .content .merchant-form .merchant-form-bg {
+    transform: scale(-1, 1);
+    margin-top: -132px;
+    left: -20%; }
   .content .footer {
     width: 100%;
     height: 100%;
@@ -1246,7 +1687,7 @@ body {
     width: 244px;
     margin: auto; }
     #mobile-menu .mobile-menu-content .category {
-      margin: 45px 0; }
+      margin: 30px 0; }
       #mobile-menu .mobile-menu-content .category .category-title {
         color: #2BBE00;
         font-family: "Montserrat-SemiBold";
