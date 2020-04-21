@@ -3,6 +3,8 @@
 }
 
 .content {
+  max-width: 100%;
+  overflow-x: hidden;
   width: 100%;
   color: #212121;
 
@@ -219,14 +221,16 @@
         @media screen and (max-width: 599px) {
           background: url("../../img/main-mini-bg.png") no-repeat center center;
           height: auto;
-          max-height: 308px;
-          min-height: 258px;
-          min-width: 140%;
-          max-width: 535px;
           margin: auto -20%;
           left: 0;
-          background-size: contain !important;
+          right: 0;
+          background-size: cover;
+          height: 258px;
+          width: 100%;
+          left: 0;
+          margin: auto;
         }
+        
       }
       
       .c-g-notebook-bg {
@@ -738,7 +742,7 @@
     }
     @media screen and (max-width: 1023px) {
       max-width: 522px;
-      margin: 72px auto 116px;
+      margin: 72px auto 79px;
     }
     @media screen and (max-width: 599px) {
       max-width: 346px;
@@ -956,7 +960,18 @@
 
   .merchant-crm {
     width: 100%;
-    margin: 130px auto 210px;
+    @media screen and (min-width: 1440px) {
+      margin: 136px auto 192px;
+    }
+    @media screen and (max-width: 1439px) {
+      margin: 97px auto 168px;
+    }
+    @media screen and (max-width: 1023px) {
+      margin: 79px auto 96px;
+    }
+    @media screen and (max-width: 599px) {
+      margin: 58px auto 35px;
+    }
 
     .m-s-title {
       margin: auto;
@@ -964,68 +979,194 @@
     }
 
     .merchant-crm-content {
-      display: flex;
       width: 100%;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+      }
 
       .merchant-notebook {
-        max-height: 584px;
-        margin-top: 131px;
-        height: -webkit-fill-available;
-        max-width: 1027px;
-        right: 0;
-        width: 59%;
-        position: absolute;
         background: url(../../img/merchant-crm.png) no-repeat;
         background-size: cover;
-        z-index: -1;
+        @media screen and (min-width: 1024px) {
+          max-height: 584px;
+          margin-top: 131px;
+          height: -webkit-fill-available;
+          max-width: 1027px;
+          right: 0;
+          width: 59%;
+          position: absolute;
+          background-size: cover;
+          z-index: -1;
+        }
+        @media screen and (max-width: 1023px) {
+          max-height: 232px;
+          margin: 39px auto 15px;
+          max-width: 408px;
+          min-width: 408px;
+          min-height: 232px;
+          background-size: cover;
+        }
+        @media screen and (max-width: 599px) {
+          max-height: 190px;
+          margin: 21px auto 15px;
+          max-width: 334px;
+          min-width: 334px;
+          min-height: 190px;
+        }
       }
 
       .merchant-crm-bg {
-        margin-top: -52px;
+        z-index: -2;
+        @media screen and (min-width: 1024px) {
+          margin-top: -52px;
+        }
+        @media screen and (max-width: 1023px) {
+          right: 0;
+          position: absolute;
+          background: url("../../img/how-works-bg.png") no-repeat;
+          background-size: cover;
+          height: 552px;
+          width: 100%;
+          left: 0;
+          margin: -365px auto auto;
+        }
+        @media screen and (max-width: 599px) {
+          background: url("../../img/how-works-bg.png") no-repeat center;
+          background-size: cover;
+          height: 552px;
+          width: 100%;
+          left: 0;
+          margin: -265px auto auto;
+        }
       }
 
       .text-block {
-        max-width: 1106px;
         margin: 0 auto;
         width: 100%;
+        @media screen and (min-width: 1440px) {
+          max-width: 1106px;
+        }
+        @media screen and (max-width: 1439px) {
+          max-width: 930px;
+        }
+        @media screen and (max-width: 1023px) {
+          max-width: 454px;
+        }
+        @media screen and (max-width: 599px) {
+          max-width: 346px;
+        }
 
         .about-merchant {
-          max-width: 1106px;
-          margin-top: 52px;
+          max-width: 100%;
           text-align: left;
+          @media screen and (min-width: 1024px) {
+            margin-top: 52px;
+          }
+          @media screen and (max-width: 1023px) {
+            margin-top: 24px;
+          }
+          @media screen and (max-width: 599px) {
+            margin-top: 19px;
+          }
+
+          .couple-icons {
+            @media screen and (max-width: 1023px) {
+              display: flex;
+            }
+          }
           
           .info-block-with-ic {
-            width: 422px;
-            display: flex;
             align-items: center;
-            margin-bottom: 18px;
-  
+            @media screen and (min-width: 1024px) {
+              width: 422px;
+              margin-bottom: 18px;
+              display: flex;
+            }
+            @media screen and (max-width: 1023px) {
+              width: 212px;
+              margin: 15px 17px;
+              text-align: center;
+            }
+            @media screen and (max-width: 599px) {
+              width: 162px;
+              margin-bottom: 11px 28px;
+            }
+
             .icon {
-              width: 80px;
-              min-width: 80px;
-              height: 80px;
               display: flex;
               align-items: center;
               justify-content: center;
+              @media screen and (min-width: 1023px) {
+                width: 80px;
+                min-width: 80px;
+                height: 80px;
+              }
+              @media screen and (max-width: 1023px) {
+                margin: auto;
+                width: 63px;
+                min-width: 63px;
+                height: 63px;
+              }
+              @media screen and (max-width: 599px) {
+                width: 48px;
+                min-width: 48px;
+                height: 48px;
+              }
+
+              img {
+                max-width: 100%;
+                max-height: 100%;
+              }
             }
   
             .text-about {
               font-family: $fontR_M;
-              font-size: 22px;
-              line-height: 28px;
-              padding-left: 15px;
+              @media screen and (min-width: 1024px) {
+                font-size: 22px;
+                line-height: 28px;
+                padding-left: 15px;
+              }
+              @media screen and (max-width: 1023px) {
+                font-size: 18px;
+                line-height: 24px;
+                padding-top: 6px;
+              }
+              @media screen and (max-width: 599px) {
+                font-size: 14px;
+                line-height: 16px;
+                padding-top: 5px;
+              }
+
+              p {
+                @media screen and (max-width: 1023px) {
+                  display: flex;
+                  flex-flow: wrap;
+                }
+              }
   
               .upcoming {
                 font-family: $fontR_B;
-                font-size: 14px;
-                line-height: 20px;
-                padding: 3px 14px 4px;
                 color: white;
                 background-color: #FF119D;
-                border-radius: 10px;
-                min-width: 102px;
-                min-height: 26px;
-                margin-right: 10px;
+                @media screen and (min-width: 1024px) {
+                  font-size: 14px;
+                  line-height: 20px;
+                  padding: 3px 14px 4px;
+                  border-radius: 10px;
+                  min-width: 102px;
+                  min-height: 26px;
+                  margin-right: 10px;
+                }
+                @media screen and (max-width: 1023px) {
+                  font-size: 10px;
+                  line-height: 14px;
+                  padding: 2px 10px;
+                  border-radius: 6px;
+                  min-width: 70px;
+                  min-height: 18px;
+                  order: 1;
+                  margin: 4px auto;
+                }
               }
             }
           }
@@ -1040,25 +1181,60 @@
     display: flex;
 
     .text-area {
-      max-width: 1022px;
-      text-align: left;
       margin: auto;
-      padding: 58px 0 48px;
       z-index: 1;
+      width: 100%;
+      @media screen and (min-width: 1440px) {
+        max-width: 962px;
+        padding: 58px 0 48px;
+      }
+      @media screen and (max-width: 1439px) {
+        max-width: 930px;
+        padding: 56px 0 48px;
+      }
+      @media screen and (max-width: 1023px) {
+        max-width: 510px;
+        padding: 26px 0 33px;
+      }
+      @media screen and (max-width: 599px) {
+        max-width: 343px;
+        padding: 28px 0 37px;
+      }
 
       .text {
         color: white;
         font-family: $fontM_M;
-        float: right;
         @media screen and (min-width: 1440px) {
           font-size: 32px;
           line-height: 42px;
-          max-width: 511px;
+          max-width: 486px;
+          margin-left: auto;
+          padding: 0;
+          text-align: left;
         }
         @media screen and (max-width: 1439px) {
           font-size: 28px;
           line-height: 36px;
-          max-width: 370px;
+          max-width: 486px;
+          margin-left: auto;
+          padding: 0 58px;
+          text-align: left;
+        }
+        @media screen and (max-width: 1023px) {
+          font-size: 18px;
+          line-height: 24px;
+          max-width: 240px;
+          margin-left: auto;
+          padding: 0;
+          text-align: center;
+        }
+        @media screen and (max-width: 599px) {
+          font-size: 14px;
+          line-height: 19px;
+          max-width: 192px;
+          margin-left: auto;
+          padding: 0;
+          text-align: left;
         }
         
         .semibold {
@@ -1067,21 +1243,55 @@
       }
 
       .buttons {
-        display: flex;
         color: #212B36;
-        margin-top: 35px;
-        float: right;
+        margin-left: auto;
+        @media screen and (min-width: 1440px) {
+          margin-top: 35px;
+          max-width: 486px;
+          margin-left: auto;
+        }
+        @media screen and (max-width: 1439px) {
+          margin-top: 35px;
+          max-width: 486px;
+          margin-left: auto;
+        }
+        @media screen and (min-width: 1024px) {
+          display: flex;
+        }
+        @media screen and (max-width: 1023px) {
+          margin-top: 11px;
+          max-width: 240px;
+          margin-left: auto;
+        }
+        @media screen and (max-width: 599px) {
+          margin-top: 24px;
+          max-width: 192px;
+          margin-left: auto;
+        }
 
         button {
           background-color: #F7FAFC;
-          width: 230px;
-          height: 44px;
-          border-radius: 22px;
           box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32);
-          margin-right: 26px;
           font-family: $fontR_R;
-          font-size: 16px;
-          line-height: 12px;
+          @media screen and (min-width: 1024px) {
+            width: 230px;
+            height: 44px;
+            margin-right: 26px;
+            font-size: 16px;
+            line-height: 12px;
+            border-radius: 22px;
+          }
+          @media screen and (max-width: 1023px) {
+            width: 138px;
+            height: 26px;
+            margin: 13px 51px 0;
+            font-size: 9px;
+            line-height: 9px;
+            border-radius: 13px;
+          }
+          @media screen and (max-width: 599px) {
+            margin-top: 13px;
+          }
           &:hover {
             background-color: #0064AA;
             color: white !important;
@@ -1099,6 +1309,15 @@
             }
             .logo {
               padding-right: 10px;
+              @media screen and (max-width: 1023px) {
+                padding-right: 6px;
+              }
+              img {
+                @media screen and (max-width: 1023px) {
+                  width: 9px;
+                  height: 10px;
+                }
+              }
             }
           }
         }
@@ -1123,13 +1342,18 @@
         margin-left: 9px;
       }
       @media screen and (max-width: 1023px) {
-        // max-width: 450px;
-        // padding: 46px 0 60px;
-        // display: block;
+        margin-top: -132px;
+        height: 368px;
+        width: 385px;
+        background-size: contain;
+        margin-left: -9px;
       }
       @media screen and (max-width: 599px) {
-        // max-width: 345px;
-        // padding: 37px 0 50px;
+        margin-top: 6px;
+        height: 242px;
+        width: 253px;
+        background-size: contain;
+        margin-left: -14px;
       }
     }
   }
@@ -1138,52 +1362,114 @@
     width: 100%;
     height: 100%;
     background-color: white;
-    padding: 136px 0 50px;
+    @media screen and (min-width: 1440px) {
+      padding: 136px 0 50px;
+    }
+    @media screen and (max-width: 1439px) {
+      padding: 65px 0 93px;
+    }
+    @media screen and (max-width: 1023px) {
+      padding: 41px 0 45px;
+    }
+    @media screen and (max-width: 599px) {
+      padding: 36px 0;
+    }
 
     .fees-and-limits-content {
-      max-width: 1106px;
       margin: auto;
-      display: flex;
       height: 100%;
+      @media screen and (min-width: 1440px) {
+        max-width: 1106px;
+        display: flex;
+      }
+      @media screen and (max-width: 1439px) {
+        max-width: 930px;
+        display: flex;
+      }
+      @media screen and (max-width: 1023px) {
+        max-width: 510px;
+        display: block;
+      }
+      @media screen and (max-width: 599px) {
+        max-width: 345px;
+      }
 
       .m-s-title {
         text-align: left;
       }
 
       .fees {
-        max-width: 442px;
-        width: 442px;
         height: 100%;
-        margin-right: 224px;
+        @media screen and (min-width: 1440px) {
+          width: 442px;
+          margin-right: 224px;
+        }
+        @media screen and (max-width: 1439px) {
+          width: 400px;
+          margin-right: 80px;
+        }
+        @media screen and (max-width: 1023px) {
+          width: 441px;
+          margin: auto;
+        }
+        @media screen and (max-width: 599px) {
+          width: 345px;
+          margin: auto;
+        }
 
         .m-s-title {
-          margin-bottom: 52px;
+          @media screen and (max-width: 1023px) {
+            text-align: center;
+          }
+          @media screen and (min-width: 600px) {
+            margin-bottom: 52px;
+          }
+          @media screen and (max-width: 599px) {
+            margin-bottom: 19px;
+          }
         }
 
         .fees {
           .fee {
             display: flex;
-            border-bottom: 0.5px solid #979797;
+            border-bottom: 1px solid #979797;
             align-items: center;
-            width: 439px;
-            margin-bottom: 21px;
-            padding-bottom: 8px;
+            width: 100%;
+            @media screen and (min-width: 600px) {
+              margin-bottom: 21px;
+              padding-bottom: 8px;
+            }
+            @media screen and (max-width: 599px) {
+              margin-bottom: 15px;
+              padding-bottom: 5px;
+            }
 
             .fee-title {
               font-family: $fontR_M;
-              font-size: 18px;
-              line-height: 18px;
               color: #0D9BFF;
               text-transform: uppercase;
+              @media screen and (min-width: 600px) {
+                font-size: 18px;
+                line-height: 18px;
+              }
+              @media screen and (max-width: 599px) {
+                font-size: 14px;
+                line-height: 14px;
+              }
             }
 
             .count {
               font-family: $fontM_M;
-              font-size: 32px;
-              line-height: 32px;
               color: #212B36;
               margin-left: auto;
-
+              @media screen and (min-width: 600px) {
+                font-size: 32px;
+                line-height: 32px;
+              }
+              @media screen and (max-width: 599px) {
+                font-size: 25px;
+                line-height: 25px;
+              }
               .procent {
                 color: #6B7C89;
               }
@@ -1193,19 +1479,33 @@
 
         .table {
           background-color: white;
-          border-radius: 30px;
-          width: 439px;
-          height: 262px;
+          width: 100%;
           box-shadow: 0 0 16px #A6B7C4;
-          margin-top: 44px;
           text-align: center;
+          @media screen and (min-width: 600px) {
+            height: 262px;
+            margin-top: 44px;
+            border-radius: 30px;
+          }
+          @media screen and (max-width: 599px) {
+            height: 205px;
+            margin-top: 33px;
+            border-radius: 23px;
+          }
 
           .title {
             color: #FF119D;
             font-family: $fontR_M;
-            font-size: 18px;
-            line-height: 18px;
-            padding: 36px 0;
+            @media screen and (min-width: 600px) {
+              font-size: 18px;
+              line-height: 18px;
+              padding: 36px 0;
+            }
+            @media screen and (max-width: 599px) {
+              font-size: 14px;
+              line-height: 14px;
+              padding: 28px 0 44px;
+            }
 
             img {
               vertical-align: super;
@@ -1213,7 +1513,13 @@
           }
 
           .fee {
-            padding: 0 32px 8px 32px;
+            @media screen and (min-width: 600px) {
+              padding: 0 32px 8px;
+            }
+            @media screen and (max-width: 599px) {
+              padding: 0 25px 5px;
+              margin-bottom: 10px;
+            }
           }
 
           .fee-title.grey {
@@ -1242,36 +1548,75 @@
       }
   
       .limits {
-        max-width: 440px;  
-        width: 440px;  
+        width: 100%;  
         height: 100%;
+        @media screen and (min-width: 1440px) {
+          max-width: 440px;
+        }
+        @media screen and (max-width: 1439px) {
+          max-width: 450px;
+        }
+        @media screen and (max-width: 1023px) {
+          max-width: 510px;
+          text-align: center;
+        }
+        @media screen and (max-width: 599px) {
+          max-width: 345px;
+        }
 
         .m-s-title {
-          margin-bottom: 48px;
+          @media screen and (max-width: 1023px) {
+            text-align: center;
+            margin-top: 41px;
+          }
+          @media screen and (min-width: 600px) {
+            margin-bottom: 48px;
+          }
+          @media screen and (max-width: 599px) {
+            margin-top: 36px;
+            margin-bottom: 32px;
+          }
         }
 
         .limit {
-          margin: 40px auto;
-
+          margin: 40px auto 0;
+          
           .amount {
             font-family: $fontM_B;
-            font-size: 28px;
-            line-height: 22px;
             color: #212B36;
-            margin-bottom: 14px;
+            @media screen and (min-width: 600px) {
+              font-size: 28px;
+              line-height: 22px;
+              margin-bottom: 14px;
+            }
+            @media screen and (max-width: 599px) {
+              font-size: 18px;
+              line-height: 15px;
+              margin-bottom: 9px;
+            }
 
             .period {
               font-family: $fontM_M;
               color: #6B7C89;
               text-transform: uppercase;
+              @media screen and (max-width: 599px) {
+                font-size: 13px;
+                line-height: 15px;
+              }
             }
           }
 
           .description {
             font-family: $fontR_R;
-            font-size: 18px;
-            line-height: 22px;
             color: #212B36;
+            @media screen and (min-width: 600px) {
+              font-size: 18px;
+              line-height: 22px;
+            }
+            @media screen and (max-width: 599px) {
+              font-size: 12px;
+              line-height: 15px;
+            }
 
             .medium {
               font-family: $fontR_M;
@@ -1350,7 +1695,7 @@
       max-width: 501px;
       display: flex;
       @media screen and (max-width: 1023px) {
-        margin-top: 27px;
+        margin: 27px;
       }
       @media screen and (max-width: 599px) {
         margin: 33px auto 0;
@@ -1594,18 +1939,21 @@
     @media screen and (min-width: 1440px) {
       max-width: 1106px;
       margin: 78px auto;
+      height: 397px;
     }
     @media screen and (max-width: 1439px) {
       max-width: 930px;
       margin: 62px auto 105px;
+      height: 397px;
     }
     @media screen and (max-width: 1023px) {
       max-width: 510px;
       margin: 46px auto;
+      height: 558px;
     }
     @media screen and (max-width: 599px) {
-      max-width: 345px;
-      min-height: 350px;
+      max-width: 100%;
+      height: 350px;
       margin: 60px auto 57px;
     }
 
@@ -1627,14 +1975,14 @@
           line-height: 32px;
           max-width: 320px;
           text-align: center;
-          margin: 0 auto;
+          margin: 0 auto 16px;
         }
         @media screen and (max-width: 599px) {
           font-size: 16px;
           line-height: 22px;
           max-width: 344px;
           text-align: center;
-          margin: 0 auto;
+          margin: 0 auto 8px;
         }
       }
 
@@ -1709,16 +2057,16 @@
       form {
         text-align: center;
         @media screen and (min-width: 1440px) {
-          margin: 24px 64px 32px;
+          padding: 24px 64px 32px;
         }
         @media screen and (max-width: 1439px) {
-          margin: 24px 50px 32px;
+          padding: 24px 50px 32px;
         }
         @media screen and (max-width: 1023px) {
-          margin: 24px 57px 32px;
+          padding: 24px 57px 32px;
         }
         @media screen and (max-width: 599px) {
-          margin: 16px 38px 21px;
+          padding: 16px 38px 21px;
         }
 
         .m-s-title {
@@ -1807,9 +2155,37 @@
     }
 
     .merchant-form-bg {
-      transform: scale(-1, 1);
-      margin-top: -132px;
-      left: -20%;
+      @media screen and (min-width: 1440px) {
+        margin-top: -132px;
+        left: -20%;
+        transform: scale(-1, 1);
+      }
+      @media screen and (max-width: 1439px) {
+        margin: -6% auto 0;
+        background: url("../../img/how-works-bg.png") no-repeat center center;
+        background-size: cover;
+        height: 902px;
+        position: absolute;
+        right: -20%;
+        left: -20%;
+      }
+      @media screen and (max-width: 1023px) {
+        position: relative;
+        height: 551px;
+        padding: 0;
+        top: 0;
+        margin: -500px -46px 0;
+        width: calc(100% + 92px);
+        left: 0;
+      }
+      @media screen and (max-width: 599px) {
+        height: 538px;
+        padding: 0;
+        top: 0;
+        margin: -339px 0;
+        width: 100%;
+        left: 0;
+      }
     }
   }
 
@@ -1821,20 +2197,50 @@
 
     .links-block-content {
       margin: 41px auto;
-      display: flex;
+      @media screen and (min-width: 600px) {
+        display: flex;
+      }
+
+      .sub-links-block {
+        display: flex;
+      }
 
       .links-block-title {
         font-family: $fontR_M;
-        font-size: 16px;
-        line-height: 19px;
+        @media screen and (min-width: 1024px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        @media screen and (max-width: 1023px) {
+          font-size: 14px;
+          line-height: 16px;
+        }
+        @media screen and (max-width: 599px) {
+          font-size: 12px;
+          line-height: 14px;
+        }
       }
 
       .links {
-        margin-top: 28px;
-        width: 155px;
         font-family: $fontR_R;
-        font-size: 16px;
-        line-height: 24px;
+        @media screen and (min-width: 1024px) {
+          width: 155px;
+          font-size: 16px;
+          line-height: 24px;
+          margin-top: 28px;
+        }
+        @media screen and (max-width: 1023px) {
+          width: 132px;
+          font-size: 12px;
+          line-height: 20px;
+          margin-top: 12px;
+        }
+        @media screen and (max-width: 599px) {
+          width: 114px;
+          font-size: 10px;
+          line-height: 18px;
+          margin: 10px auto 16px;
+        }
 
         a, a:visited {
           color: #595F63;
@@ -1844,10 +2250,21 @@
 
     .copyright {
       font-family: $fontR_R;
-      font-size: 14px;
-      line-height: 16px;
       max-width: 1106px;
       margin: 64px auto 32px;
+      @media screen and (min-width: 1024px) {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      @media screen and (max-width: 1023px) {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      @media screen and (max-width: 599px) {
+        font-size: 10px;
+        line-height: 13px;
+        text-align: center;
+      }
     }
 
     .links-block-content, .copyright {
@@ -1888,7 +2305,7 @@
   &.inactive {
     display: none;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1024px) {
     display: none !important;
   }
 
