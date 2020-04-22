@@ -49,4 +49,17 @@ function removeGratitude() {
 document.getElementById('sendForm').onsubmit = (function(event) {
     event.preventDefault();
     sendForm(event);
-}); 
+});
+
+// document.addEventListener('DOMContentLoaded', function(){
+//     console.log('Hi');
+//     let arrs = document.getElementsByClassName('show');
+//     for (let i = 0; i < arrs.length; i++) {
+//         arrs[i].classList.add('hidden');
+//         arrs[i].addEventListener('mouseover', (event) => {
+//             console.log('Hi', event.target);
+//             event.target.classList.remove('hidden');    
+//         });
+//     }
+//     console.log('Hi3', arrs);
+// });

@@ -6,7 +6,8 @@
   max-width: 100%;
   width: 100%;
   color: #212121;
-
+  transition: all 3s ease;
+  
   .m-s-title {
     font-family: $fontM_SB;
     color: #2BBE00;
@@ -162,6 +163,10 @@
     @media screen and (max-width: 599px) {
       margin: 23px auto 0;
       padding-bottom: 46px;
+    }
+    &:focus.anim-show, &:focus .anim-show {
+      transition: 1s;
+      animation: show 3s 1;
     }
 
     .bg-wrapper {
@@ -616,6 +621,7 @@
               width: 100px;
             }
           }
+
           .hr {
             width: 240%;
             min-width: 240px;
@@ -691,30 +697,47 @@
               max-width: 248px;
               font-size: 18px;
               line-height: 24px;
+              margin-bottom: 44px;
             }
             @media screen and (max-width: 1439px) {
               max-width: 248px;
               font-size: 18px;
               line-height: 24px;
+              margin-bottom: 44px;
             }
             @media screen and (max-width: 1023px) {
               max-width: 149px;
               font-size: 14px;
               line-height: 18px;
+              margin-bottom: 48px;
             }
             @media screen and (max-width: 599px) {
               max-width: 100px;
               font-size: 10px;
               line-height: 12px;
+              margin-bottom: 30px;
             }
           }
         }
 
-        .api3-screen {
-          .tablet-screen {
+        & {
+          img.tablet-screen {
             box-shadow: 7px 8px 21px rgba(0, 0, 0, 0.2);
-            border-radius: 36px;
-            width: 100%;
+            @media screen and (min-width: 1024px) {
+              width: 535px;
+              height: 342px;
+              border-radius: 36px;
+            }
+            @media screen and (max-width: 1023px) {
+              width: 432px;
+              height: 276px !important;
+              border-radius: 24px;
+            }
+            @media screen and (max-width: 599px) {
+              width: 293px;
+              height: 187px !important;
+              border-radius: 16px;
+            }
           }
         }
 
@@ -723,10 +746,45 @@
           font-size: 12px;
           line-height: 14px;
           color: #6B7C89;
-          width: 100%;
           text-align: right;
-          margin: 14px auto;
+          margin-right: 0;
+          @media screen and (min-width: 1024px) {
+            width: 535px;
+            margin: 14px auto 72px;
+          }
+          @media screen and (max-width: 1023px) {
+            width: 432px;
+            margin: 8px auto 50px;
+          }
+          @media screen and (max-width: 599px) {
+            width: 293px;
+            margin-bottom: 33px;
+          }
         }
+      }
+
+      .nav-wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 10px;
+        margin: 0 auto;
+        max-width: 110px;
+      }
+    
+      .nav-wrapper .current {
+        width: 80px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #09CD0A;
+        margin-right: 10px;
+      }
+    
+      .nav-wrapper .next-stage {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #B3BDC3;
+        margin-right: 10px;
       }
     }
   }
@@ -985,7 +1043,7 @@
       }
 
       .merchant-notebook {
-        background: url(../../img/merchant-crm.png) no-repeat;
+        background: url("../../img/merchant-crm.png") no-repeat;
         background-size: cover;
         @media screen and (min-width: 1024px) {
           max-height: 584px;
@@ -1906,6 +1964,9 @@
               margin-right: 19px;
             }
             @media screen and (max-width: 599px) {
+              margin-right: 8px;
+            }
+            @media screen and (max-width: 349px) {
               margin-right: auto;
             }
 
@@ -2257,9 +2318,16 @@
 
     .merchant-form-bg {
       @media screen and (min-width: 1440px) {
-        margin-top: -132px;
+        margin-top: -78px;
         left: -20%;
         transform: scale(-1, 1);
+        background-size: cover;
+        min-width: 1532px;
+        width: 100%;
+        max-height: 846px;
+        height: 100%;
+        background: url("../../img/how-works-bg.png") no-repeat bottom;
+
       }
       @media screen and (max-width: 1439px) {
         margin: -6% auto 0;
@@ -2501,5 +2569,22 @@
       color: #6B7C89;
       margin: 30px auto;
     }
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1 ;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
