@@ -210,10 +210,18 @@
                 </div>
                 <div class="buttons">
                     <button class="app-store">
-                        <a href="#"><span class="logo"><img src="./img/svg/logo-applestore.svg"></span>App Store</a>
+                        <a href="#">
+                            <span class="logo black"><img src="./img/svg/logo-applestore.svg"></span>
+                            <span class="logo white"><img src="./img/svg/logo-applestore-white.svg"></span>
+                            App Store
+                        </a>
                     </button>
                     <button class="google-play">
-                        <a href="#"><span class="logo"><img src="./img/svg/logo-googleplay.svg"></span>Google Play</a>
+                        <a href="#">
+                            <span class="logo black"><img src="./img/svg/logo-googleplay.svg"></span>
+                            <span class="logo white"><img src="./img/svg/logo-googleplay-white.svg"></span>
+                            Google Play
+                        </a>
                     </button>
                 </div>
             </div>
@@ -453,13 +461,19 @@
                         <input type="text" name="name" placeholder="Name">
                     </div>
                     <div class="form-field">
-                        <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                        <input type="email" name="email" id="email" onblur="checkEmail()" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
                     </div>
                     <div class="form-field url">
-                        <input type="link" name="url" placeholder="Shop URL">
+                        <input type="link" name="url" id="shopurl" onblur="checkShopUrl()" placeholder="Shop URL" required>
                     </div>
                     <button type="submit">Send</button>
                 </form>
+                <div id="gratitude">
+                    <div>
+                        <p class="subheader">Thank You!</p>
+                        <p class="text">Your Request Has Been Sent! </p>
+                    </div>
+                </div>
             </div>
             <div class="merchant-form-bg"></div>
         </div>

@@ -369,7 +369,8 @@ body {
       text-align: center; } }
   @media screen and (max-width: 599px) {
     .content .custom-gateway .text-area {
-      max-width: 345px; } }
+      max-width: 100%;
+      width: 345px; } }
   .content .custom-gateway .text-area h2 {
     line-height: 68px;
     color: #212121; }
@@ -666,7 +667,7 @@ body {
               margin: 0 31px; } }
           @media screen and (max-width: 599px) {
             .content .how-it-works .slider .api2-slide .steps-screens .second, .content .how-it-works .slider .api3-slide .steps-screens .second {
-              margin: 0 22px; } }
+              margin: 0 auto; } }
           .content .how-it-works .slider .api2-slide .steps-screens img, .content .how-it-works .slider .api3-slide .steps-screens img {
             border-radius: 7px;
             box-shadow: 0 0 5px rgba(33, 43, 54, 0.15); }
@@ -983,8 +984,9 @@ body {
           .content .merchant-crm .merchant-crm-content .merchant-notebook {
             max-height: 190px;
             margin: 21px auto 15px;
-            max-width: 334px;
-            min-width: 334px;
+            max-width: 100%;
+            width: 334px;
+            min-width: 190px;
             min-height: 190px; } }
       .content .merchant-crm .merchant-crm-content .merchant-crm-bg {
         z-index: -2; }
@@ -1232,17 +1234,23 @@ body {
           @media screen and (max-width: 599px) {
             .content .letknow-app .text-area .buttons button {
               margin: 13px 27px 0; } }
+          .content .letknow-app .text-area .buttons button:visited a, .content .letknow-app .text-area .buttons button a:visited {
+            color: #212B36; }
           .content .letknow-app .text-area .buttons button:hover {
             background-color: #0064AA;
-            color: white !important; }
+            cursor: pointer; }
+          .content .letknow-app .text-area .buttons button:hover a, .content .letknow-app .text-area .buttons button a:hover {
+            color: white; }
+          .content .letknow-app .text-area .buttons button:hover .black {
+            display: none; }
+          .content .letknow-app .text-area .buttons button .white {
+            display: none; }
+          .content .letknow-app .text-area .buttons button:hover .white {
+            display: flex !important; }
           .content .letknow-app .text-area .buttons button a {
             display: flex;
             align-items: center;
             justify-content: center; }
-            .content .letknow-app .text-area .buttons button a:hover {
-              color: white !important; }
-            .content .letknow-app .text-area .buttons button a:visited {
-              color: #212B36; }
             .content .letknow-app .text-area .buttons button a .logo {
               padding-right: 10px; }
               @media screen and (max-width: 1023px) {
@@ -1335,8 +1343,9 @@ body {
             margin: auto; } }
         @media screen and (max-width: 599px) {
           .content .fees-and-limits .fees-and-limits-content .fees {
-            width: 345px;
-            margin: auto; } }
+            max-width: 345px;
+            margin: auto;
+            width: 100%; } }
         @media screen and (max-width: 1023px) {
           .content .fees-and-limits .fees-and-limits-content .fees .m-s-title {
             text-align: center; } }
@@ -1712,7 +1721,7 @@ body {
               margin-right: 19px; } }
           @media screen and (max-width: 599px) {
             .content .currencies-supported .content .currencies .string .currency {
-              margin-right: 8px; } }
+              margin-right: auto; } }
           @media screen and (min-width: 1024px) {
             .content .currencies-supported .content .currencies .string .currency .icon {
               width: 35px;
@@ -1886,7 +1895,10 @@ body {
         width: 100%;
         border: 1px solid #C8CFD8;
         color: #8C9AA7;
-        font-family: "SF-Pro-Text-Light"; }
+        font-family: "SF-Pro-Text-Light";
+        outline: none; }
+        .content .merchant-form .form form input:focus {
+          border: 1px solid #595F63 !important; }
         @media screen and (min-width: 600px) {
           .content .merchant-form .form form input {
             height: 50px;
@@ -1905,6 +1917,8 @@ body {
             margin: 6px auto;
             max-width: 267px;
             width: 100%; } }
+      .content .merchant-form .form form .filled:invalid {
+        border: 1px solid red; }
       .content .merchant-form .form form button {
         color: white;
         box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32);
@@ -1935,6 +1949,75 @@ body {
             width: 100%;
             height: 30px;
             border-radius: 15px; } }
+        .content .merchant-form .form form button:hover {
+          box-shadow: 0 6px 20px rgba(5, 48, 95, 0.38); }
+        .content .merchant-form .form form button:active {
+          box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45); }
+    .content .merchant-form .form #gratitude {
+      background-color: #2BBE00;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      position: absolute;
+      text-align: center;
+      display: none;
+      justify-content: center;
+      align-items: center; }
+      @media screen and (min-width: 1440px) {
+        .content .merchant-form .form #gratitude {
+          max-width: 535px;
+          max-height: 397px;
+          margin-top: -397px; } }
+      @media screen and (max-width: 1439px) {
+        .content .merchant-form .form #gratitude {
+          max-width: 450px;
+          max-height: 397px;
+          margin-top: -397px; } }
+      @media screen and (max-width: 1023px) {
+        .content .merchant-form .form #gratitude {
+          max-width: 510px;
+          max-height: 397px;
+          margin-top: -403px; } }
+      @media screen and (max-width: 599px) {
+        .content .merchant-form .form #gratitude {
+          max-width: 345px;
+          max-height: 268px;
+          margin-top: -269px; } }
+      .content .merchant-form .form #gratitude .subheader {
+        color: white;
+        font-family: "Montserrat-Bold"; }
+        @media screen and (min-width: 1024px) {
+          .content .merchant-form .form #gratitude .subheader {
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 28px; } }
+        @media screen and (max-width: 1023px) {
+          .content .merchant-form .form #gratitude .subheader {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 20px; } }
+        @media screen and (max-width: 599px) {
+          .content .merchant-form .form #gratitude .subheader {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 12px; } }
+      .content .merchant-form .form #gratitude .text {
+        color: #000000;
+        font-family: "Montserrat-Regular"; }
+        @media screen and (min-width: 1024px) {
+          .content .merchant-form .form #gratitude .text {
+            font-size: 20px;
+            line-height: 32px; } }
+        @media screen and (max-width: 1023px) {
+          .content .merchant-form .form #gratitude .text {
+            font-size: 14px;
+            line-height: 20px; } }
+        @media screen and (max-width: 599px) {
+          .content .merchant-form .form #gratitude .text {
+            font-size: 12px;
+            line-height: 18px; } }
+    .content .merchant-form .form #gratitude.active {
+      display: flex; }
   @media screen and (min-width: 1440px) {
     .content .merchant-form .merchant-form-bg {
       margin-top: -132px;
@@ -2046,7 +2129,7 @@ body {
     @media screen and (max-width: 599px) {
       .content .footer .links-block-content, .content .footer .copyright {
         max-width: 345px;
-        width: 345px; } }
+        width: 100%; } }
 
 #mobile-menu {
   height: 100%;

@@ -295,7 +295,8 @@
         text-align: center;
       }
       @media screen and (max-width: 599px) {
-        max-width: 345px;
+        max-width: 100%;
+        width: 345px;
       }
       
       h2 {
@@ -635,7 +636,7 @@
               margin: 0 31px;
             }
             @media screen and (max-width: 599px) {
-              margin: 0 22px;
+              margin: 0 auto;
             }
           }
 
@@ -1008,8 +1009,9 @@
         @media screen and (max-width: 599px) {
           max-height: 190px;
           margin: 21px auto 15px;
-          max-width: 334px;
-          min-width: 334px;
+          max-width: 100%;
+          width: 334px;
+          min-width: 190px;
           min-height: 190px;
         }
       }
@@ -1291,26 +1293,37 @@
           @media screen and (max-width: 599px) {
             margin: 13px 27px 0;
           }
+          &:visited a, a:visited {
+            color: #212B36;
+          }
           &:hover {
             background-color: #0064AA;
-            color: white !important;
+            cursor: pointer;
+          }
+          &:hover a, a:hover {
+            color: white;
+          }
+          &:hover .black {
+            display: none;
+          }
+          .white {
+            display: none;
+          }
+          &:hover .white {
+            display: flex !important;
           }
 
           a {
             display: flex;
             align-items: center;
             justify-content: center;
-            &:hover {
-              color: white !important;
-            }
-            &:visited {
-              color: #212B36;
-            }
+            
             .logo {
               padding-right: 10px;
               @media screen and (max-width: 1023px) {
                 padding-right: 6px;
               }
+
               img {
                 @media screen and (max-width: 1023px) {
                   width: 9px;
@@ -1412,8 +1425,9 @@
           margin: auto;
         }
         @media screen and (max-width: 599px) {
-          width: 345px;
+          max-width: 345px;
           margin: auto;
+          width: 100%;
         }
 
         .m-s-title {
@@ -1892,7 +1906,7 @@
               margin-right: 19px;
             }
             @media screen and (max-width: 599px) {
-              margin-right: 8px;
+              margin-right: auto;
             }
 
               .icon {
@@ -2099,6 +2113,11 @@
           border: 1px solid #C8CFD8;
           color: #8C9AA7;
           font-family: $fontSF_L;
+          outline: none;
+          &:focus {
+            border: 1px solid #595F63 !important;
+          }
+          
           @media screen and (min-width: 600px) {
             height: 50px;
             border-radius: 8px;
@@ -2117,6 +2136,10 @@
             max-width: 267px;
             width: 100%;
           }
+        }
+
+        .filled:invalid {
+          border: 1px solid red;
         }
 
         button {
@@ -2149,8 +2172,87 @@
             height: 30px;
             border-radius: 15px;
           }
+          &:hover {
+            box-shadow: 0 6px 20px rgba(5, 48, 95, 0.38);
+          }
+          &:active {
+            box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45);
+          }
         }
       }   
+
+      #gratitude {
+        background-color: #2BBE00;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        position: absolute;
+        text-align: center;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: 1440px) {
+          max-width: 535px;
+          max-height: 397px;
+          margin-top: -397px;
+        }
+        @media screen and (max-width: 1439px) {
+          max-width: 450px;
+          max-height: 397px;
+          margin-top: -397px;
+        }
+        @media screen and (max-width: 1023px) {
+          max-width: 510px;
+          max-height: 397px;
+          margin-top: -403px;
+        }
+        @media screen and (max-width: 599px) {
+          max-width: 345px;
+          max-height: 268px;
+          margin-top: -269px;
+        }
+
+        .subheader {
+          color: white;
+          font-family: $fontM_B;
+          @media screen and (min-width: 1024px) {
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 28px;
+          }
+          @media screen and (max-width: 1023px) {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 20px;
+          }
+          @media screen and (max-width: 599px) {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 12px;
+          }
+        }
+
+        .text {
+          color: #000000;
+          font-family: $fontM_R;
+          @media screen and (min-width: 1024px) {
+            font-size: 20px;
+            line-height: 32px;
+          }
+          @media screen and (max-width: 1023px) {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          @media screen and (max-width: 599px) {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      #gratitude.active {
+        display: flex;
+      }
     }
 
     .merchant-form-bg {
@@ -2281,7 +2383,7 @@
       }
       @media screen and (max-width: 599px) {
         max-width: 345px;
-        width: 345px;
+        width: 100%;
       }
     }
   }
