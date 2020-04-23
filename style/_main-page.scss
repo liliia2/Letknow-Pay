@@ -233,6 +233,7 @@
           width: 100%;
           left: 0;
           margin: auto;
+          background-position: center;
         }
         
       }
@@ -1399,7 +1400,7 @@
           @media screen and (max-width: 599px) {
             margin: 13px 27px 0;
           }
-          &:visited a, a:visited {
+          &:visited a, a:visited, a {
             color: #212B36;
           }
           &:hover {
@@ -1423,6 +1424,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            color: #212B36;
             a:visited {
               color: #212B36;
             }
@@ -2519,6 +2521,9 @@
       @media screen and (max-width: 599px) {
         max-width: 345px;
         width: 100%;
+      }
+      @media screen and (max-width: 375px) {
+        max-width: 90%;
       }
     }
   }

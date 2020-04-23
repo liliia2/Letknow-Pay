@@ -526,7 +526,8 @@ body {
         height: 258px;
         width: 100%;
         left: 0;
-        margin: auto; } }
+        margin: auto;
+        background-position: center; } }
   .content .custom-gateway .bg-wrapper .c-g-notebook-bg {
     position: absolute;
     z-index: -1;
@@ -1543,7 +1544,7 @@ body {
           @media screen and (max-width: 599px) {
             .content .letknow-app .text-area .buttons button {
               margin: 13px 27px 0; } }
-          .content .letknow-app .text-area .buttons button:visited a, .content .letknow-app .text-area .buttons button a:visited {
+          .content .letknow-app .text-area .buttons button:visited a, .content .letknow-app .text-area .buttons button a:visited, .content .letknow-app .text-area .buttons button a {
             color: #212B36; }
           .content .letknow-app .text-area .buttons button:hover {
             background-color: #0064AA;
@@ -1559,7 +1560,8 @@ body {
           .content .letknow-app .text-area .buttons button a {
             display: flex;
             align-items: center;
-            justify-content: center; }
+            justify-content: center;
+            color: #212B36; }
             .content .letknow-app .text-area .buttons button a a:visited {
               color: #212B36; }
             .content .letknow-app .text-area .buttons button a a:hover {
@@ -2467,6 +2469,9 @@ body {
       .content .footer .links-block-content, .content .footer .copyright {
         max-width: 345px;
         width: 100%; } }
+    @media screen and (max-width: 375px) {
+      .content .footer .links-block-content, .content .footer .copyright {
+        max-width: 90%; } }
 
 #mobile-menu {
   height: 100%;
