@@ -188,7 +188,7 @@ body {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+  background: #fff center center no-repeat; }
 
 /* Icons */
 @font-face {
@@ -514,10 +514,10 @@ body {
         max-width: 638px;
         left: 0;
         margin: auto;
-        background: url("../../img/main-mini-bg.png") no-repeat center center; } }
+        background-position: center;
+        background: url("../../img/main-mini-bg.png") no-repeat; } }
     @media screen and (max-width: 599px) {
       .content .custom-gateway .bg-wrapper .c-g-gradient-bg {
-        background: url("../../img/main-mini-bg.png") no-repeat center center;
         height: auto;
         margin: auto -20%;
         left: 0;
@@ -713,6 +713,27 @@ body {
     @media screen and (max-width: 599px) {
       .content .how-it-works {
         max-width: 347px; } }
+    @media screen and (min-width: 1600px) {
+      .content .how-it-works .how-it-works-bg {
+        background-position: center; } }
+    @media screen and (max-width: 1439px) {
+      .content .how-it-works .how-it-works-bg {
+        height: 902px;
+        background-position: center;
+        background-size: cover; } }
+    @media screen and (max-width: 1023px) {
+      .content .how-it-works .how-it-works-bg {
+        height: 551px;
+        width: 100%;
+        max-width: 951px;
+        background-position: center bottom;
+        background-size: cover;
+        margin-top: 170px; } }
+    @media screen and (max-width: 599px) {
+      .content .how-it-works .how-it-works-bg {
+        background-position: center top;
+        background-size: cover;
+        margin-top: 0; } }
     .content .how-it-works .text-area {
       max-width: 915px; }
       @media screen and (min-width: 1440px) {
@@ -934,25 +955,25 @@ body {
                 max-width: 248px;
                 font-size: 18px;
                 line-height: 24px;
-                margin-bottom: 44px; } }
+                margin-bottom: 38px; } }
             @media screen and (max-width: 1439px) {
               .content .how-it-works .slider .api2-slide .steps-screens .text, .content .how-it-works .slider .api3-slide .steps-screens .text {
                 max-width: 248px;
                 font-size: 18px;
                 line-height: 24px;
-                margin-bottom: 44px; } }
+                margin-bottom: 37px; } }
             @media screen and (max-width: 1023px) {
               .content .how-it-works .slider .api2-slide .steps-screens .text, .content .how-it-works .slider .api3-slide .steps-screens .text {
                 max-width: 149px;
                 font-size: 14px;
                 line-height: 18px;
-                margin-bottom: 48px; } }
+                margin-bottom: 42px; } }
             @media screen and (max-width: 599px) {
               .content .how-it-works .slider .api2-slide .steps-screens .text, .content .how-it-works .slider .api3-slide .steps-screens .text {
                 max-width: 100px;
                 font-size: 10px;
                 line-height: 12px;
-                margin-bottom: 30px; } }
+                margin-bottom: 24px; } }
         .content .how-it-works .slider .api2-slide img.tablet-screen, .content .how-it-works .slider .api3-slide img.tablet-screen {
           box-shadow: 7px 8px 21px rgba(0, 0, 0, 0.2); }
           @media screen and (min-width: 1024px) {
@@ -992,21 +1013,39 @@ body {
       .content .how-it-works .slider .nav-wrapper {
         display: flex;
         flex-direction: row;
-        height: 10px;
-        margin: 0 auto;
-        max-width: 110px; }
+        margin: 0 auto; }
+        @media screen and (min-width: 600px) {
+          .content .how-it-works .slider .nav-wrapper {
+            height: 10px;
+            max-width: 110px; } }
+        @media screen and (max-width: 599px) {
+          .content .how-it-works .slider .nav-wrapper {
+            height: 7px;
+            max-width: 78px; } }
       .content .how-it-works .slider .nav-wrapper .current {
-        width: 80px;
-        height: 10px;
         border-radius: 10px;
         background-color: #09CD0A;
         margin-right: 10px; }
+        @media screen and (min-width: 600px) {
+          .content .how-it-works .slider .nav-wrapper .current {
+            width: 80px;
+            height: 10px; } }
+        @media screen and (max-width: 599px) {
+          .content .how-it-works .slider .nav-wrapper .current {
+            width: 58px;
+            height: 7px; } }
       .content .how-it-works .slider .nav-wrapper .next-stage {
-        width: 10px;
-        height: 10px;
         border-radius: 50%;
         background-color: #B3BDC3;
         margin-right: 10px; }
+        @media screen and (min-width: 600px) {
+          .content .how-it-works .slider .nav-wrapper .next-stage {
+            width: 10px;
+            height: 10px; } }
+        @media screen and (max-width: 599px) {
+          .content .how-it-works .slider .nav-wrapper .next-stage {
+            width: 7px;
+            height: 7px; } }
   @media screen and (min-width: 1440px) {
     .content .integration {
       max-width: 915px;
@@ -1225,6 +1264,9 @@ body {
       .content .merchant-crm .merchant-crm-content .merchant-notebook {
         background: url("../../img/merchant-crm.png") no-repeat;
         background-size: cover; }
+        @media screen and (min-width: 1600px) {
+          .content .merchant-crm .merchant-crm-content .merchant-notebook {
+            left: 45%; } }
         @media screen and (min-width: 1024px) {
           .content .merchant-crm .merchant-crm-content .merchant-notebook {
             max-height: 584px;
@@ -1254,6 +1296,9 @@ body {
             min-height: 190px; } }
       .content .merchant-crm .merchant-crm-content .merchant-crm-bg {
         z-index: -2; }
+        @media screen and (min-width: 1600px) {
+          .content .merchant-crm .merchant-crm-content .merchant-crm-bg {
+            background-position: center; } }
         @media screen and (min-width: 1024px) {
           .content .merchant-crm .merchant-crm-content .merchant-crm-bg {
             margin-top: -52px; } }
@@ -1269,7 +1314,7 @@ body {
             margin: -365px auto auto; } }
         @media screen and (max-width: 599px) {
           .content .merchant-crm .merchant-crm-content .merchant-crm-bg {
-            background: url("../../img/how-works-bg.png") no-repeat center;
+            background-position: center;
             background-size: cover;
             height: 552px;
             width: 100%;
@@ -1515,6 +1560,10 @@ body {
             display: flex;
             align-items: center;
             justify-content: center; }
+            .content .letknow-app .text-area .buttons button a a:visited {
+              color: #212B36; }
+            .content .letknow-app .text-area .buttons button a a:hover {
+              color: white; }
             .content .letknow-app .text-area .buttons button a .logo {
               padding-right: 10px; }
               @media screen and (max-width: 1023px) {
@@ -1527,12 +1576,18 @@ body {
     .content .letknow-app .letknow-app-bg {
       background: url("../../img/img-phone.png") no-repeat;
       position: absolute; }
+      @media screen and (min-width: 1600px) {
+        .content .letknow-app .letknow-app-bg {
+          right: 48%;
+          left: auto; } }
+      @media screen and (max-width: 1559px) {
+        .content .letknow-app .letknow-app-bg {
+          left: -2%; } }
       @media screen and (min-width: 1440px) {
         .content .letknow-app .letknow-app-bg {
           margin-top: -280px;
           height: 800px;
           width: 830px;
-          left: -2%;
           background-size: cover; } }
       @media screen and (max-width: 1439px) {
         .content .letknow-app .letknow-app-bg {
@@ -1540,7 +1595,9 @@ body {
           height: 492px;
           width: 636px;
           background-size: contain;
-          margin-left: 9px; } }
+          margin-left: 9px;
+          right: 40%;
+          left: auto; } }
       @media screen and (max-width: 1023px) {
         .content .letknow-app .letknow-app-bg {
           margin-top: -132px;
@@ -1756,6 +1813,10 @@ body {
               font-family: "Montserrat-Medium";
               color: #6B7C89;
               text-transform: uppercase; }
+              @media screen and (min-width: 600px) {
+                .content .fees-and-limits .fees-and-limits-content .limits .limit .amount .period {
+                  font-size: 20px;
+                  line-height: 22px; } }
               @media screen and (max-width: 599px) {
                 .content .fees-and-limits .fees-and-limits-content .limits .limit .amount .period {
                   font-size: 13px;
@@ -2285,43 +2346,46 @@ body {
             line-height: 18px; } }
     .content .merchant-form .form #gratitude.active {
       display: flex; }
-  @media screen and (min-width: 1440px) {
-    .content .merchant-form .merchant-form-bg {
-      margin-top: -78px;
-      left: -20%;
-      transform: scale(-1, 1);
-      background-size: cover;
-      min-width: 1532px;
-      width: 100%;
-      max-height: 846px;
-      height: 100%;
-      background: url("../../img/how-works-bg.png") no-repeat bottom; } }
-  @media screen and (max-width: 1439px) {
-    .content .merchant-form .merchant-form-bg {
-      margin: -6% auto 0;
-      background: url("../../img/how-works-bg.png") no-repeat center center;
-      background-size: cover;
-      height: 902px;
-      position: absolute;
-      right: -20%;
-      left: -20%; } }
-  @media screen and (max-width: 1023px) {
-    .content .merchant-form .merchant-form-bg {
-      position: relative;
-      height: 551px;
-      padding: 0;
-      top: 0;
-      margin: -500px -46px 0;
-      width: calc(100% + 92px);
-      left: 0; } }
-  @media screen and (max-width: 599px) {
-    .content .merchant-form .merchant-form-bg {
-      height: 538px;
-      padding: 0;
-      top: 0;
-      margin: -339px 0;
-      width: 100%;
-      left: 0; } }
+  .content .merchant-form .merchant-form-bg {
+    background: url("../../img/how-works-bg.png") no-repeat; }
+    @media screen and (min-width: 1440px) {
+      .content .merchant-form .merchant-form-bg {
+        margin-top: -78px;
+        left: -20%;
+        transform: scale(-1, 1);
+        background-size: cover;
+        min-width: 1532px;
+        width: 100%;
+        max-height: 846px;
+        height: 100%;
+        background-position: bottom; } }
+    @media screen and (max-width: 1439px) {
+      .content .merchant-form .merchant-form-bg {
+        margin: -6% auto 0;
+        background-position: center;
+        background-size: cover;
+        height: 902px;
+        position: absolute;
+        right: -20%;
+        left: -20%; } }
+    @media screen and (max-width: 1023px) {
+      .content .merchant-form .merchant-form-bg {
+        position: absolute;
+        height: 551px;
+        padding: 0;
+        margin: -500px 0 0;
+        width: 100%;
+        max-width: 951px;
+        left: 0; } }
+    @media screen and (max-width: 599px) {
+      .content .merchant-form .merchant-form-bg {
+        position: relative;
+        height: 538px;
+        padding: 0;
+        top: 0;
+        margin: -339px 0;
+        width: 100%;
+        left: 0; } }
   .content .footer {
     width: 100%;
     height: 100%;
