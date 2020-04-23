@@ -2,11 +2,29 @@
   overflow: hidden;
 }
 
+a, a:link, a:active, a:visited {
+  transition: all 0.25s ease-out; 
+}
+
+button, button:hover, button:active, button:visited {
+  transition: all 0.2s ease-out; 
+}
+
+.opacity-anim {
+  opacity: 0.1;
+  transition: opacity 1.5s ease !important; 
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 1.5s ease !important; 
+}
+
 .content {
   max-width: 100%;
   width: 100%;
   color: #212121;
-  transition: all 3s ease;
+  transition: all 2s ease;
   
   .m-s-title {
     font-family: $fontM_SB;
@@ -136,8 +154,16 @@
         @media screen and (max-width: 1023px) {
           display: flex;
         }
+
         img {
           box-shadow: 0px 9px 34px #05305f80;
+        }
+
+        .shadows {
+          box-shadow: inset 0px 0px 4px #05305f17;
+          height: 25px;
+          width: 4px;
+          position: absolute;
         }
       }
     }
@@ -827,6 +853,7 @@
         border-radius: 10px;
         background-color: #09CD0A;
         margin-right: 10px;
+        cursor: pointer;
         @media screen and (min-width: 600px) {
           width: 80px;
           height: 10px;
@@ -841,6 +868,7 @@
         border-radius: 50%;
         background-color: #B3BDC3;
         margin-right: 10px;
+        cursor: pointer;
         @media screen and (min-width: 600px) {
           width: 10px;
           height: 10px;
@@ -857,8 +885,10 @@
         width: 60px;
         height: 60px;
         border-radius: 50%;
+
         &.grey {
           background-color: #6b7c8959;
+          cursor: default !important;
         }
         &:hover.active {
           background-color: #09CD0A;
@@ -2296,7 +2326,7 @@
           font-family: $fontSF_L;
           outline: none;
           &:focus {
-            border: 1px solid #595F63 !important;
+            border: 1px solid #09CD0A !important;
           }
           
           @media screen and (min-width: 600px) {
@@ -2693,22 +2723,5 @@
       color: #6B7C89;
       margin: 30px auto;
     }
-  }
-}
-
-.hidden {
-  opacity: 0;
-}
-
-.visible {
-  opacity: 1 ;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }

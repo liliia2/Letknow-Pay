@@ -34,7 +34,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
   .slick-loading & {
-    background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+    background: #fff center center no-repeat;
   }
 }
 
@@ -203,7 +203,6 @@ $slick-opacity-not-active: 0.25 !default;
     &.slick-active button:before {
       background: #00beff;
       border-radius: 5px;
-
       width: 24px;
       height: 10px;
       opacity: $slick-opacity-default;

@@ -50,10 +50,10 @@
                     <p class="nav-link"><a href="#">Contacts</a></p>
                     <p class="nav-link"><a class="accent" href="#">Log In</a></p>
                 </div>
-                <div class="menu" onclick="openMenu()"><img src="img/svg/ic-menu.svg" alt="logotype"></div>
+                <div class="menu" onclick="openMenu()"><span class="shadows"></span><img src="img/svg/ic-menu.svg" alt="logotype"></div>
             </div>
         </div>
-        <div class="custom-gateway">
+        <div class="custom-gateway opacity-anim">
             <div class="bg-wrapper">
                 <div class="c-g-gradient-bg"></div>
                 <div class="c-g-notebook-bg"></div>
@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div class="how-it-works">
+        <div class="how-it-works opacity-anim">
             <div class="how-it-works-bg"></div>
             <div class="text-area">
                 <p class="m-s-title">How it works</p>
@@ -122,7 +122,7 @@
                 </div>
             </div>
         </div>
-        <div class="integration">
+        <div class="integration opacity-anim">
             <div class="text-area">
                 <p class="m-s-title">Integration</p>
                 <p class="subheader">LetKnow’s API provides direct integration for Merchants.</p>
@@ -152,7 +152,7 @@
                 </div>
             </div>
         </div>
-        <div class="merchant-crm">
+        <div class="merchant-crm opacity-anim">
             <p class="m-s-title">Merchant CRM FEATURES</p>
             <div class="merchant-crm-content">
                 <div class="merchant-notebook"></div>
@@ -217,7 +217,7 @@
                 </div>
             </div>
         </div>
-        <div class="letknow-app">
+        <div class="letknow-app opacity-anim">
             <div class="text-area">
                 <div class="text">
                     <p>Install our <span class="semibold">LetKnow App</span> and get 24/7 support via the messenger</p>
@@ -241,7 +241,7 @@
             </div>
             <div class="letknow-app-bg"></div>
         </div>
-        <div class="fees-and-limits">
+        <div class="fees-and-limits opacity-anim">
             <div class="fees-and-limits-content">
                 <div class="fees">
                     <p class="m-s-title">Fees</p>
@@ -305,7 +305,7 @@
                 </div>
             </div>
         </div>
-        <div class="settlements">
+        <div class="settlements opacity-anim">
             <div class="text-block">
                 <p class="m-s-title">Settlements</p>
                 <p class="text">Once the balance of €2,500 is reached, our Backoffice team will automatically settle the funds to a Merchant bank account, unless otherwise agreed upon.</p>
@@ -327,7 +327,7 @@
                 </div>
             </div>
         </div>
-        <div class="currencies-supported">
+        <div class="currencies-supported opacity-anim">
             <div class="content">
                 <p class="m-s-title">Currencies supported</p>
                 <div class="currencies">
@@ -462,7 +462,7 @@
                 </div>
             </div>
         </div>
-        <div class="merchant-form">
+        <div class="merchant-form opacity-anim">
             <div class="text-block">
                 <p class="title">Apply For A Merchant Account Now</p>
                 <p class="text">Fill the Merchant Form, or send us e-mail request  directly to <span class="email"><a href="mailto:pay@letknow.com">pay@letknow.com</a></span></p>
@@ -491,7 +491,7 @@
             </div>
             <div class="merchant-form-bg"></div>
         </div>
-        <div class="footer">
+        <div class="footer opacity-anim">
             <div class="links-block-content">
                 <div class="sub-links-block">
                     <div class="letknow-block">
@@ -536,16 +536,13 @@
     <script src="script/jquery.js"></script>
     <script src="script/slick.js"></script>
     <script src="script/slider.js"></script>
-    <!-- <script src="script/jquery.js"></script>
+    <!-- <script src="script/parallax.js"></script> -->
     <script src="script/viewportchecker.js"></script>
     <script>
         jQuery(document).ready(function() {
-            jQuery('.post').addClass('hidden').viewportChecker({
-                classToAdd: 'visible animated fadeIn',
-                offset: 100
-            });
+            jQuery('.opacity-anim').viewportChecker();
         });
-    </script> -->
+    </script>
     
 </body>
 </html>
