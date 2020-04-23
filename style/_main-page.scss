@@ -2468,16 +2468,21 @@ button, button:hover, button:active, button:visited {
 
     .merchant-form-bg {
       background: url("../../img/how-works-bg.png") no-repeat;
-      @media screen and (min-width: 1440px) {
-        margin-top: -78px;
+      @media screen and (min-width: 1921px) {
+        transform: scale(-1, 1);
+        background-size: contain;
+        min-width: 1532px;
+        width: 1532px;
+        background-position: center top;
+        margin: auto;
+      }
+      @media screen and (max-width: 1920px) {
         left: -20%;
         transform: scale(-1, 1);
-        background-size: cover;
+        background-size: contain;
         min-width: 1532px;
-        width: 100%;
-        max-height: 846px;
-        height: 100%;
-        background-position: bottom;
+        width: 1532px;
+        background-position: bottom;    
       }
       @media screen and (max-width: 1439px) {
         margin: -6% auto 0;

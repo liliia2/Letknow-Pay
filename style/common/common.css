@@ -2413,16 +2413,21 @@ button, button:hover, button:active, button:visited {
       display: flex; }
   .content .merchant-form .merchant-form-bg {
     background: url("../../img/how-works-bg.png") no-repeat; }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1921px) {
       .content .merchant-form .merchant-form-bg {
-        margin-top: -78px;
+        transform: scale(-1, 1);
+        background-size: contain;
+        min-width: 1532px;
+        width: 1532px;
+        background-position: center top;
+        margin: auto; } }
+    @media screen and (max-width: 1920px) {
+      .content .merchant-form .merchant-form-bg {
         left: -20%;
         transform: scale(-1, 1);
-        background-size: cover;
+        background-size: contain;
         min-width: 1532px;
-        width: 100%;
-        max-height: 846px;
-        height: 100%;
+        width: 1532px;
         background-position: bottom; } }
     @media screen and (max-width: 1439px) {
       .content .merchant-form .merchant-form-bg {
