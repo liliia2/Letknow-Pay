@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -188,7 +187,7 @@ body {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff center center no-repeat; }
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
 
 /* Icons */
 @font-face {
@@ -245,9 +244,9 @@ body {
     left: auto;
     right: -25px; }
   .slick-prev:before {
-    content: "←"; }
+    content: none; }
     [dir="rtl"] .slick-prev:before {
-      content: "→"; }
+      content: none; }
 
 .slick-next {
   right: -25px; }
@@ -255,9 +254,9 @@ body {
     left: -25px;
     right: auto; }
   .slick-next:before {
-    content: "→"; }
+    content: none; }
     [dir="rtl"] .slick-next:before {
-      content: "←"; }
+      content: none; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -890,12 +889,33 @@ body {
             .content .how-it-works .slider .api2-slide .steps-screens .screen, .content .how-it-works .slider .api3-slide .steps-screens .screen {
               width: 100px; } }
           .content .how-it-works .slider .api2-slide .steps-screens .hr, .content .how-it-works .slider .api3-slide .steps-screens .hr {
-            width: 240%;
-            min-width: 240px;
-            max-width: 570px;
             height: 1px;
             background-color: #0D9BFF;
-            margin: auto -65%; }
+            z-index: -1; }
+            @media screen and (min-width: 1440px) {
+              .content .how-it-works .slider .api2-slide .steps-screens .hr, .content .how-it-works .slider .api3-slide .steps-screens .hr {
+                margin: 4% -14% auto;
+                position: absolute;
+                width: 240%;
+                max-width: 570px; } }
+            @media screen and (max-width: 1439px) {
+              .content .how-it-works .slider .api2-slide .steps-screens .hr, .content .how-it-works .slider .api3-slide .steps-screens .hr {
+                margin: 5% -14% auto;
+                position: absolute;
+                width: 240%;
+                max-width: 530px; } }
+            @media screen and (max-width: 1023px) {
+              .content .how-it-works .slider .api2-slide .steps-screens .hr, .content .how-it-works .slider .api3-slide .steps-screens .hr {
+                margin: 9% -22% auto;
+                position: absolute;
+                width: 100%;
+                max-width: 368px; } }
+            @media screen and (max-width: 599px) {
+              .content .how-it-works .slider .api2-slide .steps-screens .hr, .content .how-it-works .slider .api3-slide .steps-screens .hr {
+                margin: 11.5% -20% auto;
+                position: absolute;
+                width: 100%;
+                max-width: 242px; } }
           @media screen and (min-width: 1440px) {
             .content .how-it-works .slider .api2-slide .steps-screens .second, .content .how-it-works .slider .api3-slide .steps-screens .second {
               margin: 0 35px; } }
@@ -1047,6 +1067,27 @@ body {
           .content .how-it-works .slider .nav-wrapper .next-stage {
             width: 7px;
             height: 7px; } }
+      .content .how-it-works .slider .slick-prev, .content .how-it-works .slider .slick-next {
+        background: #0D9BFF;
+        box-shadow: #212b3682;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; }
+        .content .how-it-works .slider .slick-prev.grey, .content .how-it-works .slider .slick-next.grey {
+          background-color: #6b7c8959; }
+        .content .how-it-works .slider .slick-prev:hover.active, .content .how-it-works .slider .slick-next:hover.active {
+          background-color: #09CD0A; }
+        @media screen and (max-width: 1023px) {
+          .content .how-it-works .slider .slick-prev, .content .how-it-works .slider .slick-next {
+            display: none; } }
+      .content .how-it-works .slider .slick-next {
+        right: 0; }
+        .content .how-it-works .slider .slick-next img {
+          transform: rotate(270deg); }
+      .content .how-it-works .slider .slick-prev {
+        left: 0; }
+        .content .how-it-works .slider .slick-prev img {
+          transform: rotate(90deg); }
   @media screen and (min-width: 1440px) {
     .content .integration {
       max-width: 915px;

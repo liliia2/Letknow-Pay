@@ -1,6 +1,6 @@
 $(document).ready(function () {
     let currentSlideIndex = 0;
-
+    
     $('.slider .all-slides').slick({
         speed: 600,
         fade: true,
@@ -23,8 +23,16 @@ $(document).ready(function () {
     $(".nav1").on("click", function () {
         $('.slider .all-slides')[0].slick.slickGoTo(0);
     });
+
     $(".nav2").on("click", function () {
         $('.slider .all-slides')[0].slick.slickGoTo(1);
     });
 
+    $(".slick-prev").on("click", function () {
+        $('.slider .all-slides')[0].slick.slickGoTo(0);
+    });
+    
+    $(".slick-next").on("click", function () {
+        $('.slider .all-slides')[0].slick.slickGoTo(1);
+    });
 });

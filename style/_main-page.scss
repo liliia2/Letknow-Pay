@@ -648,12 +648,33 @@
           }
 
           .hr {
-            width: 240%;
-            min-width: 240px;
-            max-width: 570px;
             height: 1px;
             background-color: #0D9BFF;
-            margin: auto -65%;
+            z-index: -1;
+            @media screen and (min-width: 1440px) {
+              margin: 4% -14% auto;
+              position: absolute;
+              width: 240%;
+              max-width: 570px;        
+            }
+            @media screen and (max-width: 1439px) {
+              margin: 5% -14% auto;
+              position: absolute; 
+              width: 240%;
+              max-width: 530px;       
+            }
+            @media screen and (max-width: 1023px) {
+              margin: 9% -22% auto;
+              position: absolute;     
+              width: 100%;
+              max-width: 368px;   
+            }
+            @media screen and (max-width: 599px) {
+              margin: 11.5% -20% auto;
+              position: absolute;
+              width: 100%;
+              max-width: 242px;
+            }
           }
 
           .second {
@@ -827,6 +848,37 @@
         @media screen and (max-width: 599px) {
           width: 7px;
           height: 7px;
+        }
+      }
+
+      .slick-prev, .slick-next {
+        background: #0D9BFF;
+        box-shadow: #212b3682;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        &.grey {
+          background-color: #6b7c8959;
+        }
+        &:hover.active {
+          background-color: #09CD0A;
+        }
+        @media screen and (max-width: 1023px) {
+          display: none;
+        }
+      }
+
+      .slick-next {
+        right: 0;
+        img {
+          transform: rotate(270deg);
+        }
+      }
+
+      .slick-prev {
+        left: 0;
+        img {
+          transform: rotate(90deg);
         }
       }
     }
