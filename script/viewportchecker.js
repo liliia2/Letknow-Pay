@@ -23,13 +23,17 @@
             $elem.each(function () {
                 var $obj = $(this);
 
+                if ($obj.hasClass('visible')) {
+                    return;
+                }
+
                 // define the top position of the element and include the offset which makes is appear earlier or later
                 var elemTop = Math.round($obj.offset().top) + options.offset,
                     elemBottom = elemTop + ($obj.height());
 
                 if ((elemTop < scrolled + viewportBottom) && (elemBottom > scrolled)) {
                     $obj.addClass('visible');
-                    $obj.removeClass('opacity-anim');
+                    $obj.removeClass('animated');
                     // Do the callback function. Callback wil send the jQuery object as parameter
                     options.callbackFunction($obj);
                 }

@@ -331,8 +331,8 @@ a, a:link, a:active, a:visited {
 button, button:hover, button:active, button:visited {
   transition: all 0.2s ease-out; }
 
-.opacity-anim {
-  opacity: 0.1;
+.animated {
+  opacity: 0;
   transition: opacity 1.5s ease !important; }
 
 .visible {
