@@ -2505,6 +2505,7 @@ button, button:hover, button:active, button:visited {
       }
       @media screen and (max-width: 1023px) {
         position: absolute;
+        background-size: cover;
         height: 551px;
         padding: 0;
         margin: -500px 0 0;
