@@ -334,14 +334,13 @@ button, button:hover, button:active, button:visited {
       h2 {
         line-height: 68px;
         color: #212121;
+        font-family: $fontM_M;
         @media screen and (min-width: 1440px) {
           font-size: 54px;
-          font-family: $fontM_B;
           padding: 32px 0;
         }
         @media screen and (max-width: 1439px) {
           font-size: 50px;
-          font-family: $fontM_M;
           padding: 65px 0 32px;
         }
         @media screen and (max-width: 1023px) {
@@ -429,6 +428,9 @@ button, button:hover, button:active, button:visited {
           }
           &:hover {
             box-shadow: 0 6px 20px rgba(5, 48, 95, 0.45);
+            background-image: none;
+            background-color: #2BBE00;
+            transition: color 2s ease;
           }
           &:active {
             box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45);
@@ -2567,9 +2569,26 @@ button, button:hover, button:active, button:visited {
           line-height: 18px;
           margin: 10px auto 16px;
         }
-
+        
         a, a:visited {
           color: #595F63;
+        }
+
+        a:hover, a:active {
+          color: #09CD0A;
+          text-decoration: underline;
+        }
+      }
+
+      .long-link {
+        @media screen and (min-width: 1024px) {
+          width: 176px;
+        }
+        @media screen and (max-width: 1023px) {
+          width: 132px;
+        }
+        @media screen and (max-width: 599px) {
+          width: 116px;
         }
       }
     }

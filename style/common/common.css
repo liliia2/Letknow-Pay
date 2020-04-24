@@ -610,16 +610,15 @@ button, button:hover, button:active, button:visited {
       width: 345px; } }
   .content .custom-gateway .text-area h2 {
     line-height: 68px;
-    color: #212121; }
+    color: #212121;
+    font-family: "Montserrat-Medium"; }
     @media screen and (min-width: 1440px) {
       .content .custom-gateway .text-area h2 {
         font-size: 54px;
-        font-family: "Montserrat-Bold";
         padding: 32px 0; } }
     @media screen and (max-width: 1439px) {
       .content .custom-gateway .text-area h2 {
         font-size: 50px;
-        font-family: "Montserrat-Medium";
         padding: 65px 0 32px; } }
     @media screen and (max-width: 1023px) {
       .content .custom-gateway .text-area h2 {
@@ -695,7 +694,10 @@ button, button:hover, button:active, button:visited {
         width: 195px;
         font-size: 16px; } }
     .content .custom-gateway .text-area .submit-btn button:hover {
-      box-shadow: 0 6px 20px rgba(5, 48, 95, 0.45); }
+      box-shadow: 0 6px 20px rgba(5, 48, 95, 0.45);
+      background-image: none;
+      background-color: #2BBE00;
+      transition: color 2s ease; }
     .content .custom-gateway .text-area .submit-btn button:active {
       box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45); }
     .content .custom-gateway .text-area .submit-btn button img {
@@ -2505,6 +2507,18 @@ button, button:hover, button:active, button:visited {
             margin: 10px auto 16px; } }
         .content .footer .links-block-content .links a, .content .footer .links-block-content .links a:visited {
           color: #595F63; }
+        .content .footer .links-block-content .links a:hover, .content .footer .links-block-content .links a:active {
+          color: #09CD0A;
+          text-decoration: underline; }
+      @media screen and (min-width: 1024px) {
+        .content .footer .links-block-content .long-link {
+          width: 176px; } }
+      @media screen and (max-width: 1023px) {
+        .content .footer .links-block-content .long-link {
+          width: 132px; } }
+      @media screen and (max-width: 599px) {
+        .content .footer .links-block-content .long-link {
+          width: 116px; } }
     .content .footer .copyright {
       font-family: "Roboto-Regular";
       max-width: 1106px;
