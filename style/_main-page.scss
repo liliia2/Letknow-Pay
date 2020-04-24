@@ -2495,11 +2495,13 @@ button, button:hover, button:active, button:visited {
       @media screen and (max-width: 1439px) {
         margin: -6% auto 0;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         height: 902px;
         position: absolute;
-        right: -20%;
-        left: -20%;
+        right: 0;
+        left: 0;
+        min-width: 100%;
+        width: 100%;
       }
       @media screen and (max-width: 1023px) {
         position: absolute;
