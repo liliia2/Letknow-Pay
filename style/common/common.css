@@ -2446,7 +2446,8 @@ button, button:hover, button:active, button:visited {
         margin: -500px 0 0;
         width: 100%;
         max-width: 951px;
-        left: 0; } }
+        left: 0;
+        min-width: 100%; } }
     @media screen and (max-width: 599px) {
       .content .merchant-form .merchant-form-bg {
         position: relative;

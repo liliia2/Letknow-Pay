@@ -2501,6 +2501,7 @@ button, button:hover, button:active, button:visited {
         width: 100%;
         max-width: 951px;
         left: 0;
+        min-width: 100%;
       }
       @media screen and (max-width: 599px) {
         position: relative;
