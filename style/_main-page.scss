@@ -314,6 +314,7 @@ button, button:hover, button:active, button:visited {
     }
 
     .text-area {
+      z-index: 1;
       @media screen and (min-width: 1440px) {
         max-width: 630px;
       }
@@ -398,7 +399,7 @@ button, button:hover, button:active, button:visited {
         }
       }
 
-      .submit-btn {
+      .btn {
         @media screen and (min-width: 1440px) {
           padding-top: 61px;
         }
@@ -412,7 +413,6 @@ button, button:hover, button:active, button:visited {
         button {
           background-image: linear-gradient(180deg, #0BBF50, #0BB095);
           border-radius: 34px;
-          color: white;
           font-family: $fontR_R;
           line-height: 18px;
           box-shadow: 0 9px 34px #05305f52;
@@ -434,6 +434,12 @@ button, button:hover, button:active, button:visited {
           }
           &:active {
             box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45);
+            background-image: none;
+            background-color: #2BBE00;
+          }
+
+          a, a:link, a:active, a:visited {
+            color: white;
           }
 
           img {

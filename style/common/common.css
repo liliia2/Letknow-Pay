@@ -592,125 +592,130 @@ button, button:hover, button:active, button:visited {
         left: 0;
         margin: auto;
         background: url("../../img/main-mini-notebook.png") no-repeat center center; } }
-  @media screen and (min-width: 1440px) {
-    .content .custom-gateway .text-area {
-      max-width: 630px; } }
-  @media screen and (max-width: 1439px) {
-    .content .custom-gateway .text-area {
-      max-width: 510px; } }
-  @media screen and (max-width: 1023px) {
-    .content .custom-gateway .text-area {
-      max-width: 510px;
-      width: 510px;
-      margin: auto;
-      text-align: center; } }
-  @media screen and (max-width: 599px) {
-    .content .custom-gateway .text-area {
-      max-width: 100%;
-      width: 345px; } }
-  .content .custom-gateway .text-area h2 {
-    line-height: 68px;
-    color: #212121;
-    font-family: "Montserrat-Medium"; }
+  .content .custom-gateway .text-area {
+    z-index: 1; }
     @media screen and (min-width: 1440px) {
-      .content .custom-gateway .text-area h2 {
-        font-size: 54px;
-        padding: 32px 0; } }
+      .content .custom-gateway .text-area {
+        max-width: 630px; } }
     @media screen and (max-width: 1439px) {
-      .content .custom-gateway .text-area h2 {
-        font-size: 50px;
-        padding: 65px 0 32px; } }
+      .content .custom-gateway .text-area {
+        max-width: 510px; } }
     @media screen and (max-width: 1023px) {
-      .content .custom-gateway .text-area h2 {
-        font-size: 48px;
-        padding: 15px 0 18px; } }
+      .content .custom-gateway .text-area {
+        max-width: 510px;
+        width: 510px;
+        margin: auto;
+        text-align: center; } }
     @media screen and (max-width: 599px) {
-      .content .custom-gateway .text-area h2 {
-        font-size: 28px;
-        padding: 15px 0 0;
-        line-height: 57px; } }
-  .content .custom-gateway .text-area p {
-    color: #212121;
-    padding-bottom: 10px; }
-  .content .custom-gateway .text-area p.subheader {
-    font-family: "Montserrat-Medium"; }
-    @media screen and (min-width: 1440px) {
-      .content .custom-gateway .text-area p.subheader {
-        line-height: 33px; } }
-    @media screen and (min-width: 1024px) {
-      .content .custom-gateway .text-area p.subheader {
-        font-size: 24px;
-        line-height: 32px; } }
-    @media screen and (max-width: 1023px) {
-      .content .custom-gateway .text-area p.subheader {
-        font-size: 20px;
-        line-height: 28px; } }
-    @media screen and (max-width: 599px) {
-      .content .custom-gateway .text-area p.subheader {
-        font-size: 14px;
-        line-height: 18px; } }
-  .content .custom-gateway .text-area p.text {
-    font-family: "Montserrat-Regular"; }
-    @media screen and (min-width: 1440px) {
-      .content .custom-gateway .text-area p.text {
-        font-size: 22px;
-        line-height: 33px; } }
-    @media screen and (max-width: 1439px) {
-      .content .custom-gateway .text-area p.text {
-        font-size: 20px;
-        line-height: 30px; } }
-    @media screen and (max-width: 1023px) {
-      .content .custom-gateway .text-area p.text {
-        font-size: 14px;
-        line-height: 20px; } }
-    @media screen and (max-width: 599px) {
-      .content .custom-gateway .text-area p.text {
-        font-size: 12px;
-        line-height: 19px; } }
-  @media screen and (min-width: 1440px) {
-    .content .custom-gateway .text-area .submit-btn {
-      padding-top: 61px; } }
-  @media screen and (max-width: 1439px) {
-    .content .custom-gateway .text-area .submit-btn {
-      padding-top: 77px; } }
-  @media screen and (max-width: 1023px) {
-    .content .custom-gateway .text-area .submit-btn {
-      padding-top: 27px; } }
-  .content .custom-gateway .text-area .submit-btn button {
-    background-image: linear-gradient(180deg, #0BBF50, #0BB095);
-    border-radius: 34px;
-    color: white;
-    font-family: "Roboto-Regular";
-    line-height: 18px;
-    box-shadow: 0 9px 34px #05305f52; }
-    @media screen and (min-width: 600px) {
-      .content .custom-gateway .text-area .submit-btn button {
-        height: 60px;
-        width: 235px;
-        font-size: 18px; } }
-    @media screen and (max-width: 599px) {
-      .content .custom-gateway .text-area .submit-btn button {
-        height: 50px;
-        width: 195px;
-        font-size: 16px; } }
-    .content .custom-gateway .text-area .submit-btn button:hover {
-      box-shadow: 0 6px 20px rgba(5, 48, 95, 0.45);
-      background-image: none;
-      background-color: #2BBE00;
-      transition: color 2s ease; }
-    .content .custom-gateway .text-area .submit-btn button:active {
-      box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45); }
-    .content .custom-gateway .text-area .submit-btn button img {
-      position: relative;
-      left: 16px; }
-      @media screen and (min-width: 600px) {
-        .content .custom-gateway .text-area .submit-btn button img {
-          height: 16px;
-          width: 16px; } }
+      .content .custom-gateway .text-area {
+        max-width: 100%;
+        width: 345px; } }
+    .content .custom-gateway .text-area h2 {
+      line-height: 68px;
+      color: #212121;
+      font-family: "Montserrat-Medium"; }
+      @media screen and (min-width: 1440px) {
+        .content .custom-gateway .text-area h2 {
+          font-size: 54px;
+          padding: 32px 0; } }
+      @media screen and (max-width: 1439px) {
+        .content .custom-gateway .text-area h2 {
+          font-size: 50px;
+          padding: 65px 0 32px; } }
+      @media screen and (max-width: 1023px) {
+        .content .custom-gateway .text-area h2 {
+          font-size: 48px;
+          padding: 15px 0 18px; } }
       @media screen and (max-width: 599px) {
-        .content .custom-gateway .text-area .submit-btn button img {
-          height: 14px;
-          width: 14px; } }
+        .content .custom-gateway .text-area h2 {
+          font-size: 28px;
+          padding: 15px 0 0;
+          line-height: 57px; } }
+    .content .custom-gateway .text-area p {
+      color: #212121;
+      padding-bottom: 10px; }
+    .content .custom-gateway .text-area p.subheader {
+      font-family: "Montserrat-Medium"; }
+      @media screen and (min-width: 1440px) {
+        .content .custom-gateway .text-area p.subheader {
+          line-height: 33px; } }
+      @media screen and (min-width: 1024px) {
+        .content .custom-gateway .text-area p.subheader {
+          font-size: 24px;
+          line-height: 32px; } }
+      @media screen and (max-width: 1023px) {
+        .content .custom-gateway .text-area p.subheader {
+          font-size: 20px;
+          line-height: 28px; } }
+      @media screen and (max-width: 599px) {
+        .content .custom-gateway .text-area p.subheader {
+          font-size: 14px;
+          line-height: 18px; } }
+    .content .custom-gateway .text-area p.text {
+      font-family: "Montserrat-Regular"; }
+      @media screen and (min-width: 1440px) {
+        .content .custom-gateway .text-area p.text {
+          font-size: 22px;
+          line-height: 33px; } }
+      @media screen and (max-width: 1439px) {
+        .content .custom-gateway .text-area p.text {
+          font-size: 20px;
+          line-height: 30px; } }
+      @media screen and (max-width: 1023px) {
+        .content .custom-gateway .text-area p.text {
+          font-size: 14px;
+          line-height: 20px; } }
+      @media screen and (max-width: 599px) {
+        .content .custom-gateway .text-area p.text {
+          font-size: 12px;
+          line-height: 19px; } }
+    @media screen and (min-width: 1440px) {
+      .content .custom-gateway .text-area .btn {
+        padding-top: 61px; } }
+    @media screen and (max-width: 1439px) {
+      .content .custom-gateway .text-area .btn {
+        padding-top: 77px; } }
+    @media screen and (max-width: 1023px) {
+      .content .custom-gateway .text-area .btn {
+        padding-top: 27px; } }
+    .content .custom-gateway .text-area .btn button {
+      background-image: linear-gradient(180deg, #0BBF50, #0BB095);
+      border-radius: 34px;
+      font-family: "Roboto-Regular";
+      line-height: 18px;
+      box-shadow: 0 9px 34px #05305f52; }
+      @media screen and (min-width: 600px) {
+        .content .custom-gateway .text-area .btn button {
+          height: 60px;
+          width: 235px;
+          font-size: 18px; } }
+      @media screen and (max-width: 599px) {
+        .content .custom-gateway .text-area .btn button {
+          height: 50px;
+          width: 195px;
+          font-size: 16px; } }
+      .content .custom-gateway .text-area .btn button:hover {
+        box-shadow: 0 6px 20px rgba(5, 48, 95, 0.45);
+        background-image: none;
+        background-color: #2BBE00;
+        transition: color 2s ease; }
+      .content .custom-gateway .text-area .btn button:active {
+        box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45);
+        background-image: none;
+        background-color: #2BBE00; }
+      .content .custom-gateway .text-area .btn button a, .content .custom-gateway .text-area .btn button a:link, .content .custom-gateway .text-area .btn button a:active, .content .custom-gateway .text-area .btn button a:visited {
+        color: white; }
+      .content .custom-gateway .text-area .btn button img {
+        position: relative;
+        left: 16px; }
+        @media screen and (min-width: 600px) {
+          .content .custom-gateway .text-area .btn button img {
+            height: 16px;
+            width: 16px; } }
+        @media screen and (max-width: 599px) {
+          .content .custom-gateway .text-area .btn button img {
+            height: 14px;
+            width: 14px; } }
   .content .how-it-works-bg, .content .merchant-crm-bg, .content .merchant-form-bg {
     height: 100%;
     max-height: 902px;
