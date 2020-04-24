@@ -10,11 +10,10 @@ $(document).ready(function () {
     function parallaxScroll() {
         var scrolled = $(window).scrollTop();
         if (windowWidth > 1439) {
-            console.log('windowWidth', windowWidth);
             $('.parallax1').css('margin-top', (270 - (scrolled * .3)) + 'px');
             $('.parallax2').css('margin-top', (700 - (scrolled * .3)) + 'px');
             $('.parallax3').css('margin-top', (1900 - (scrolled * .4)) + 'px');
-        } else if (windowWidth > 1024 && windowWidth < 1440) {
+        } else if (windowWidth > 1023 && windowWidth < 1440) {
             $('.parallax1').css('margin-top', (270 - (scrolled * .3)) + 'px');
             $('.parallax2').css('margin-top', (700 - (scrolled * .3)) + 'px');
             $('.parallax3').css('margin-top', (1950 - (scrolled * .4)) + 'px');
