@@ -2745,7 +2745,14 @@ button, button:hover, button:active, button:visited {
       font-size: 16px;
       margin: auto;
       margin-bottom: 43px;
-
+      &:hover {
+        box-shadow: 0 4px 21px #05305f52;
+      }
+      &:hover {
+        box-shadow: 0 4px 21px #05305f52;
+        background-color: #c90176;
+      }
+      
       a, a:visited {
         color: white;
       }

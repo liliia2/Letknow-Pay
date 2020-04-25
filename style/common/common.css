@@ -2638,6 +2638,11 @@ button, button:hover, button:active, button:visited {
       font-size: 16px;
       margin: auto;
       margin-bottom: 43px; }
+      #mobile-menu .bottom .login:hover {
+        box-shadow: 0 4px 21px #05305f52; }
+      #mobile-menu .bottom .login:hover {
+        box-shadow: 0 4px 21px #05305f52;
+        background-color: #c90176; }
       #mobile-menu .bottom .login a, #mobile-menu .bottom .login a:visited {
         color: white; }
     #mobile-menu .bottom .copyright {
