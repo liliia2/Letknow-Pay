@@ -178,7 +178,6 @@
             // Extracted from jQuery v1.11 source
             _.htmlExpr = /^(?:\s*(<[\w\W]+>)[^>]*)$/;
 
-
             _.registerBreakpoints();
             _.init(true);
 
