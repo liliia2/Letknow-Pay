@@ -683,7 +683,8 @@ button, button:hover, button:active, button:visited {
       border-radius: 34px;
       font-family: "Roboto-Regular";
       line-height: 18px;
-      box-shadow: 0 9px 34px #05305f52; }
+      box-shadow: 0 9px 34px #05305f52;
+      color: white; }
       @media screen and (min-width: 600px) {
         .content .custom-gateway .text-area .btn button {
           height: 60px;
@@ -698,12 +699,12 @@ button, button:hover, button:active, button:visited {
         box-shadow: 0 6px 20px rgba(5, 48, 95, 0.45);
         background-image: none;
         background-color: #2BBE00;
-        transition: color 2s ease; }
+        transition: color 2s ease;
+        color: white; }
       .content .custom-gateway .text-area .btn button:active {
         box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45);
         background-image: none;
-        background-color: #2BBE00; }
-      .content .custom-gateway .text-area .btn button a, .content .custom-gateway .text-area .btn button a:link, .content .custom-gateway .text-area .btn button a:active, .content .custom-gateway .text-area .btn button a:visited {
+        background-color: #2BBE00;
         color: white; }
       .content .custom-gateway .text-area .btn button img {
         position: relative;

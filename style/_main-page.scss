@@ -416,6 +416,7 @@ button, button:hover, button:active, button:visited {
           font-family: $fontR_R;
           line-height: 18px;
           box-shadow: 0 9px 34px #05305f52;
+          color: white;
           @media screen and (min-width: 600px) {
             height: 60px;
             width: 235px;
@@ -431,14 +432,12 @@ button, button:hover, button:active, button:visited {
             background-image: none;
             background-color: #2BBE00;
             transition: color 2s ease;
+            color: white;
           }
           &:active {
             box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45);
             background-image: none;
             background-color: #2BBE00;
-          }
-
-          a, a:link, a:active, a:visited {
             color: white;
           }
 
