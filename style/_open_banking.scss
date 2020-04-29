@@ -291,8 +291,14 @@
         box-shadow: 4px 2px 17px rgba(0, 0, 0, 0.5);
         position: absolute;
         border-radius: 50%;
-        width: 88px;
-        height: 88px;
+        @media screen and (min-width: 1440px) {
+          width: 88px;
+          height: 88px;
+        }
+        @media screen and (max-width: 1439px) {
+          width: 70px;
+          height: 70px;
+        }
       }
 
       @media screen and (min-width: 1440px) {
