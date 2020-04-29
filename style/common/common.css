@@ -2652,4 +2652,808 @@ button, button:hover, button:active, button:visited {
       color: #6B7C89;
       margin: 30px auto; }
 
+.content {
+  max-width: 100%;
+  width: 100%;
+  color: #212121;
+  transition: all 2s ease; }
+  @media screen and (min-width: 1440px) {
+    .content .easy-way {
+      max-width: 1106px;
+      height: 551px;
+      margin: 0 auto; } }
+  @media screen and (max-width: 1439px) {
+    .content .easy-way {
+      max-width: 924px;
+      height: 412px;
+      margin: 0 auto 32px; } }
+  @media screen and (max-width: 1023px) {
+    .content .easy-way {
+      margin: 0 auto;
+      height: 633px;
+      text-align: center; } }
+  @media screen and (max-width: 599px) {
+    .content .easy-way {
+      margin: 0 auto;
+      height: 427px; } }
+  .content .easy-way .bg-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
+    @media screen and (min-width: 1440px) {
+      .content .easy-way .bg-wrapper {
+        max-height: 551px;
+        height: 551px;
+        position: absolute; } }
+    @media screen and (max-width: 1439px) {
+      .content .easy-way .bg-wrapper {
+        max-height: 409px;
+        height: 409px;
+        position: absolute; } }
+    @media screen and (max-width: 1023px) {
+      .content .easy-way .bg-wrapper {
+        max-height: 415px;
+        height: 415px;
+        position: initial; } }
+    @media screen and (max-width: 599px) {
+      .content .easy-way .bg-wrapper {
+        max-height: 257px;
+        height: 257px; } }
+    .content .easy-way .bg-wrapper .gradient {
+      position: absolute;
+      z-index: -2;
+      background: url("../../img/long-bg.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+      left: 0;
+      right: 0;
+      width: 100%; }
+      @media screen and (min-width: 1999px) {
+        .content .easy-way .bg-wrapper .gradient {
+          background-size: contain !important; } }
+      @media screen and (min-width: 1440px) {
+        .content .easy-way .bg-wrapper .gradient {
+          height: 763px;
+          margin: -264px auto 0; } }
+      @media screen and (max-width: 1439px) {
+        .content .easy-way .bg-wrapper .gradient {
+          height: 610px;
+          margin: -217px auto 0; } }
+      @media screen and (max-width: 1023px) {
+        .content .easy-way .bg-wrapper .gradient {
+          height: 610px;
+          margin: -239px auto 0; } }
+      @media screen and (max-width: 599px) {
+        .content .easy-way .bg-wrapper .gradient {
+          height: 366px;
+          margin: -135px auto 0; } }
+    .content .easy-way .bg-wrapper .illustration {
+      z-index: -1;
+      background: url("../../img/open-banking-illustration.png") no-repeat;
+      background-size: cover;
+      position: absolute; }
+      @media screen and (min-width: 1666px) {
+        .content .easy-way .bg-wrapper .illustration {
+          background-size: contain; } }
+      @media screen and (min-width: 1440px) {
+        .content .easy-way .bg-wrapper .illustration {
+          height: 550px;
+          right: 0;
+          left: 51%; } }
+      @media screen and (max-width: 1439px) {
+        .content .easy-way .bg-wrapper .illustration {
+          height: 396px;
+          max-width: 590px;
+          right: 0;
+          left: 46%;
+          margin-top: 16px; } }
+      @media screen and (max-width: 1023px) {
+        .content .easy-way .bg-wrapper .illustration {
+          height: 403px;
+          width: auto;
+          max-width: 601px;
+          margin: 12px auto 0;
+          left: 5%; } }
+      @media screen and (max-width: 599px) {
+        .content .easy-way .bg-wrapper .illustration {
+          height: 242px;
+          width: 361px;
+          max-width: 100%;
+          margin: 15px auto 0; } }
+      @media screen and (max-width: 379px) {
+        .content .easy-way .bg-wrapper .illustration {
+          width: 100%;
+          background-size: contain;
+          left: 0; } }
+  .content .easy-way .text-area {
+    font-family: "Montserrat-Medium"; }
+    @media screen and (min-width: 1440px) {
+      .content .easy-way .text-area {
+        max-width: 535px;
+        text-align: left; } }
+    @media screen and (max-width: 1439px) {
+      .content .easy-way .text-area {
+        max-width: 428px;
+        text-align: left; } }
+    @media screen and (max-width: 1023px) {
+      .content .easy-way .text-area {
+        width: 390px;
+        text-align: center;
+        margin: 0 auto 43px; } }
+    @media screen and (max-width: 599px) {
+      .content .easy-way .text-area {
+        max-width: 90%;
+        width: 346px;
+        margin: 0 auto 40px; } }
+    @media screen and (min-width: 1440px) {
+      .content .easy-way .text-area h2 {
+        font-size: 54px;
+        line-height: 68px;
+        padding: 163px 0 132px;
+        color: white; } }
+    @media screen and (max-width: 1439px) {
+      .content .easy-way .text-area h2 {
+        font-size: 44px;
+        line-height: 54px;
+        padding: 124px 0 106px;
+        color: white; } }
+    @media screen and (max-width: 1023px) {
+      .content .easy-way .text-area h2 {
+        font-size: 34px;
+        line-height: 44px;
+        padding: 43px 0;
+        color: #212B36; } }
+    @media screen and (max-width: 599px) {
+      .content .easy-way .text-area h2 {
+        font-size: 28px;
+        line-height: 34px;
+        padding: 28px 0 40px; } }
+  .content .open-banking {
+    margin: 0 auto; }
+    @media screen and (min-width: 1440px) {
+      .content .open-banking {
+        max-width: 1106px;
+        display: flex; } }
+    @media screen and (max-width: 1439px) {
+      .content .open-banking {
+        max-width: 924px;
+        display: flex; } }
+    @media screen and (max-width: 1023px) {
+      .content .open-banking {
+        max-width: 508px;
+        display: block; } }
+    @media screen and (max-width: 599px) {
+      .content .open-banking {
+        max-width: 90%;
+        width: 346px; } }
+    @media screen and (min-width: 1440px) {
+      .content .open-banking .text-area {
+        max-width: 630px; } }
+    @media screen and (max-width: 1439px) {
+      .content .open-banking .text-area {
+        max-width: 530px; } }
+    @media screen and (max-width: 1023px) {
+      .content .open-banking .text-area {
+        max-width: 508px;
+        margin: 0 auto; } }
+    @media screen and (max-width: 599px) {
+      .content .open-banking .text-area {
+        max-width: 90%;
+        width: 346px; } }
+    @media screen and (min-width: 1024px) {
+      .content .open-banking .text-area .title, .content .open-banking .text-area .subheader, .content .open-banking .text-area .text {
+        text-align: left; } }
+    @media screen and (max-width: 1023px) {
+      .content .open-banking .text-area .title, .content .open-banking .text-area .subheader, .content .open-banking .text-area .text {
+        text-align: center; } }
+    .content .open-banking .text-area .title {
+      color: #2BBE00;
+      font-family: "Montserrat-SemiBold";
+      text-transform: uppercase; }
+      @media screen and (min-width: 1440px) {
+        .content .open-banking .text-area .title {
+          font-size: 28px;
+          line-height: 40px; } }
+      @media screen and (max-width: 1439px) {
+        .content .open-banking .text-area .title {
+          font-size: 24px;
+          line-height: 32px; } }
+      @media screen and (max-width: 599px) {
+        .content .open-banking .text-area .title {
+          font-size: 12px;
+          line-height: 32px; } }
+    .content .open-banking .text-area .subheader {
+      font-family: "Montserrat-Medium"; }
+      @media screen and (min-width: 1440px) {
+        .content .open-banking .text-area .subheader {
+          font-size: 28px;
+          line-height: 34px;
+          margin: 10px auto 20px; } }
+      @media screen and (max-width: 1439px) {
+        .content .open-banking .text-area .subheader {
+          font-size: 24px;
+          line-height: 34px;
+          margin: 11px auto; } }
+      @media screen and (max-width: 599px) {
+        .content .open-banking .text-area .subheader {
+          font-size: 14px;
+          line-height: 19px;
+          margin: 0 auto 9px; } }
+    .content .open-banking .text-area .text {
+      font-family: "Montserrat-Regular"; }
+      @media screen and (min-width: 1440px) {
+        .content .open-banking .text-area .text {
+          font-size: 24px;
+          line-height: 34px; } }
+      @media screen and (max-width: 1439px) {
+        .content .open-banking .text-area .text {
+          font-size: 20px;
+          line-height: 30px; } }
+      @media screen and (max-width: 599px) {
+        .content .open-banking .text-area .text {
+          font-size: 12px;
+          line-height: 18px; } }
+      .content .open-banking .text-area .text .bolder {
+        font-family: "Montserrat-Bold"; }
+    @media screen and (min-width: 1440px) {
+      .content .open-banking .bank-icons {
+        width: 440px;
+        height: 400px;
+        margin-top: -63px; } }
+    @media screen and (max-width: 1439px) {
+      .content .open-banking .bank-icons {
+        width: 353px;
+        height: 298px;
+        margin-top: -60px; } }
+    @media screen and (max-width: 1023px) {
+      .content .open-banking .bank-icons {
+        display: none; } }
+    .content .open-banking .bank-icons .bank-icon {
+      box-shadow: 4px 2px 17px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      border-radius: 50%;
+      width: 88px;
+      height: 88px; }
+    @media screen and (min-width: 1440px) {
+      .content .open-banking .bank-icons .first {
+        margin: 18px auto auto 0; }
+      .content .open-banking .bank-icons .second {
+        margin: 18px auto auto 155px; }
+      .content .open-banking .bank-icons .third {
+        margin: 0 46px auto 306px; }
+      .content .open-banking .bank-icons .fourth {
+        margin: 147px auto auto 67px; }
+      .content .open-banking .bank-icons .fifth {
+        margin: 210px auto auto 226px; }
+      .content .open-banking .bank-icons .sixth {
+        margin: 132px 0 auto 352px; }
+      .content .open-banking .bank-icons .seventh {
+        margin: 311px 0 0 352px; } }
+    @media screen and (max-width: 1439px) {
+      .content .open-banking .bank-icons .first {
+        margin: 14px auto auto 0; }
+      .content .open-banking .bank-icons .second {
+        margin: 14px auto auto 124px; }
+      .content .open-banking .bank-icons .third {
+        margin: 0 37px auto 245px; }
+      .content .open-banking .bank-icons .fourth {
+        margin: 134px auto auto 34px; }
+      .content .open-banking .bank-icons .fifth {
+        margin: 141px auto auto 169px; }
+      .content .open-banking .bank-icons .sixth {
+        margin: 105px 0 auto 282px; }
+      .content .open-banking .bank-icons .seventh {
+        margin: 227px 0 0 282px; } }
+  @media screen and (min-width: 1440px) {
+    .content .scheme-block {
+      max-width: 1174px;
+      display: flex;
+      align-items: center;
+      margin: 42px auto 85px; } }
+  @media screen and (max-width: 1439px) {
+    .content .scheme-block {
+      max-width: 930px;
+      display: flex;
+      align-items: center;
+      margin: 65px auto; } }
+  @media screen and (max-width: 1023px) {
+    .content .scheme-block {
+      max-width: 506px;
+      display: block;
+      margin: 40px auto 61px; } }
+  @media screen and (max-width: 599px) {
+    .content .scheme-block {
+      max-width: 90%;
+      width: 307px;
+      margin: 30px auto 41px; } }
+  .content .scheme-block .background {
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+    position: absolute;
+    background: url("../../img/how-works-bg.png") no-repeat;
+    background-size: inherit;
+    z-index: -1; }
+    @media screen and (min-width: 1640px) {
+      .content .scheme-block .background {
+        background-position: center; } }
+    @media screen and (min-width: 1440px) {
+      .content .scheme-block .background {
+        height: 902px;
+        max-height: 902px;
+        margin-top: 80px; } }
+    @media screen and (max-width: 1439px) {
+      .content .scheme-block .background {
+        height: 902px;
+        max-height: 902px;
+        margin-top: 80px;
+        background-position: center center; } }
+    @media screen and (max-width: 1023px) {
+      .content .scheme-block .background {
+        height: 551px;
+        max-height: 551px;
+        max-width: 958px;
+        right: 0;
+        left: 0;
+        margin-top: -367px;
+        background-size: cover; } }
+    @media screen and (max-width: 599px) {
+      .content .scheme-block .background {
+        height: 551px;
+        max-height: 551px;
+        margin-top: -280px; } }
+  .content .scheme-block .scheme {
+    background: url("../../img/scheme.png") no-repeat;
+    background-size: contain; }
+    @media screen and (min-width: 1440px) {
+      .content .scheme-block .scheme {
+        width: 586px;
+        height: 641px;
+        margin-right: 113px; } }
+    @media screen and (max-width: 1439px) {
+      .content .scheme-block .scheme {
+        width: 469px;
+        height: 513px;
+        margin-right: 91px; } }
+    @media screen and (max-width: 1023px) {
+      .content .scheme-block .scheme {
+        margin: 0 auto; } }
+    @media screen and (max-width: 599px) {
+      .content .scheme-block .scheme {
+        max-width: 90%;
+        width: 282px;
+        height: 309px; } }
+  @media screen and (min-width: 1440px) {
+    .content .scheme-block .text-block {
+      max-width: 440px; } }
+  @media screen and (max-width: 1439px) {
+    .content .scheme-block .text-block {
+      max-width: 370px; } }
+  @media screen and (max-width: 1023px) {
+    .content .scheme-block .text-block {
+      max-width: 508px;
+      display: flex;
+      margin: 43px auto 0; } }
+  @media screen and (max-width: 599px) {
+    .content .scheme-block .text-block {
+      max-width: 90%;
+      width: 307px;
+      margin: 35px auto 0; } }
+  @media screen and (max-width: 1023px) {
+    .content .scheme-block .text-block .block.left {
+      margin-right: 32px; } }
+  @media screen and (max-width: 599px) {
+    .content .scheme-block .text-block .block.left {
+      margin-right: 47px; } }
+  @media screen and (max-width: 349px) {
+    .content .scheme-block .text-block .block.left {
+      margin-right: auto; } }
+  @media screen and (max-width: 1023px) {
+    .content .scheme-block .text-block .block .item {
+      width: 238px; } }
+  @media screen and (max-width: 599px) {
+    .content .scheme-block .text-block .block .item {
+      width: 130px; } }
+  .content .scheme-block .text-block .block p {
+    font-family: "Roboto-Regular";
+    padding-bottom: 12px; }
+    @media screen and (min-width: 1440px) {
+      .content .scheme-block .text-block .block p {
+        font-size: 24px;
+        line-height: 34px;
+        min-height: 34px; } }
+    @media screen and (max-width: 1439px) {
+      .content .scheme-block .text-block .block p {
+        font-size: 20px;
+        line-height: 30px;
+        min-height: 30px; } }
+    @media screen and (max-width: 599px) {
+      .content .scheme-block .text-block .block p {
+        font-size: 12px;
+        line-height: 18px;
+        min-height: 18px; } }
+    @media screen and (min-width: 1440px) {
+      .content .scheme-block .text-block .block p img {
+        margin: -3px 0; } }
+    @media screen and (max-width: 1439px) {
+      .content .scheme-block .text-block .block p img {
+        margin: -4px 0; } }
+    @media screen and (max-width: 599px) {
+      .content .scheme-block .text-block .block p img {
+        margin: -4px 0;
+        height: 12px; } }
+  .content .for-customers {
+    background-color: white;
+    margin: 0 auto;
+    width: 100%; }
+    .content .for-customers .text-block {
+      text-align: center;
+      margin: 0 auto; }
+      @media screen and (min-width: 1440px) {
+        .content .for-customers .text-block {
+          max-width: 819px;
+          margin: 0 auto;
+          padding: 46px 0 50px; } }
+      @media screen and (max-width: 1439px) {
+        .content .for-customers .text-block {
+          max-width: 819px;
+          padding: 46px 0 50px; } }
+      @media screen and (max-width: 1023px) {
+        .content .for-customers .text-block {
+          max-width: 508px;
+          padding: 43px 0 0; } }
+      @media screen and (max-width: 599px) {
+        .content .for-customers .text-block {
+          max-width: 90%;
+          width: 345px;
+          padding: 26px 0 0; } }
+      .content .for-customers .text-block .title {
+        color: #2BBE00;
+        font-family: "Montserrat-SemiBold";
+        text-transform: uppercase; }
+        @media screen and (min-width: 1440px) {
+          .content .for-customers .text-block .title {
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 8px; } }
+        @media screen and (max-width: 1439px) {
+          .content .for-customers .text-block .title {
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 8px; } }
+        @media screen and (max-width: 1023px) {
+          .content .for-customers .text-block .title {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 14px; } }
+        @media screen and (max-width: 599px) {
+          .content .for-customers .text-block .title {
+            font-size: 12px;
+            line-height: 32px;
+            margin-bottom: 9px; } }
+      .content .for-customers .text-block .text {
+        color: #000000;
+        font-family: "Montserrat-Regular"; }
+        @media screen and (min-width: 1440px) {
+          .content .for-customers .text-block .text {
+            font-size: 24px;
+            line-height: 34px; } }
+        @media screen and (max-width: 1439px) {
+          .content .for-customers .text-block .text {
+            font-size: 24px;
+            line-height: 34px; } }
+        @media screen and (max-width: 1023px) {
+          .content .for-customers .text-block .text {
+            font-size: 20px;
+            line-height: 30px; } }
+        @media screen and (max-width: 599px) {
+          .content .for-customers .text-block .text {
+            font-size: 12px;
+            line-height: 18px; } }
+    @media screen and (max-width: 1023px) {
+      .content .for-customers .withoutSlider {
+        display: none !important; } }
+    @media screen and (min-width: 1024px) {
+      .content .for-customers .slider {
+        display: none !important; } }
+    @media screen and (min-width: 1440px) {
+      .content .for-customers .tables {
+        max-width: 1106px;
+        margin: 0 auto;
+        padding: 0 0 50px;
+        display: flex; } }
+    @media screen and (max-width: 1439px) {
+      .content .for-customers .tables {
+        max-width: 931px;
+        margin: 0 auto;
+        padding: 0 0 50px;
+        display: flex; } }
+    @media screen and (max-width: 1023px) {
+      .content .for-customers .tables {
+        max-width: 484px;
+        margin: 0 auto;
+        padding: 0;
+        display: block; } }
+    @media screen and (max-width: 599px) {
+      .content .for-customers .tables {
+        max-width: 100%;
+        width: auto;
+        margin: 0 auto;
+        padding: 0; } }
+    .content .for-customers .tables .table {
+      background-color: white;
+      margin: 0 auto;
+      box-shadow: 0 0 16px rgba(166, 183, 196, 0.32); }
+      @media screen and (min-width: 1440px) {
+        .content .for-customers .tables .table {
+          width: 535px;
+          min-width: 535px;
+          height: 540px;
+          border-radius: 30px; } }
+      @media screen and (max-width: 1439px) {
+        .content .for-customers .tables .table {
+          width: 450px;
+          min-width: 450px;
+          height: 540px;
+          border-radius: 30px; } }
+      @media screen and (max-width: 1023px) {
+        .content .for-customers .tables .table {
+          width: 450px;
+          min-width: 450px;
+          height: 540px;
+          padding: 15px;
+          margin: 43px auto 65px; } }
+      @media screen and (max-width: 599px) {
+        .content .for-customers .tables .table {
+          max-width: 100%;
+          width: 345px;
+          min-width: auto;
+          height: 413px;
+          border-radius: 24px;
+          margin: 26px auto 46px; } }
+      .content .for-customers .tables .table .table-title {
+        color: #FF119D;
+        font-family: "Roboto-Medium";
+        text-transform: uppercase;
+        width: fit-content;
+        margin: 0 auto; }
+        @media screen and (min-width: 1440px) {
+          .content .for-customers .tables .table .table-title {
+            font-size: 22px;
+            line-height: 18px;
+            padding: 67px 0 58px; } }
+        @media screen and (max-width: 1439px) {
+          .content .for-customers .tables .table .table-title {
+            font-size: 22px;
+            line-height: 18px;
+            padding: 67px 0 58px; } }
+        @media screen and (max-width: 1023px) {
+          .content .for-customers .tables .table .table-title {
+            font-size: 22px;
+            line-height: 18px; } }
+        @media screen and (max-width: 599px) {
+          .content .for-customers .tables .table .table-title {
+            font-size: 16px;
+            line-height: 14px;
+            padding: 54px 0 45px; } }
+      .content .for-customers .tables .table .items .item {
+        display: flex;
+        color: #212B36;
+        font-family: "Roboto-Medium";
+        margin: 0 auto;
+        align-items: center; }
+        @media screen and (min-width: 1440px) {
+          .content .for-customers .tables .table .items .item {
+            font-size: 18px;
+            line-height: 24px;
+            width: 296px;
+            height: 48px;
+            margin-bottom: 21px; } }
+        @media screen and (max-width: 1439px) {
+          .content .for-customers .tables .table .items .item {
+            font-size: 18px;
+            line-height: 24px;
+            width: 296px;
+            height: 48px;
+            margin-bottom: 21px; } }
+        @media screen and (max-width: 599px) {
+          .content .for-customers .tables .table .items .item {
+            font-size: 14px;
+            line-height: 18px;
+            width: 237px;
+            height: 36px;
+            margin-bottom: 19px; } }
+        .content .for-customers .tables .table .items .item .counter {
+          color: white;
+          background-color: #0D9BFF;
+          border-radius: 50%;
+          z-index: 1;
+          box-shadow: 2px 2px 10px #a6b7c4; }
+          @media screen and (min-width: 600px) {
+            .content .for-customers .tables .table .items .item .counter {
+              margin-right: 21px;
+              width: 38px;
+              min-width: 38px;
+              height: 38px; } }
+          @media screen and (max-width: 599px) {
+            .content .for-customers .tables .table .items .item .counter {
+              margin-right: 17px;
+              width: 30px;
+              min-width: 30px;
+              height: 30px; } }
+          .content .for-customers .tables .table .items .item .counter.green {
+            background-color: #2BBE00; }
+          @media screen and (min-width: 600px) {
+            .content .for-customers .tables .table .items .item .counter p {
+              margin: 7px 13px; } }
+          @media screen and (max-width: 599px) {
+            .content .for-customers .tables .table .items .item .counter p {
+              margin: 6px 11px; } }
+          @media screen and (min-width: 1024px) {
+            .content .for-customers .tables .table .items .item .counter p.check {
+              margin: 6px 13px; } }
+          @media screen and (max-width: 1023px) {
+            .content .for-customers .tables .table .items .item .counter p.check {
+              margin: 15px 12px; } }
+          @media screen and (max-width: 599px) {
+            .content .for-customers .tables .table .items .item .counter p.check {
+              margin: 11px 9px; } }
+      .content .for-customers .tables .table .items .vertical-line {
+        position: absolute;
+        background-color: #0D9BFF;
+        width: 1px; }
+        @media screen and (min-width: 1440px) {
+          .content .for-customers .tables .table .items .vertical-line {
+            height: 279px;
+            margin-top: -322px;
+            margin-left: 139px; } }
+        @media screen and (max-width: 1439px) {
+          .content .for-customers .tables .table .items .vertical-line {
+            height: 279px;
+            margin-top: -322px;
+            margin-left: 96px; } }
+        @media screen and (max-width: 1023px) {
+          .content .for-customers .tables .table .items .vertical-line {
+            height: 279px;
+            margin-top: -322px;
+            margin-left: 82px; } }
+        @media screen and (max-width: 599px) {
+          .content .for-customers .tables .table .items .vertical-line {
+            height: 220px;
+            margin-top: -258px;
+            margin-left: 55px; } }
+        @media screen and (max-width: 349px) {
+          .content .for-customers .tables .table .items .vertical-line {
+            display: none; } }
+    @media screen and (min-width: 1440px) {
+      .content .for-customers .tables .left {
+        margin-right: 35px; } }
+    @media screen and (max-width: 1439px) {
+      .content .for-customers .tables .left {
+        margin-right: 30px; } }
+    @media screen and (max-width: 1023px) {
+      .content .for-customers .tables .left {
+        margin-right: auto; } }
+    .content .for-customers .slider .nav-wrapper {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto; }
+      @media screen and (min-width: 600px) {
+        .content .for-customers .slider .nav-wrapper {
+          height: 10px;
+          max-width: 110px;
+          margin-bottom: 54px; } }
+      @media screen and (max-width: 599px) {
+        .content .for-customers .slider .nav-wrapper {
+          height: 7px;
+          max-width: 78px;
+          margin-bottom: 32px; } }
+    .content .for-customers .slider .nav-wrapper .current {
+      border-radius: 10px;
+      background-color: #09CD0A;
+      margin-right: 10px;
+      cursor: pointer; }
+      @media screen and (min-width: 600px) {
+        .content .for-customers .slider .nav-wrapper .current {
+          width: 80px;
+          height: 10px; } }
+      @media screen and (max-width: 599px) {
+        .content .for-customers .slider .nav-wrapper .current {
+          width: 58px;
+          height: 7px; } }
+    .content .for-customers .slider .nav-wrapper .next-stage {
+      border-radius: 50%;
+      background-color: #B3BDC3;
+      margin-right: 10px;
+      cursor: pointer; }
+      @media screen and (min-width: 600px) {
+        .content .for-customers .slider .nav-wrapper .next-stage {
+          width: 10px;
+          height: 10px; } }
+      @media screen and (max-width: 599px) {
+        .content .for-customers .slider .nav-wrapper .next-stage {
+          width: 7px;
+          height: 7px; } }
+  .content .contact-btn-block {
+    width: 100%; }
+    @media screen and (min-width: 1440px) {
+      .content .contact-btn-block {
+        background-color: white; } }
+    @media screen and (max-width: 1439px) {
+      .content .contact-btn-block {
+        background-color: white; } }
+    @media screen and (max-width: 1023px) {
+      .content .contact-btn-block {
+        background: none; } }
+    .content .contact-btn-block .contact-btn {
+      width: 380px;
+      max-width: 90%;
+      text-align: center;
+      margin: 0 auto; }
+      @media screen and (min-width: 1440px) {
+        .content .contact-btn-block .contact-btn {
+          padding-bottom: 112px; } }
+      @media screen and (max-width: 1439px) {
+        .content .contact-btn-block .contact-btn {
+          padding-bottom: 112px; } }
+      @media screen and (max-width: 1023px) {
+        .content .contact-btn-block .contact-btn {
+          padding: 60px 0; } }
+      @media screen and (max-width: 599px) {
+        .content .contact-btn-block .contact-btn {
+          padding: 46px 0; } }
+      .content .contact-btn-block .contact-btn .question {
+        font-family: "Montserrat-Medium";
+        color: #FF119D; }
+        @media screen and (min-width: 1440px) {
+          .content .contact-btn-block .contact-btn .question {
+            font-size: 32px;
+            line-height: 42px; } }
+        @media screen and (max-width: 1439px) {
+          .content .contact-btn-block .contact-btn .question {
+            font-size: 32px;
+            line-height: 42px; } }
+        @media screen and (max-width: 599px) {
+          .content .contact-btn-block .contact-btn .question {
+            font-size: 18px;
+            line-height: 42px; } }
+      .content .contact-btn-block .contact-btn button {
+        background-image: linear-gradient(180deg, #0ABE52, #0BB194);
+        box-shadow: 0 9px 34px rgba(5, 48, 95, 0.32);
+        color: white;
+        font-family: "Roboto-Regular";
+        font-size: 18px;
+        line-height: 18px; }
+        @media screen and (min-width: 1440px) {
+          .content .contact-btn-block .contact-btn button {
+            width: 380px;
+            height: 60px;
+            border-radius: 34px;
+            margin-top: 31px; } }
+        @media screen and (max-width: 1439px) {
+          .content .contact-btn-block .contact-btn button {
+            width: 380px;
+            height: 60px;
+            border-radius: 34px;
+            margin-top: 31px; } }
+        @media screen and (max-width: 599px) {
+          .content .contact-btn-block .contact-btn button {
+            width: 237px;
+            max-width: 90%;
+            height: 60px;
+            border-radius: 34px;
+            margin-top: 26px; } }
+        .content .contact-btn-block .contact-btn button:hover {
+          box-shadow: 0 6px 20px rgba(5, 48, 95, 0.45);
+          background-image: none;
+          background-color: #2BBE00;
+          transition: color 2s ease;
+          color: white; }
+        .content .contact-btn-block .contact-btn button:active {
+          box-shadow: 0 4px 10px rgba(5, 48, 95, 0.45);
+          background-image: none;
+          background-color: #2BBE00;
+          color: white; }
+
 /*# sourceMappingURL=common.css.map */
