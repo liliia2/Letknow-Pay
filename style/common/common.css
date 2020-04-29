@@ -2921,6 +2921,18 @@ button, button:hover, button:active, button:visited {
         .content .open-banking .bank-icons .bank-icon {
           width: 70px;
           height: 70px; } }
+      .content .open-banking .bank-icons .bank-icon img {
+        box-shadow: 4px 2px 17px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        border-radius: 50%; }
+        @media screen and (min-width: 1440px) {
+          .content .open-banking .bank-icons .bank-icon img {
+            width: 88px;
+            height: 88px; } }
+        @media screen and (max-width: 1439px) {
+          .content .open-banking .bank-icons .bank-icon img {
+            width: 70px;
+            height: 70px; } }
     @media screen and (min-width: 1440px) {
       .content .open-banking .bank-icons .first {
         margin: 18px auto auto 0; }
