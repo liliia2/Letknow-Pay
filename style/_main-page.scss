@@ -10,6 +10,10 @@ button, button:hover, button:active, button:visited {
   transition: all 0.2s ease-out; 
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .animated {
   opacity: 0;
   transition: opacity 1.5s ease !important; 
